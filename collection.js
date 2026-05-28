@@ -67,6 +67,9 @@ const collections = {
     groups: [
       {
         title: "Fenix Composites",
+        href: "https://fenix-composites.com/index.html",
+        linkLabel: "Website ansehen",
+        note: "For Fenix, I wanted the images to feel precise and strong, with a quiet focus on shape, surface and movement.",
         files: [
           "material/Produktfotografie/Fenix Composites/FENIX1883_result.jpg",
           "material/Produktfotografie/Fenix Composites/FENIX1920_result.jpg",
@@ -97,6 +100,9 @@ const collections = {
       },
       {
         title: "Schwenkbier",
+        href: "https://schwenkbier.shop/password",
+        linkLabel: "Website ansehen",
+        note: "With Schwenkbier, I focused on the bottle as a small object with character, warm light and a handmade feeling.",
         files: [
           "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1785_result.jpg",
           "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1803_result.jpg",
@@ -106,6 +112,9 @@ const collections = {
       },
       {
         title: "MoManufaktur",
+        href: "https://momanufaktur.com/produkt/zeitloser-infinity-kalender-individuell-mit-ihrem-logo-als-einzel-oder-serienanfertigung/",
+        linkLabel: "Website ansehen",
+        note: "For MoManufaktur, I kept the visuals calm and minimal so the object could speak through material, balance and detail.",
         files: [
           "material/Produktfotografie/MoManufaktur/DSC_2572_result.jpg",
           "material/Produktfotografie/MoManufaktur/Pro-Capture One 0021_result.jpg",
@@ -114,6 +123,9 @@ const collections = {
       },
       {
         title: "Haymark Lavash",
+        href: "https://haymark.de",
+        linkLabel: "Website ansehen",
+        note: "For Haymark Lavash, I wanted the work to feel familiar and warm, like food moments from an everyday table.",
         files: [
           "material/Produktfotografie/Haymark Lavash/DSC_0103_result.jpg",
           "material/Produktfotografie/Haymark Lavash/DSC_0143_result.jpg",
@@ -124,6 +136,9 @@ const collections = {
       },
       {
         title: "Hobby",
+        href: "https://www.lassepts.de",
+        linkLabel: "Website ansehen",
+        note: "A small collection of free-time projects and personal visual experiments. The guitar belongs to Lasse.",
         files: [
           "material/Produktfotografie/Hobby/Capture One Catalog0053_result.jpg",
           "material/Produktfotografie/Hobby/DSC_0124_result.jpg",
@@ -196,6 +211,51 @@ const collections = {
       "material/freestyle/freestyle5_result.jpg",
       "material/freestyle/freestyle9_result.jpg"
     ]
+  },
+  mockups: {
+    title: "Mockups",
+    label: "Webdesign / Social Media",
+    groups: [
+      {
+        title: "Personal Portfolio",
+        note: "A first portfolio mockup exploring how photography, typography and small handwritten details can feel personal without losing structure.",
+        files: [
+          "material/mockups/mein 1. Postfolio.png"
+        ]
+      },
+      {
+        title: "Coffee Shop Concept",
+        note: "A free project for a coffee shop identity, with warm product presentation and simple digital touchpoints for a friendly brand feeling.",
+        files: [
+          "material/mockups/coffee shop freies projekt.png"
+        ]
+      },
+      {
+        title: "Ice Cream Concept",
+        note: "A playful free project for an ice cream brand, focused on bright presentation, clear hierarchy and a light visual mood.",
+        files: [
+          "material/mockups/Ice-Cream freies Projekt.png"
+        ]
+      },
+      {
+        title: "GIE Instagram Concept",
+        href: "https://www.instagram.com/gie_hsfl?igsh=MWl1OTQxaGlsZmNvdA%3D%3D&utm_source=qr",
+        linkLabel: "Instagram ansehen",
+        note: "Visual mockups created for Hochschule Flensburg's GIE social media presence. The concept focuses on clarity, consistency and a modern visual language.",
+        files: [
+          "material/mockups/GIE-instagram.png"
+        ]
+      },
+      {
+        title: "DesignLab Instagram",
+        href: "https://www.instagram.com/designlab_flensburg?igsh=MWVzbnl4NGRucnhxcQ%3D%3D&utm_source=qr",
+        linkLabel: "Instagram ansehen",
+        note: "I was active in Social Media for DesignLab at Hochschule Flensburg in 2024-2025. This mockup reflects that period and my work with structured content, visual clarity and a calm editorial rhythm.",
+        files: [
+          "material/mockups/DesignLab-instagram.png"
+        ]
+      }
+    ]
   }
 };
 
@@ -204,8 +264,206 @@ const collectionLinks = [
   ["Street Portraits", "street-portraits.html", "street"],
   ["Produktfotografie", "produktfotografie.html", "produkt"],
   ["Events", "events.html", "events"],
-  ["Freestyle", "nature.html", "nature"]
+  ["Freestyle", "nature.html", "nature"],
+  ["Mockups", "mockups.html", "mockups"]
 ];
+
+const i18n = {
+  de: {
+    nav: {
+      works: "Works",
+      about: "About",
+      contact: "Kontakt",
+      mediaView: "Medienansicht",
+      closeMedia: "Medienansicht schließen",
+      previous: "Vorheriges Bild",
+      next: "Nächstes Bild"
+    },
+    links: {
+      portraits: "Portraits",
+      street: "Street Portraits",
+      produkt: "Produktfotografie",
+      events: "Events",
+      nature: "Freestyle",
+      mockups: "Mockups"
+    },
+    collections: {
+      portraits: {
+        title: "Portraits",
+        label: "Ordner / Portraits",
+        description: "Alle Bilder aus dem Ordner Portraits. Ruhig angeordnet, ohne harte Zuschnitte."
+      },
+      street: {
+        title: "Street Portraits",
+        label: "Ordner / Street Portraits",
+        description: "Alle Bilder aus dem Ordner Street Portraits."
+      },
+      produkt: {
+        title: "Produktfotografie",
+        label: "Ordner / Produktfotografie",
+        description: "Alle Bilder aus dem Ordner Produktfotografie."
+      },
+      events: {
+        title: "Events",
+        label: "Ordner / Events",
+        description: "Alle Bilder aus dem Ordner Events."
+      },
+      nature: {
+        title: "Freestyle",
+        label: "Ordner / Freestyle",
+        description: "Alle Bilder aus dem Ordner Freestyle."
+      },
+      mockups: {
+        title: "Mockups",
+        label: "Webdesign / Social Media"
+      }
+    },
+    groups: {
+      "Fenix Composites": {
+        note: "Für Fenix sollten die Bilder präzise und kraftvoll wirken, mit ruhigem Fokus auf Form, Oberfläche und Bewegung.",
+        linkLabel: "Website ansehen"
+      },
+      Schwenkbier: {
+        note: "Bei Schwenkbier lag der Fokus auf der Flasche als kleines Objekt mit Charakter, warmem Licht und handgemachtem Gefühl.",
+        linkLabel: "Website ansehen"
+      },
+      MoManufaktur: {
+        note: "Bei MoManufaktur habe ich die Bildsprache ruhig und minimal gehalten, damit Material, Balance und Detail im Vordergrund stehen.",
+        linkLabel: "Website ansehen"
+      },
+      "Haymark Lavash": {
+        note: "Bei Haymark Lavash sollte die Arbeit vertraut und warm wirken, wie kleine Food-Momente aus dem Alltag.",
+        linkLabel: "Website ansehen"
+      },
+      Hobby: {
+        note: "Eine kleine Sammlung freier Projekte und persönlicher visueller Experimente. Die Gitarre gehört Lasse.",
+        linkLabel: "Website ansehen"
+      },
+      "Personal Portfolio": {
+        note: "Ein erstes Portfolio-Mockup, das Fotografie, Typografie und kleine handschriftliche Details persönlich wirken lässt, ohne die Struktur zu verlieren."
+      },
+      "Coffee Shop Concept": {
+        note: "Ein freies Projekt für eine Coffee-Shop-Identity mit warmer Produktpräsentation und einfachen digitalen Kontaktpunkten für ein freundliches Markengefühl."
+      },
+      "Ice Cream Concept": {
+        note: "Ein spielerisches freies Projekt für eine Ice-Cream-Marke mit heller Präsentation, klarer Hierarchie und leichter visueller Stimmung."
+      },
+      "GIE Instagram Concept": {
+        note: "Visuelle Mockups für den Social-Media-Auftritt von GIE an der Hochschule Flensburg. Das Konzept setzt auf Klarheit, Konsistenz und eine moderne visuelle Sprache.",
+        linkLabel: "Instagram ansehen"
+      },
+      "DesignLab Instagram": {
+        note: "Ich war 2024-2025 im Social-Media-Bereich für das DesignLab der Hochschule Flensburg tätig. Dieses Mockup zeigt diese Zeit und meine Arbeit mit strukturiertem Content, visueller Klarheit und ruhigem editorialem Rhythmus.",
+        linkLabel: "Instagram ansehen"
+      }
+    }
+  },
+  en: {
+    nav: {
+      works: "Works",
+      about: "About",
+      contact: "Contact",
+      mediaView: "Media view",
+      closeMedia: "Close media view",
+      previous: "Previous image",
+      next: "Next image"
+    },
+    links: {
+      portraits: "Portraits",
+      street: "Street Portraits",
+      produkt: "Product Photography",
+      events: "Events",
+      nature: "Freestyle",
+      mockups: "Mockups"
+    },
+    collections: {
+      portraits: {
+        title: "Portraits",
+        label: "Folder / Portraits",
+        description: "All images from the Portraits folder, arranged calmly without harsh crops."
+      },
+      street: {
+        title: "Street Portraits",
+        label: "Folder / Street Portraits",
+        description: "All images from the Street Portraits folder."
+      },
+      produkt: {
+        title: "Product Photography",
+        label: "Folder / Product Photography",
+        description: "All images from the Product Photography folder."
+      },
+      events: {
+        title: "Events",
+        label: "Folder / Events",
+        description: "All images from the Events folder."
+      },
+      nature: {
+        title: "Freestyle",
+        label: "Folder / Freestyle",
+        description: "All images from the Freestyle folder."
+      },
+      mockups: {
+        title: "Mockups",
+        label: "Web Design / Social Media"
+      }
+    },
+    groups: {}
+  }
+};
+
+function getLanguage() {
+  return localStorage.getItem("portfolio-language") === "en" ? "en" : "de";
+}
+
+function getCollectionText(property) {
+  const language = getLanguage();
+  return i18n[language]?.collections?.[key]?.[property] || collection[property];
+}
+
+function getGroupText(group, property) {
+  const language = getLanguage();
+  return i18n[language]?.groups?.[group.title]?.[property] || group[property];
+}
+
+function getLinkLabel(linkKey, fallback) {
+  const language = getLanguage();
+  return i18n[language]?.links?.[linkKey] || fallback;
+}
+
+function setupLanguageToggle() {
+  const header = document.querySelector(".site-header");
+
+  if (!header || header.querySelector(".language-toggle")) {
+    return;
+  }
+
+  const toggle = document.createElement("div");
+  toggle.className = "language-toggle";
+  toggle.setAttribute("aria-label", "Sprache wechseln");
+  toggle.innerHTML = `
+    <button type="button" data-lang="de">DE</button>
+    <span>/</span>
+    <button type="button" data-lang="en">EN</button>
+  `;
+  header.append(toggle);
+
+  const sync = () => {
+    const language = getLanguage();
+    document.documentElement.lang = language;
+    toggle.querySelectorAll("button").forEach((button) => {
+      button.classList.toggle("active", button.dataset.lang === language);
+    });
+  };
+
+  toggle.querySelectorAll("button").forEach((button) => {
+    button.addEventListener("click", () => {
+      localStorage.setItem("portfolio-language", button.dataset.lang);
+      window.location.reload();
+    });
+  });
+
+  sync();
+}
 
 const root = document.querySelector("#collection-root");
 const key = document.body.dataset.collection;
@@ -239,11 +497,23 @@ function renderGallery(items, label) {
 }
 
 function renderGroup(group, index) {
+  const heading = group.href
+    ? `<a href="${group.href}" target="_blank" rel="noreferrer">${group.title}</a>`
+    : group.title;
+  const noteText = getGroupText(group, "note");
+  const note = noteText ? `<p>${noteText}</p>` : "";
+  const actionText = getGroupText(group, "linkLabel");
+  const action = group.href && actionText
+    ? `<a class="collection-group-link" href="${group.href}" target="_blank" rel="noreferrer">${actionText} -></a>`
+    : "";
+
   return `
     <section class="collection-group collection-group-${slug(group.title)}">
       <header class="collection-group-heading">
         <span>${String(index + 1).padStart(2, "0")}</span>
-        <h2>${group.title}</h2>
+        <h2>${heading}</h2>
+        ${note}
+        ${action}
       </header>
       ${renderGallery(group.files, group.title)}
     </section>
@@ -256,16 +526,35 @@ function renderCollection() {
     return;
   }
 
-  document.title = `${collection.title} | Julianna Yengibaryan`;
-  root.innerHTML = `
+  const language = getLanguage();
+  const collectionTitle = getCollectionText("title");
+  const collectionLabel = getCollectionText("label");
+  const collectionDescription = getCollectionText("description");
+  const navText = i18n[language].nav;
+
+  document.documentElement.lang = language;
+  document.title = `${collectionTitle} | Julianna Yengibaryan`;
+  document.querySelector(".main-nav a[href='index.html#index']")?.replaceChildren(document.createTextNode(navText.works));
+  document.querySelector(".main-nav a[href='index.html#about']")?.replaceChildren(document.createTextNode(navText.about));
+  document.querySelector(".main-nav a[href='index.html#kontakt']")?.replaceChildren(document.createTextNode(navText.contact));
+
+  const switcher = `
+    <nav class="collection-switcher" aria-label="Andere Ordner">
+      ${collectionLinks.map(([label, href, linkKey]) => `<a class="${linkKey === key ? "active" : ""}" href="${href}">${getLinkLabel(linkKey, label)}</a>`).join("")}
+    </nav>
+  `;
+  const hero = `
     <section class="collection-hero">
       <span class="collection-number">${String(activeIndex + 1).padStart(2, "0")} —</span>
-      <p class="collection-hand">${collection.label.replace("Ordner / ", "")}</p>
-      <h1>${collection.title}</h1>
+      <p class="collection-hand">${collectionLabel.replace("Ordner / ", "")}</p>
+      <h1>${collectionTitle}</h1>
+      ${collectionDescription ? `<p class="collection-description">${collectionDescription}</p>` : ""}
     </section>
-    <nav class="collection-switcher" aria-label="Andere Ordner">
-      ${collectionLinks.map(([label, href, linkKey]) => `<a class="${linkKey === key ? "active" : ""}" href="${href}">${label}</a>`).join("")}
-    </nav>
+  `;
+
+  root.innerHTML = `
+    ${hero}
+    ${switcher}
     ${collection.groups ? `
       <section class="collection-groups" aria-label="${collection.title}">
         ${collection.groups.map(renderGroup).join("")}
@@ -282,7 +571,7 @@ function setupLightbox() {
     lightbox.className = "lightbox";
     lightbox.setAttribute("aria-label", "Medienansicht");
     lightbox.innerHTML = `
-      <button class="close-lightbox" type="button" aria-label="Medienansicht schliessen">x</button>
+      <button class="close-lightbox" type="button" aria-label="${i18n[getLanguage()].nav.closeMedia}">x</button>
       <img src="" alt="">
     `;
     document.body.append(lightbox);
@@ -304,12 +593,12 @@ function setupLightbox() {
 
   previousButton.className = "lightbox-nav lightbox-prev";
   previousButton.type = "button";
-  previousButton.setAttribute("aria-label", "Vorheriges Bild");
+  previousButton.setAttribute("aria-label", i18n[getLanguage()].nav.previous);
   previousButton.textContent = "←";
 
   nextButton.className = "lightbox-nav lightbox-next";
   nextButton.type = "button";
-  nextButton.setAttribute("aria-label", "Naechstes Bild");
+  nextButton.setAttribute("aria-label", i18n[getLanguage()].nav.next);
   nextButton.textContent = "→";
 
   lightbox.append(previousButton, nextButton);
@@ -415,6 +704,7 @@ function setupMobileMenu() {
   });
 }
 
+setupLanguageToggle();
 renderCollection();
 setupLightbox();
 setupScrollNav();

@@ -8,7 +8,7 @@
       name="description"
       content="Creative Portfolio for Photography, Film, Web & Visual Design"
     >
-    <link rel="stylesheet" href="styles.css?v=20260528y">
+    <link rel="stylesheet" href="styles.css?v=20260529i">
   </head>
   <body>
     <div class="grain" aria-hidden="true"></div>
@@ -17,9 +17,9 @@
         <span>Start</span>
       </a>
       <nav class="main-nav" aria-label="Hauptnavigation">
-        <a href="#index">Index</a>
-        <a href="#about">About</a>
-        <a href="#kontakt">Contact</a>
+        <a href="#index" data-i18n="nav.index">Index</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
       </nav>
     </header>
 
@@ -27,9 +27,14 @@
       <section class="board board-hero" aria-labelledby="hero-title">
         <a class="home-start-logo" href="#top">Personal<br>Portfolio</a>
         <nav class="board-nav" aria-label="Sections">
-          <a href="#index">Works</a>
-          <a href="#about">About</a>
-          <a href="#kontakt">Contact</a>
+          <a href="#index" data-i18n="nav.works">Works</a>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+          <span class="language-toggle" aria-label="Sprache wechseln">
+            <button type="button" data-lang="de">DE</button>
+            <span>/</span>
+            <button type="button" data-lang="en">EN</button>
+          </span>
         </nav>
         <button class="mobile-menu-toggle home-mobile-menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
           <span></span>
@@ -38,7 +43,7 @@
         </button>
         <h1 id="hero-title">Personal<br>Portfolio</h1>
         <p class="hand-name" id="flying-name">julianna yengibaryan</p>
-        <p class="hero-fields">Photography<br>Video /<br>Web &amp; Visual Design</p>
+        <p class="hero-fields" data-i18n-html="hero.fields">Fotografie<br>Video /<br>Webdesign &amp; Visual Design</p>
         <span class="pink-circle pink-circle-hero"></span>
         <span class="pink-star pink-star-hero">*</span>
         <span class="scroll-note">Scroll<br>↓</span>
@@ -51,13 +56,13 @@
         </figure>
         <div class="about-statement">
           <div class="about-name-slot" aria-hidden="true"></div>
-          <p>Hi, I’m Julianna — this is my visual diary, a collection of photography, design and creative projects shaped by emotion, storytelling and everyday inspiration. Enjoy your visit.</p>
+          <p data-i18n="about.text">Hi, ich bin Julianna — das ist mein visuelles Tagebuch, eine Sammlung aus Fotografie, Design und kreativen Projekten, geprägt von Emotion, Storytelling und Inspiration aus dem Alltag. Schön, dass du da bist.</p>
         </div>
         <span class="pink-star about-star about-star-a">*</span>
         <span class="pink-star about-star about-star-b">*</span>
         <span class="pink-star about-star about-star-c">*</span>
         <span class="about-rule" aria-hidden="true"></span>
-        <span class="about-place">Based in Germany</span>
+        <span class="about-place" data-i18n="about.place">Based in Germany</span>
       </section>
 
       <section class="board board-index" id="index" aria-labelledby="index-title">
@@ -65,9 +70,10 @@
         <nav class="editorial-index" aria-label="Portfolio index">
           <a href="portraits.html"><span>01</span>Portraits</a>
           <a href="street-portraits.html"><span>02</span>Street Portraits</a>
-          <a href="produktfotografie.html"><span>03</span>Product Photography</a>
+          <a href="produktfotografie.html"><span>03</span><em data-i18n="works.product">Produktfotografie</em></a>
           <a href="events.html"><span>04</span>Events</a>
           <a href="nature.html"><span>05</span>Freestyle</a>
+          <a href="mockups.html"><span>06</span>Mockups</a>
         </nav>
         <figure class="index-photo">
           <img src="material/Julianna/Materialcover_result.jpg" alt="Material preview">
@@ -77,15 +83,15 @@
       </section>
 
       <section class="board board-ink" aria-label="I create visual stories">
-        <h2 class="ink-hero-title">I create<br><span>visual</span><br>stories.</h2>
+        <h2 class="ink-hero-title" data-i18n-html="ink.title">Ich erzähle<br><span>visuelle</span><br>Geschichten.</h2>
         <span class="pink-star pink-star-hero">*</span>
       </section>
 
       <section class="board board-quote" id="kontakt" aria-label="Contact">
-        <h2>Let’s<br>create<br><em>together.</em></h2>
+        <h2 data-i18n-html="contact.title">Lass uns<br><em>zusammen</em><br>gestalten.</h2>
         <span class="pink-star quote-star">*</span>
         <div class="contact-email-frame">
-          <span>email</span>
+          <span data-i18n="contact.email">email</span>
           <a href="mailto:yengibaryan.j@outlook.de">yengibaryan.j@outlook.de</a>
         </div>
         <span class="pink-circle quote-circle contact-email-circle" aria-hidden="true"></span>
@@ -93,15 +99,76 @@
 
     </main>
 
+    <footer class="legal-footer home-legal-footer">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </footer>
+
     <script>
+      const homeI18n = {
+        de: {
+          nav: { index: "Index", works: "Arbeiten", about: "Über mich", contact: "Kontakt" },
+          hero: { fields: "Fotografie<br>Video /<br>Webdesign &amp; Visual Design" },
+          about: {
+            text: "Hi, ich bin Julianna — das ist mein visuelles Tagebuch, eine Sammlung aus Fotografie, Design und kreativen Projekten, geprägt von Emotion, Storytelling und Inspiration aus dem Alltag. Schön, dass du da bist.",
+            place: "Based in Germany"
+          },
+          works: { product: "Produktfotografie" },
+          ink: { title: "Ich erzähle<br><span>visuelle</span><br>Geschichten." },
+          contact: { title: "Lass uns<br><em>zusammen</em><br>gestalten.", email: "email" }
+        },
+        en: {
+          nav: { index: "Index", works: "Works", about: "About", contact: "Contact" },
+          hero: { fields: "Photography<br>Video /<br>Web &amp; Visual Design" },
+          about: {
+            text: "Hi, I'm Julianna — this is my visual diary, a collection of photography, design and creative projects shaped by emotion, storytelling and everyday inspiration. Enjoy your visit.",
+            place: "Based in Germany"
+          },
+          works: { product: "Product Photography" },
+          ink: { title: "I create<br><span>visual</span><br>stories." },
+          contact: { title: "Let's<br>create<br><em>together.</em>", email: "email" }
+        }
+      };
+
+      const getHomeLanguage = () => localStorage.getItem("portfolio-language") === "en" ? "en" : "de";
+      const applyHomeLanguage = () => {
+        const language = getHomeLanguage();
+        document.documentElement.lang = language;
+        document.body.dataset.language = language;
+
+        document.querySelectorAll("[data-i18n]").forEach((item) => {
+          const value = item.dataset.i18n.split(".").reduce((data, key) => data?.[key], homeI18n[language]);
+          if (value) item.textContent = value;
+        });
+
+        document.querySelectorAll("[data-i18n-html]").forEach((item) => {
+          const value = item.dataset.i18nHtml.split(".").reduce((data, key) => data?.[key], homeI18n[language]);
+          if (value) item.innerHTML = value;
+        });
+
+        document.querySelectorAll(".language-toggle button").forEach((button) => {
+          button.classList.toggle("active", button.dataset.lang === language);
+        });
+      };
+
+      document.querySelectorAll(".language-toggle button").forEach((button) => {
+        button.addEventListener("click", () => {
+          localStorage.setItem("portfolio-language", button.dataset.lang);
+          applyHomeLanguage();
+        });
+      });
+
+      applyHomeLanguage();
+
       const fixedNav = document.querySelector(".board-hero .board-nav");
       const homeStartLogo = document.querySelector(".home-start-logo");
       const mobileMenuToggle = document.querySelector(".home-mobile-menu-toggle");
+      const homeLanguageToggle = document.querySelector(".board-hero .language-toggle");
       const contactSection = document.querySelector("#kontakt");
       const aboutSection = document.querySelector("#about");
       const flyingName = document.querySelector("#flying-name");
       const aboutNameSlot = document.querySelector(".about-name-slot");
-      const floatingNavItems = [fixedNav, homeStartLogo, mobileMenuToggle].filter(Boolean);
+      const floatingNavItems = [fixedNav, homeStartLogo, mobileMenuToggle, homeLanguageToggle].filter(Boolean);
 
       if (mobileMenuToggle && fixedNav) {
         mobileMenuToggle.addEventListener("click", () => {
@@ -129,6 +196,7 @@
           fixedNav.classList.toggle("on-dark", isDark);
           homeStartLogo?.classList.toggle("on-dark", isDark);
           mobileMenuToggle?.classList.toggle("on-dark", isDark);
+          homeLanguageToggle?.classList.toggle("on-dark", isDark);
         };
 
         updateNavColor();
@@ -163,6 +231,7 @@
       if (flyingName && aboutNameSlot && aboutSection) {
         let start = null;
         let ticking = false;
+        let resizeTimer = null;
 
         const measureNameFlight = () => {
           document.body.classList.remove("name-flight-ready");
@@ -199,8 +268,8 @@
           const y = (target.top - start.top) * eased;
           const rotation = -2 - 1.5 * eased;
           const scale = window.matchMedia("(max-width: 680px)").matches
-            ? 1 - 0.26 * eased
-            : 1 + 0.18 * eased;
+            ? 1 - 0.34 * eased
+            : 1 - 0.16 * eased;
 
           flyingName.style.setProperty("--name-flight-x", `${x}px`);
           flyingName.style.setProperty("--name-flight-y", `${y}px`);
@@ -220,7 +289,10 @@
         window.addEventListener("load", measureNameFlight);
         measureNameFlight();
         window.addEventListener("scroll", requestNameFlight, { passive: true });
-        window.addEventListener("resize", measureNameFlight);
+        window.addEventListener("resize", () => {
+          window.clearTimeout(resizeTimer);
+          resizeTimer = window.setTimeout(measureNameFlight, 160);
+        });
       }
     </script>
 

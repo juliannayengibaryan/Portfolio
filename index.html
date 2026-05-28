@@ -8,7 +8,7 @@
       name="description"
       content="Portfolio fuer Fotografie, Video, Animation und visuelle Gestaltung."
     >
-    <link rel="stylesheet" href="styles.css?v=20260528t">
+    <link rel="stylesheet" href="styles.css?v=20260528y">
   </head>
   <body>
     <div class="grain" aria-hidden="true"></div>
@@ -25,12 +25,17 @@
 
     <main id="top" class="editorial-home">
       <section class="board board-hero" aria-labelledby="hero-title">
-        <a class="home-start-logo" href="#top">Start</a>
+        <a class="home-start-logo" href="#top">Personal<br>Portfolio</a>
         <nav class="board-nav" aria-label="Sections">
           <a href="#index">Works</a>
           <a href="#about">About</a>
           <a href="#kontakt">Contact</a>
         </nav>
+        <button class="mobile-menu-toggle home-mobile-menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <h1 id="hero-title">Personal<br>Portfolio</h1>
         <p class="hand-name" id="flying-name">julianna yengibaryan</p>
         <p class="hero-fields">Photography<br>Video /<br>Web &amp; Visual Design</p>
@@ -91,11 +96,30 @@
     <script>
       const fixedNav = document.querySelector(".board-hero .board-nav");
       const homeStartLogo = document.querySelector(".home-start-logo");
+      const mobileMenuToggle = document.querySelector(".home-mobile-menu-toggle");
       const contactSection = document.querySelector("#kontakt");
       const aboutSection = document.querySelector("#about");
       const flyingName = document.querySelector("#flying-name");
       const aboutNameSlot = document.querySelector(".about-name-slot");
-      const floatingNavItems = [fixedNav, homeStartLogo].filter(Boolean);
+      const floatingNavItems = [fixedNav, homeStartLogo, mobileMenuToggle].filter(Boolean);
+
+      if (mobileMenuToggle && fixedNav) {
+        mobileMenuToggle.addEventListener("click", () => {
+          const isOpen = fixedNav.classList.toggle("menu-open");
+          mobileMenuToggle.classList.toggle("menu-open", isOpen);
+          mobileMenuToggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        fixedNav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            window.setTimeout(() => {
+              fixedNav.classList.remove("menu-open");
+              mobileMenuToggle.classList.remove("menu-open");
+              mobileMenuToggle.setAttribute("aria-expanded", "false");
+            }, 0);
+          });
+        });
+      }
 
       if (fixedNav && contactSection) {
         const updateNavColor = () => {
@@ -104,6 +128,7 @@
           const isDark = rect.top <= viewportMiddle && rect.bottom > 0;
           fixedNav.classList.toggle("on-dark", isDark);
           homeStartLogo?.classList.toggle("on-dark", isDark);
+          mobileMenuToggle?.classList.toggle("on-dark", isDark);
         };
 
         updateNavColor();

@@ -91,15 +91,21 @@ body:has(.editorial-home) .grain {
 
 .home-start-logo,
 .board-hero .board-nav,
+.mobile-menu-toggle,
 .collection-page .site-header {
   transition: opacity 220ms ease, transform 220ms ease;
 }
 
 .home-start-logo.nav-hidden,
-.board-hero .board-nav.nav-hidden {
+.board-hero .board-nav.nav-hidden,
+.mobile-menu-toggle.nav-hidden {
   opacity: 0;
   pointer-events: none;
   transform: translateY(-18px);
+}
+
+.mobile-menu-toggle {
+  display: none;
 }
 
 .board-hero {
@@ -1500,6 +1506,45 @@ footer {
   z-index: 0;
 }
 
+.mobile-menu-toggle {
+  place-items: center;
+  gap: 4px;
+  width: 42px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  color: var(--ink);
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  cursor: pointer;
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  width: 18px;
+  height: 1.5px;
+  border-radius: 999px;
+  background: currentColor;
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+.mobile-menu-toggle.menu-open span:first-child {
+  transform: translateY(5.5px) rotate(38deg);
+}
+
+.mobile-menu-toggle.menu-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.menu-open span:last-child {
+  transform: translateY(-5.5px) rotate(-38deg);
+}
+
+.mobile-menu-toggle.on-dark {
+  color: var(--paper);
+}
+
 .home-hero {
   min-height: calc(100svh - 58px);
   display: flex;
@@ -2862,16 +2907,59 @@ body[data-collection="werbung"] .collection-group-heading h2 {
   }
 
   .home-start-logo {
+    display: block;
     top: 18px;
     left: 18px;
-    font-size: 10px;
+    max-width: 96px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 0.9;
+    text-transform: none;
+  }
+
+  .mobile-menu-toggle {
+    display: grid;
+  }
+
+  .home-mobile-menu-toggle {
+    position: fixed;
+    top: 20px;
+    right: 22px;
+    z-index: 103;
   }
 
   .board-hero .board-nav {
-    top: 18px;
-    right: 18px;
-    gap: 10px;
-    font-size: 10px;
+    top: 68px;
+    right: 22px;
+    z-index: 102;
+    display: grid;
+    gap: 12px;
+    min-width: 154px;
+    padding: 16px 18px;
+    color: var(--ink);
+    background: rgba(245, 243, 238, 0.94);
+    border: 1px solid rgba(21, 21, 21, 0.12);
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity 180ms ease, transform 180ms ease;
+  }
+
+  .board-hero .board-nav.menu-open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .board-hero .board-nav.on-dark {
+    color: var(--ink);
+    background: rgba(17, 18, 15, 0.9);
+  }
+
+  .board-hero .board-nav.on-dark a {
+    color: var(--paper);
   }
 
   .board-hero h1 {
@@ -3124,14 +3212,77 @@ body[data-collection="werbung"] .collection-group-heading h2 {
   }
 
   .site-header {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto;
     gap: 12px;
   }
 
   .main-nav {
+    position: absolute;
+    top: 68px;
+    right: 22px;
+    display: grid;
+    gap: 12px;
+    width: auto;
+    min-width: 154px;
+    padding: 16px 18px;
+    overflow: visible;
+    color: var(--ink);
+    background: rgba(245, 243, 238, 0.94);
+    border: 1px solid rgba(21, 21, 21, 0.12);
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity 180ms ease, transform 180ms ease;
+  }
+
+  .main-nav.menu-open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .collection-page .site-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: initial;
+    align-items: start;
+    padding: 20px 22px 0 18px;
+  }
+
+  .collection-page .brand {
+    max-width: 96px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 0.9;
+    text-transform: none;
+  }
+
+  .collection-page .mobile-menu-toggle {
+    display: grid;
+    justify-self: end;
+  }
+
+  .collection-switcher {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 18px;
     width: 100%;
+    padding: 16px 18px;
     overflow-x: auto;
-    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+
+  .collection-switcher::-webkit-scrollbar {
+    display: none;
+  }
+
+  .collection-switcher a,
+  .collection-switcher a.active {
+    flex: 0 0 auto;
+    font-size: clamp(17px, 5.2vw, 23px);
+    white-space: nowrap;
   }
 
   .hero {

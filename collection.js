@@ -389,6 +389,33 @@ function setupScrollNav() {
   }, { passive: true });
 }
 
+function setupMobileMenu() {
+  const header = document.querySelector(".site-header");
+  const nav = document.querySelector(".main-nav");
+  const toggle = document.querySelector(".mobile-menu-toggle");
+
+  if (!header || !nav || !toggle) {
+    return;
+  }
+
+  toggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("menu-open");
+    toggle.classList.toggle("menu-open", isOpen);
+    toggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      window.setTimeout(() => {
+        nav.classList.remove("menu-open");
+        toggle.classList.remove("menu-open");
+        toggle.setAttribute("aria-expanded", "false");
+      }, 0);
+    });
+  });
+}
+
 renderCollection();
 setupLightbox();
 setupScrollNav();
+setupMobileMenu();

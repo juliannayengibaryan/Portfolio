@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Julianna Yengibaryan | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio fuer Fotografie, Video, Animation und visuelle Gestaltung."
+    >
+    <link rel="stylesheet" href="styles.css?v=20260528c">
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Zur Startseite">
+        <span>Start</span>
+      </a>
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <a href="#index">Index</a>
+        <a href="#about">About</a>
+        <a href="#kontakt">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top" class="editorial-home">
+      <section class="board board-hero" aria-labelledby="hero-title">
+        <a class="home-start-logo" href="#top">Start</a>
+        <nav class="board-nav" aria-label="Sections">
+          <a href="#index">Works</a>
+          <a href="#about">About</a>
+          <a href="#kontakt">Contact</a>
+        </nav>
+        <h1 id="hero-title">Personal<br>Portfolio</h1>
+        <p class="hand-name" id="flying-name">julianna yengibaryan</p>
+        <p class="hero-fields">Photography<br>Video /<br>Web &amp; Visual Design</p>
+        <span class="pink-circle pink-circle-hero"></span>
+        <span class="pink-star pink-star-hero">*</span>
+        <span class="scroll-note">Scroll<br>↓</span>
+      </section>
+
+      <section class="board board-about" id="about" aria-label="About Julianna Yengibaryan">
+        <figure class="about-photo">
+          <span class="about-tape" aria-hidden="true"></span>
+          <img src="material/julianna/Julianna2.jpg" alt="Portrait von Julianna Yengibaryan">
+        </figure>
+        <div class="about-statement">
+          <div class="about-name-slot" aria-hidden="true"></div>
+          <p>Hi, I’m Julianna — this is my visual diary, a collection of photography, design and creative projects shaped by emotion, storytelling and everyday inspiration. Enjoy your visit.</p>
+        </div>
+        <span class="pink-star about-star about-star-a">*</span>
+        <span class="pink-star about-star about-star-b">*</span>
+        <span class="pink-star about-star about-star-c">*</span>
+        <span class="about-rule" aria-hidden="true"></span>
+        <span class="about-place">Based in Germany</span>
+      </section>
+
+      <section class="board board-index" id="index" aria-labelledby="index-title">
+        <h2 id="index-title" class="vertical-title">Works</h2>
+        <nav class="editorial-index" aria-label="Portfolio index">
+          <a href="portraits.html"><span>01</span>Portraits</a>
+          <a href="street-portraits.html"><span>02</span>Street Portraits</a>
+          <a href="produktfotografie.html"><span>03</span>Product Photography</a>
+          <a href="events.html"><span>04</span>Events</a>
+          <a href="nature.html"><span>05</span>Freestyle</a>
+          <a href="werbung-video.html"><span>06</span>Videos</a>
+        </nav>
+        <figure class="index-photo">
+          <img src="material/Julianna/Materialcover.jpg" alt="Material preview">
+          <span class="material-sketch material-sketch-circle" aria-hidden="true"></span>
+          <span class="material-sketch material-sketch-line" aria-hidden="true"></span>
+        </figure>
+      </section>
+
+      <section class="board board-ink" aria-label="I create visual stories">
+        <h2 class="ink-hero-title">I create<br><span>visual</span><br>stories.</h2>
+        <span class="pink-star pink-star-hero">*</span>
+      </section>
+
+      <section class="board board-quote" id="kontakt" aria-label="Contact">
+        <h2>Let’s<br>create<br><em>together.</em></h2>
+        <span class="pink-star quote-star">*</span>
+        <div class="contact-email-frame">
+          <span>email</span>
+          <a href="mailto:yengibaryan.j@outlook.de">yengibaryan.j@outlook.de</a>
+        </div>
+        <span class="pink-circle quote-circle contact-email-circle" aria-hidden="true"></span>
+      </section>
+
+    </main>
+
+    <script>
+      const fixedNav = document.querySelector(".board-hero .board-nav");
+      const homeStartLogo = document.querySelector(".home-start-logo");
+      const contactSection = document.querySelector("#kontakt");
+      const aboutSection = document.querySelector("#about");
+      const flyingName = document.querySelector("#flying-name");
+      const aboutNameSlot = document.querySelector(".about-name-slot");
+      const floatingNavItems = [fixedNav, homeStartLogo].filter(Boolean);
+
+      if (fixedNav && contactSection) {
+        const updateNavColor = () => {
+          const rect = contactSection.getBoundingClientRect();
+          const viewportMiddle = window.innerHeight * 0.35;
+          const isDark = rect.top <= viewportMiddle && rect.bottom > 0;
+          fixedNav.classList.toggle("on-dark", isDark);
+          homeStartLogo?.classList.toggle("on-dark", isDark);
+        };
+
+        updateNavColor();
+        window.addEventListener("scroll", updateNavColor, { passive: true });
+        window.addEventListener("resize", updateNavColor);
+      }
+
+      if (floatingNavItems.length) {
+        let lastScrollY = window.scrollY;
+        let tickingNav = false;
+
+        const updateNavVisibility = () => {
+          const currentScrollY = window.scrollY;
+          const isScrollingDown = currentScrollY > lastScrollY;
+          const shouldHide = isScrollingDown && currentScrollY > 90;
+
+          floatingNavItems.forEach((item) => {
+            item.classList.toggle("nav-hidden", shouldHide);
+          });
+
+          lastScrollY = currentScrollY;
+          tickingNav = false;
+        };
+
+        window.addEventListener("scroll", () => {
+          if (tickingNav) return;
+          tickingNav = true;
+          requestAnimationFrame(updateNavVisibility);
+        }, { passive: true });
+      }
+
+      if (flyingName && aboutNameSlot && aboutSection) {
+        let start = null;
+        let ticking = false;
+
+        const measureNameFlight = () => {
+          document.body.classList.remove("name-flight-ready");
+          flyingName.style.removeProperty("--name-start-left");
+          flyingName.style.removeProperty("--name-start-top");
+          flyingName.style.removeProperty("--name-flight-x");
+          flyingName.style.removeProperty("--name-flight-y");
+          flyingName.style.removeProperty("--name-flight-rotate");
+          flyingName.style.removeProperty("--name-flight-scale");
+
+          const rect = flyingName.getBoundingClientRect();
+          start = {
+            left: rect.left,
+            top: rect.top + window.scrollY
+          };
+
+          flyingName.style.setProperty("--name-start-left", `${start.left}px`);
+          flyingName.style.setProperty("--name-start-top", `${start.top}px`);
+          document.body.classList.add("name-flight-ready");
+          updateNameFlight();
+        };
+
+        const updateNameFlight = () => {
+          if (!start) return;
+          const target = aboutNameSlot.getBoundingClientRect();
+          const aboutTop = aboutSection.offsetTop;
+          const aboutTravelStart = Math.max(1, aboutTop - window.innerHeight * 0.92);
+          const aboutTravelEnd = Math.max(aboutTravelStart + 1, aboutTop - window.innerHeight * 0.2);
+          const rawProgress = (window.scrollY - aboutTravelStart) / (aboutTravelEnd - aboutTravelStart);
+          const progress = Math.min(1, Math.max(0, rawProgress));
+          const eased = 1 - Math.pow(1 - progress, 3);
+
+          const x = (target.left - start.left) * eased;
+          const y = (target.top - start.top) * eased;
+          const rotation = -2 - 1.5 * eased;
+          const scale = 1 + 0.18 * eased;
+
+          flyingName.style.setProperty("--name-flight-x", `${x}px`);
+          flyingName.style.setProperty("--name-flight-y", `${y}px`);
+          flyingName.style.setProperty("--name-flight-rotate", `${rotation}deg`);
+          flyingName.style.setProperty("--name-flight-scale", scale);
+        };
+
+        const requestNameFlight = () => {
+          if (ticking) return;
+          ticking = true;
+          requestAnimationFrame(() => {
+            updateNameFlight();
+            ticking = false;
+          });
+        };
+
+        window.addEventListener("load", measureNameFlight);
+        measureNameFlight();
+        window.addEventListener("scroll", requestNameFlight, { passive: true });
+        window.addEventListener("resize", measureNameFlight);
+      }
+    </script>
+
+  </body>
+</html>

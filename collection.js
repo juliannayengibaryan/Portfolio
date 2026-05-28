@@ -4,41 +4,41 @@ const collections = {
     label: "Ordner / Portraits",
     description: "Alle Bilder aus dem Ordner Portraits. Ruhig angeordnet, ohne harte Zuschnitte.",
     files: [
-      "material/Portraits/DSC_4478.jpg",
-      "material/Portraits/DSC_4486.jpg",
-      "material/Portraits/DSC_4622.jpg",
-      "material/Portraits/DSC_4633.jpg",
-      "material/Portraits/DSC_5214.jpg",
-      "material/Portraits/DSC_5259.jpg",
-      "material/Portraits/Fenix_Philipp0164.jpg",
-      "material/Portraits/Fenix_Philipp0250-2.jpg",
-      "material/Portraits/Fenix_Philipp0260.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0913.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0926.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0954.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0963.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1097.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1231.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1239.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1245.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits_Julianna_Yengibaryan_01.jpg",
-      "material/Portraits/Julianna_Yengibaryan.jpg",
-      "material/Portraits/Kai_Portrait0563-2.jpg",
-      "material/Portraits/Lasse Petersen1178.jpg",
-      "material/Portraits/Lasse Petersen1224.jpg",
-      "material/Portraits/Lasse Petersen1467.jpg",
-      "material/Portraits/Lasse Petersen1517.jpg",
-      "material/Portraits/Lasse Petersen1525.jpg",
-      "material/Portraits/Marvin Vorstellungsfoto.jpg",
-      "material/Portraits/Portrait10.jpg",
-      "material/Portraits/Portrait11.jpg",
-      "material/Portraits/Portrait15.jpg",
-      "material/Portraits/Portrait2.jpg",
-      "material/Portraits/Portrait7.jpg",
-      "material/Portraits/Portrait8.JPG",
-      "material/Portraits/Portrait9.jpg",
-      "material/Portraits/_DSC2048.jpg",
-      "material/Portraits/portrait15.jpeg"
+      "material/Portraits/DSC_4478_result.jpg",
+      "material/Portraits/DSC_4486_result.jpg",
+      "material/Portraits/DSC_4622_result.jpg",
+      "material/Portraits/DSC_4633_result.jpg",
+      "material/Portraits/DSC_5214_result.jpg",
+      "material/Portraits/DSC_5259_result.jpg",
+      "material/Portraits/Fenix_Philipp0164_result.jpg",
+      "material/Portraits/Fenix_Philipp0250-2_result.jpg",
+      "material/Portraits/Fenix_Philipp0260_result.jpg",
+      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0913_result.jpg",
+      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0926_result.jpg",
+      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0954_result.jpg",
+      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0963_result.jpg",
+      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1097_result.jpg",
+      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1231_result.jpg",
+      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1239_result.jpg",
+      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1245_result.jpg",
+      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits_Julianna_Yengibaryan_01_result.jpg",
+      "material/Portraits/Julianna_Yengibaryan_result.jpg",
+      "material/Portraits/Kai_Portrait0563-2_result.jpg",
+      "material/Portraits/Lasse Petersen1178_result.jpg",
+      "material/Portraits/Lasse Petersen1224_result.jpg",
+      "material/Portraits/Lasse Petersen1467_result.jpg",
+      "material/Portraits/Lasse Petersen1517_result.jpg",
+      "material/Portraits/Lasse Petersen1525_result.jpg",
+      "material/Portraits/Marvin Vorstellungsfoto_result.jpg",
+      "material/Portraits/Portrait10_result.jpg",
+      "material/Portraits/Portrait11_result.jpg",
+      "material/Portraits/portrait15_result.jpg",
+      "material/Portraits/Portrait2_result.jpg",
+      "material/Portraits/Portrait7_result.jpg",
+      "material/Portraits/Portrait8_result.jpg",
+      "material/Portraits/Portrait9_result.jpg",
+      "material/Portraits/_DSC2048_result.jpg",
+      "material/Portraits/portrait15_result.jpg"
     ]
   },
   street: {
@@ -46,18 +46,18 @@ const collections = {
     label: "Ordner / Street Portraits",
     description: "Alle Bilder aus dem Ordner Street Portraits.",
     files: [
-      "material/Street Portraits/DSC_0066.jpg",
-      "material/Street Portraits/DSC_3982.jpg",
-      "material/Street Portraits/DSC_4687 Kopie.jpg",
-      "material/Street Portraits/DSC_4784 Kopie.jpg",
-      "material/Street Portraits/DSC_5166.jpg",
-      "material/Street Portraits/StreetPortrait10.JPG.jpg",
-      "material/Street Portraits/StreetPortrait11.JPG.jpg",
-      "material/Street Portraits/StreetPortrait12.jpg",
-      "material/Street Portraits/StreetPortrait2.JPG.jpg",
-      "material/Street Portraits/StreetPortrait5.JPG.JPG",
-      "material/Street Portraits/freestyle18.jpg",
-      "material/Street Portraits/freestyle3.jpg"
+      "material/Street Portraits/DSC_0066_result.jpg",
+      "material/Street Portraits/DSC_3982_result.jpg",
+      "material/Street Portraits/DSC_4687 Kopie_result.jpg",
+      "material/Street Portraits/DSC_4784 Kopie_result.jpg",
+      "material/Street Portraits/DSC_5166_result.jpg",
+      "material/Street Portraits/StreetPortrait10.JPG_result.jpg",
+      "material/Street Portraits/StreetPortrait11.JPG_result.jpg",
+      "material/Street Portraits/StreetPortrait12_result.jpg",
+      "material/Street Portraits/StreetPortrait2.JPG_result.jpg",
+      "material/Street Portraits/StreetPortrait5.JPG_result.jpg",
+      "material/Street Portraits/freestyle18_result.jpg",
+      "material/Street Portraits/freestyle3_result.jpg"
     ]
   },
   produkt: {
@@ -68,69 +68,69 @@ const collections = {
       {
         title: "Fenix Composites",
         files: [
-          "material/Produktfotografie/Fenix Composites/FENIX1883.jpg",
-          "material/Produktfotografie/Fenix Composites/FENIX1920.jpg",
-          "material/Produktfotografie/Fenix Composites/FENIX1928.jpg",
-          "material/Produktfotografie/Fenix Composites/FENIX2051.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix0011.JPG",
-          "material/Produktfotografie/Fenix Composites/Fenix0045.JPG",
-          "material/Produktfotografie/Fenix Composites/Fenix0091.JPG",
-          "material/Produktfotografie/Fenix Composites/Fenix0121.JPG",
-          "material/Produktfotografie/Fenix Composites/Fenix0168.JPG",
-          "material/Produktfotografie/Fenix Composites/Fenix0216.JPG",
-          "material/Produktfotografie/Fenix Composites/Fenix_Fahrrad2141.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Fahrrad2156.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Fahrrad2188.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Fahrrad2201.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Fahrrad2224.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0047.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0063.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0065.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0092.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0101.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0102.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0122.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0145.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0148.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0159.jpg"
+          "material/Produktfotografie/Fenix Composites/FENIX1883_result.jpg",
+          "material/Produktfotografie/Fenix Composites/FENIX1920_result.jpg",
+          "material/Produktfotografie/Fenix Composites/FENIX1928_result.jpg",
+          "material/Produktfotografie/Fenix Composites/FENIX2051_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix0011_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix0045_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix0091_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix0121_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix0168_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix0216_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix_Fahrrad2141_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix_Fahrrad2156_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix_Fahrrad2188_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix_Fahrrad2201_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix_Fahrrad2224_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0047_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0063_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0065_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0092_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0101_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0102_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0122_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0145_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0148_result.jpg",
+          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0159_result.jpg"
         ]
       },
       {
         title: "Schwenkbier",
         files: [
-          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1785.jpg",
-          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1803.jpg",
-          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1844.jpg",
-          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1913.jpg"
+          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1785_result.jpg",
+          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1803_result.jpg",
+          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1844_result.jpg",
+          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1913_result.jpg"
         ]
       },
       {
         title: "MoManufaktur",
         files: [
-          "material/Produktfotografie/MoManufaktur/DSC_2572.JPG",
-          "material/Produktfotografie/MoManufaktur/Pro-Capture One 0021.JPG",
-          "material/Produktfotografie/MoManufaktur/Pro-Capture One 0038.JPG"
+          "material/Produktfotografie/MoManufaktur/DSC_2572_result.jpg",
+          "material/Produktfotografie/MoManufaktur/Pro-Capture One 0021_result.jpg",
+          "material/Produktfotografie/MoManufaktur/Pro-Capture One 0038_result.jpg"
         ]
       },
       {
         title: "Haymark Lavash",
         files: [
-          "material/Produktfotografie/Haymark Lavash/DSC_0103.jpg",
-          "material/Produktfotografie/Haymark Lavash/DSC_0143.jpg",
-          "material/Produktfotografie/Haymark Lavash/DSC_0378.jpg",
-          "material/Produktfotografie/Haymark Lavash/arbeit&alltag5.jpg",
-          "material/Produktfotografie/Haymark Lavash/arbeit&alltag6.jpg"
+          "material/Produktfotografie/Haymark Lavash/DSC_0103_result.jpg",
+          "material/Produktfotografie/Haymark Lavash/DSC_0143_result.jpg",
+          "material/Produktfotografie/Haymark Lavash/DSC_0378_result.jpg",
+          "material/Produktfotografie/Haymark Lavash/arbeit&alltag5_result_1.jpg",
+          "material/Produktfotografie/Haymark Lavash/arbeit&alltag6_result.jpg"
         ]
       },
       {
         title: "Hobby",
         files: [
-          "material/Produktfotografie/Hobby/Capture One Catalog0053.jpg",
-          "material/Produktfotografie/Hobby/DSC_0124.jpg",
-          "material/Produktfotografie/Hobby/DSC_0160.jpg",
-          "material/Produktfotografie/Hobby/DSC_0167.jpg",
-          "material/Produktfotografie/Hobby/DSC_0177.jpg",
-          "material/Produktfotografie/Hobby/Lasse Petersen1376.jpg"
+          "material/Produktfotografie/Hobby/Capture One Catalog0053_result.jpg",
+          "material/Produktfotografie/Hobby/DSC_0124_result.jpg",
+          "material/Produktfotografie/Hobby/DSC_0160_result.jpg",
+          "material/Produktfotografie/Hobby/DSC_0167_result.jpg",
+          "material/Produktfotografie/Hobby/DSC_0177_result.jpg",
+          "material/Produktfotografie/Hobby/Lasse Petersen1376_result.jpg"
         ]
       }
     ]
@@ -140,41 +140,41 @@ const collections = {
     label: "Ordner / Events",
     description: "Alle Bilder aus dem Ordner events.",
     files: [
-      "material/events/DSC_2927.jpg",
-      "material/events/DSC_2934.jpg",
-      "material/events/DSC_4191.jpg",
-      "material/events/DSC_4350.jpg",
-      "material/events/DSC_4369.jpg",
-      "material/events/DSC_5884.jpg",
-      "material/events/DSC_5912.jpg",
-      "material/events/DSC_5937.jpg",
-      "material/events/DSC_5993.jpg",
-      "material/events/DSC_6022.jpg",
-      "material/events/DSC_6026.jpg",
-      "material/events/DSC_6065.jpg",
-      "material/events/DSC_6144.jpg",
-      "material/events/DSC_6158.jpg",
-      "material/events/DSC_6160.jpg",
-      "material/events/DSC_6174.jpg",
-      "material/events/DSC_6205.jpg",
-      "material/events/DSC_6207.jpg",
-      "material/events/DSC_6210.jpg",
-      "material/events/DSC_6216.jpg",
-      "material/events/DSC_6229.jpg",
-      "material/events/DSC_6291.jpg",
-      "material/events/DSC_6307.jpg",
-      "material/events/DSC_6328.jpg",
-      "material/events/DSC_6949OnStageBBQ_JuliannaYengibaryan.jpg",
-      "material/events/Fenix_Fahrrad2134.jpg",
-      "material/events/Lasse Petersen1268.jpg",
-      "material/events/OnStageBBQ_JuliannaYengibaryanDSC_6667OnStageBBQ_JuliannaYengibaryan.jpg",
-      "material/events/OnStageBBQ_JuliannaYengibaryanDSC_6727OnStageBBQ_JuliannaYengibaryan.jpg",
-      "material/events/OnStageBBQ_JuliannaYengibaryanDSC_6870OnStageBBQ_JuliannaYengibaryan.jpg",
-      "material/events/OnStageBBQ_JuliannaYengibaryanDSC_6962OnStageBBQ_JuliannaYengibaryan.jpg",
-      "material/events/OnStageBBQ_JuliannaYengibaryanDSC_6969OnStageBBQ_JuliannaYengibaryan.jpg",
-      "material/events/OnStageBBQ_JuliannaYengibaryanDSC_7253OnStageBBQ_JuliannaYengibaryan.jpg",
-      "material/events/OnStageBBQ_JuliannaYengibaryanDSC_7277OnStageBBQ_JuliannaYengibaryan.jpg",
-      "material/events/freestyle27.JPG"
+      "material/events/DSC_2927_result.jpg",
+      "material/events/DSC_2934_result.jpg",
+      "material/events/DSC_4191_result.jpg",
+      "material/events/DSC_4350_result.jpg",
+      "material/events/DSC_4369_result.jpg",
+      "material/events/DSC_5884_result.jpg",
+      "material/events/DSC_5912_result.jpg",
+      "material/events/DSC_5937_result.jpg",
+      "material/events/DSC_5993_result.jpg",
+      "material/events/DSC_6022_result.jpg",
+      "material/events/DSC_6026_result.jpg",
+      "material/events/DSC_6065_result.jpg",
+      "material/events/DSC_6144_result.jpg",
+      "material/events/DSC_6158_result.jpg",
+      "material/events/DSC_6160_result.jpg",
+      "material/events/DSC_6174_result.jpg",
+      "material/events/DSC_6205_result.jpg",
+      "material/events/DSC_6207_result.jpg",
+      "material/events/DSC_6210_result.jpg",
+      "material/events/DSC_6216_result.jpg",
+      "material/events/DSC_6229_result.jpg",
+      "material/events/DSC_6291_result.jpg",
+      "material/events/DSC_6307_result.jpg",
+      "material/events/DSC_6328_result.jpg",
+      "material/events/DSC_6949OnStageBBQ_JuliannaYengibaryan_result.jpg",
+      "material/events/Fenix_Fahrrad2134_result.jpg",
+      "material/events/Lasse Petersen1268_result.jpg",
+      "material/events/OnStageBBQ_JuliannaYengibaryanDSC_6667OnStageBBQ_JuliannaYengibaryan_result.jpg",
+      "material/events/OnStageBBQ_JuliannaYengibaryanDSC_6727OnStageBBQ_JuliannaYengibaryan_result.jpg",
+      "material/events/OnStageBBQ_JuliannaYengibaryanDSC_6870OnStageBBQ_JuliannaYengibaryan_result.jpg",
+      "material/events/OnStageBBQ_JuliannaYengibaryanDSC_6962OnStageBBQ_JuliannaYengibaryan_result.jpg",
+      "material/events/OnStageBBQ_JuliannaYengibaryanDSC_6969OnStageBBQ_JuliannaYengibaryan_result.jpg",
+      "material/events/OnStageBBQ_JuliannaYengibaryanDSC_7253OnStageBBQ_JuliannaYengibaryan_result.jpg",
+      "material/events/OnStageBBQ_JuliannaYengibaryanDSC_7277OnStageBBQ_JuliannaYengibaryan_result.jpg",
+      "material/events/freestyle27_result.jpg"
     ]
   },
   nature: {
@@ -182,100 +182,19 @@ const collections = {
     label: "Ordner / Freestyle",
     description: "Alle Bilder aus dem Ordner nature.",
     files: [
-      "material/freestyle/DSC_0283.JPG",
-      "material/freestyle/DSC_0285.JPG",
-      "material/freestyle/DSC_0309.JPG",
-      "material/freestyle/DSC_0317.JPG",
-      "material/freestyle/DSC_0322.JPG",
-      "material/freestyle/Freestyle1.JPG",
-      "material/freestyle/freestyle2.JPG",
-      "material/freestyle/freestyle23.jpg",
-      "material/freestyle/freestyle26.JPG",
-      "material/freestyle/freestyle28.jpg",
-      "material/freestyle/freestyle4.jpg",
-      "material/freestyle/freestyle5.JPG",
-      "material/freestyle/freestyle9.jpg"
-    ]
-  },
-  werbung: {
-    title: "Videos",
-    label: "Ordner / Videos",
-    description: "Alle Videos, nach Ordnern gruppiert.",
-    groups: [
-      {
-        title: "University Projects",
-        files: [
-          {
-            type: "video",
-            src: "material/Videos/University Projects/2D Animation.MP4"
-          },
-          {
-            type: "video",
-            src: "material/Videos/University Projects/AE_Endprojekt_Yengibaryan_Julianna.mp4"
-          },
-          {
-            type: "video",
-            src: "material/Videos/University Projects/team05_RedFall_Files 2.mp4"
-          }
-        ]
-      },
-      {
-        title: "Ads",
-        files: [
-          {
-            type: "video",
-            src: "material/Videos/ads/Fenix Composites.mov"
-          },
-          {
-            type: "video",
-            src: "material/Videos/ads/Werbung Task2 Julianna Yengibaryan.MOV"
-          }
-        ]
-      },
-      {
-        title: "Social Media",
-        files: [
-          {
-            type: "video",
-            src: "material/Videos/social Media/copy_58661789-DA8E-4DCF-B1C8-3E2C28AEB655.mov"
-          },
-          {
-            type: "video",
-            src: "material/Videos/social Media/copy_AFDCEC16-3EEB-4E21-9DCD-A705592E62CF 2.MOV"
-          }
-        ]
-      }
-    ]
-  },
-  animation: {
-    title: "AE Animation",
-    label: "Ordner / AE Animation",
-    description: "Videos und Moodboard aus dem Ordner AE Animation.",
-    files: [
-      {
-        type: "video",
-        src: "material/Videos/University Projects/AE_Endprojekt_Yengibaryan_Julianna.mp4",
-      },
-      {
-        type: "video",
-        src: "material/Videos/University Projects/2D Animation.MP4"
-      },
-      {
-        type: "video",
-        src: "material/Videos/University Projects/team05_RedFall_Files 2.mp4"
-      }
-    ]
-  },
-  styleguide: {
-    title: "Styleguide Leitsystem",
-    label: "Ordner / Styleguide Leitsystem",
-    description: "PDF aus dem Ordner Styleguide Leitsystem.",
-    files: [
-      {
-        type: "pdf",
-        src: "material/Styleguide Leitsystem/KDM-StyleGuide-Gruppe8.pdf",
-        title: "KDM StyleGuide Gruppe 8"
-      }
+      "material/freestyle/DSC_0283_result.jpg",
+      "material/freestyle/DSC_0285_result.jpg",
+      "material/freestyle/DSC_0309_result.jpg",
+      "material/freestyle/DSC_0317_result.jpg",
+      "material/freestyle/DSC_0322_result.jpg",
+      "material/freestyle/Freestyle1_result.jpg",
+      "material/freestyle/freestyle2_result.jpg",
+      "material/freestyle/freestyle23_result.jpg",
+      "material/freestyle/freestyle26_result.jpg",
+      "material/freestyle/freestyle28_result.jpg",
+      "material/freestyle/freestyle4_result.jpg",
+      "material/freestyle/freestyle5_result.jpg",
+      "material/freestyle/freestyle9_result.jpg"
     ]
   }
 };
@@ -285,8 +204,7 @@ const collectionLinks = [
   ["Street Portraits", "street-portraits.html", "street"],
   ["Produktfotografie", "produktfotografie.html", "produkt"],
   ["Events", "events.html", "events"],
-  ["Freestyle", "nature.html", "nature"],
-  ["Videos", "werbung-video.html", "werbung"]
+  ["Freestyle", "nature.html", "nature"]
 ];
 
 const root = document.querySelector("#collection-root");
@@ -303,36 +221,11 @@ function slug(value) {
 }
 
 function renderItem(item, index) {
-  if (typeof item === "string") {
-    return `
-      <article class="collection-item">
-        <button class="collection-image-button" type="button" data-full="${item}">
-          <img src="${item}" alt="${collection.title} ${index + 1}">
-        </button>
-      </article>
-    `;
-  }
-
-  if (item.type === "video") {
-    const videoType = item.src.toLowerCase().endsWith(".mov") ? "video/quicktime" : "video/mp4";
-    const posterAttr = item.poster ? ` poster="${item.poster}"` : "";
-    return `
-      <article class="collection-item collection-video">
-        <button class="collection-video-button" type="button" data-full="${item.src}" data-type="${videoType}">
-          <video muted playsinline preload="metadata"${posterAttr}>
-            <source src="${item.src}#t=0.1" type="${videoType}">
-          </video>
-          <span>${fileName(item.src)}</span>
-        </button>
-      </article>
-    `;
-  }
-
   return `
-    <article class="collection-item collection-pdf">
-      <a href="${item.src}" target="_blank" rel="noreferrer">
-        <strong>${item.title || fileName(item.src)}</strong>
-      </a>
+    <article class="collection-item">
+      <button class="collection-image-button" type="button" data-full="${item}">
+        <img src="${item}" alt="${collection.title} ${index + 1}">
+      </button>
     </article>
   `;
 }
@@ -397,11 +290,6 @@ function setupLightbox() {
 
   const lightboxImage = lightbox.querySelector("img");
   const closeLightbox = lightbox.querySelector(".close-lightbox");
-  const lightboxVideo = document.createElement("video");
-  lightboxVideo.className = "lightbox-video";
-  lightboxVideo.controls = true;
-  lightboxVideo.playsInline = true;
-  lightbox.append(lightboxVideo);
 
   if (!lightbox || !lightboxImage || !closeLightbox) {
     return;
@@ -409,7 +297,7 @@ function setupLightbox() {
 
   let activeIndex = 0;
   const mediaButtons = [
-    ...document.querySelectorAll(".collection-image-button, .collection-video-button")
+    ...document.querySelectorAll(".collection-image-button")
   ];
   const previousButton = document.createElement("button");
   const nextButton = document.createElement("button");
@@ -430,27 +318,12 @@ function setupLightbox() {
     activeIndex = (index + mediaButtons.length) % mediaButtons.length;
     const button = mediaButtons[activeIndex];
     const image = button.querySelector("img");
-    const video = button.querySelector("video");
-    const isVideo = button.classList.contains("collection-video-button");
 
     lightboxImage.classList.add("is-switching");
-    lightboxVideo.classList.add("is-switching");
-    lightboxVideo.pause();
     window.setTimeout(() => {
-      if (isVideo) {
-        lightboxImage.hidden = true;
-        lightboxVideo.hidden = false;
-        lightboxVideo.src = button.dataset.full;
-        lightboxVideo.load();
-      } else {
-        lightboxVideo.hidden = true;
-        lightboxImage.hidden = false;
-        lightboxVideo.removeAttribute("src");
-        lightboxImage.src = button.dataset.full;
-        lightboxImage.alt = image.alt;
-      }
+      lightboxImage.src = button.dataset.full;
+      lightboxImage.alt = image.alt;
       lightboxImage.classList.remove("is-switching");
-      lightboxVideo.classList.remove("is-switching");
     }, 120);
   }
 
@@ -462,14 +335,12 @@ function setupLightbox() {
   });
 
   closeLightbox.addEventListener("click", () => {
-    lightboxVideo.pause();
     lightbox.close();
   });
   previousButton.addEventListener("click", () => showMedia(activeIndex - 1));
   nextButton.addEventListener("click", () => showMedia(activeIndex + 1));
   lightbox.addEventListener("click", (event) => {
     if (event.target === lightbox) {
-      lightboxVideo.pause();
       lightbox.close();
     }
   });

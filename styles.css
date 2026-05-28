@@ -3934,7 +3934,7 @@ body[data-collection="produkt"] .collection-group-link {
 
   body[data-collection="mockups"] .collection-hero {
     min-height: auto;
-    padding: 34px 18px 28px;
+    padding: clamp(122px, 12vw, 190px) 18px clamp(24px, 3vw, 48px);
   }
 
   body[data-collection="mockups"] .collection-hero::before {
@@ -3946,7 +3946,7 @@ body[data-collection="produkt"] .collection-group-link {
   }
 
   body[data-collection="mockups"] .collection-number {
-    top: 34px;
+    top: clamp(116px, 12vw, 188px);
     left: auto;
     right: 18px;
     font-size: 42px;

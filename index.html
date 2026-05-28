@@ -8,7 +8,7 @@
       name="description"
       content="Portfolio fuer Fotografie, Video, Animation und visuelle Gestaltung."
     >
-    <link rel="stylesheet" href="styles.css?v=20260528e">
+    <link rel="stylesheet" href="styles.css?v=20260528t">
   </head>
   <body>
     <div class="grain" aria-hidden="true"></div>
@@ -173,7 +173,9 @@
           const x = (target.left - start.left) * eased;
           const y = (target.top - start.top) * eased;
           const rotation = -2 - 1.5 * eased;
-          const scale = 1 + 0.18 * eased;
+          const scale = window.matchMedia("(max-width: 680px)").matches
+            ? 1 - 0.26 * eased
+            : 1 + 0.18 * eased;
 
           flyingName.style.setProperty("--name-flight-x", `${x}px`);
           flyingName.style.setProperty("--name-flight-y", `${y}px`);

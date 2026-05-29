@@ -256,6 +256,43 @@ const collections = {
         ]
       }
     ]
+  },
+  filme: {
+    title: "Filme",
+    label: "Video / Motion",
+    groups: [
+      {
+        title: "Fiktive Werbung für M. Asam",
+        note: "Eine fiktive Werbung für M. Asam mit Fokus auf Rhythmus, Schnitt und klare visuelle Produktinszenierung.",
+        files: [
+          "material/Videos/Werbung Task2 Julianna Yengibaryan.mp4"
+        ]
+      },
+      {
+        title: "RedFall Files",
+        note: "Ein Teamprojekt mit filmischer Stimmung, Szenenaufbau und gemeinsamer visueller Entwicklung.",
+        posterTime: 52,
+        files: [
+          "material/Videos/team05_RedFall_Files 2.mp4"
+        ]
+      },
+      {
+        title: "Hast du Hunger",
+        note: "Ein Motion-Design-Projekt aus After Effects mit experimenteller Komposition und digitalem Storytelling.",
+        posterTime: 6,
+        files: [
+          "material/Videos/AE_Endprojekt_Yengibaryan_Julianna.mp4"
+        ]
+      },
+      {
+        title: "Outloud",
+        note: "Ein kurzer Animationsfilm mit Fokus auf Bewegung, Timing und visueller Erzählung.",
+        posterTime: 69,
+        files: [
+          "material/Videos/2D Animation.mp4"
+        ]
+      }
+    ]
   }
 };
 
@@ -265,7 +302,8 @@ const collectionLinks = [
   ["Produktfotografie", "produktfotografie.html", "produkt"],
   ["Events", "events.html", "events"],
   ["Freestyle", "nature.html", "nature"],
-  ["Mockups", "mockups.html", "mockups"]
+  ["Mockups", "mockups.html", "mockups"],
+  ["Filme", "filme.html", "filme"]
 ];
 
 const i18n = {
@@ -285,7 +323,8 @@ const i18n = {
       produkt: "Produktfotografie",
       events: "Events",
       nature: "Freestyle",
-      mockups: "Mockups"
+      mockups: "Mockups",
+      filme: "Filme"
     },
     collections: {
       portraits: {
@@ -316,6 +355,10 @@ const i18n = {
       mockups: {
         title: "Mockups",
         label: "Webdesign / Social Media"
+      },
+      filme: {
+        title: "Filme",
+        label: "Video / Motion"
       }
     },
     groups: {
@@ -355,6 +398,18 @@ const i18n = {
       "DesignLab Instagram": {
         note: "Ich war 2024-2025 im Social-Media-Bereich für das DesignLab der Hochschule Flensburg tätig. Dieses Mockup zeigt diese Zeit und meine Arbeit mit strukturiertem Content, visueller Klarheit und ruhigem editorialem Rhythmus.",
         linkLabel: "Instagram ansehen"
+      },
+      Outloud: {
+        note: "Ein kurzer Animationsfilm mit Fokus auf Bewegung, Timing und visueller Erzählung."
+      },
+      "Hast du Hunger": {
+        note: "Ein Motion-Design-Projekt aus After Effects mit experimenteller Komposition und digitalem Storytelling."
+      },
+      "Fiktive Werbung für M. Asam": {
+        note: "Eine fiktive Werbung für M. Asam mit Fokus auf Rhythmus, Schnitt und klare visuelle Produktinszenierung."
+      },
+      "RedFall Files": {
+        note: "Ein Teamprojekt mit filmischer Stimmung, Szenenaufbau und gemeinsamer visueller Entwicklung."
       }
     }
   },
@@ -374,7 +429,8 @@ const i18n = {
       produkt: "Product Photography",
       events: "Events",
       nature: "Freestyle",
-      mockups: "Mockups"
+      mockups: "Mockups",
+      filme: "Films"
     },
     collections: {
       portraits: {
@@ -405,9 +461,26 @@ const i18n = {
       mockups: {
         title: "Mockups",
         label: "Web Design / Social Media"
+      },
+      filme: {
+        title: "Films",
+        label: "Video / Motion"
       }
     },
-    groups: {}
+    groups: {
+      Outloud: {
+        note: "A short animation film focused on movement, timing and visual storytelling."
+      },
+      "Hast du Hunger": {
+        note: "A motion design project created in After Effects, built around experimental composition and digital storytelling."
+      },
+      "Fiktive Werbung für M. Asam": {
+        note: "A fictional ad for M. Asam focused on rhythm, editing and clear visual product staging."
+      },
+      "RedFall Files": {
+        note: "A team project with cinematic mood, scene building and shared visual development."
+      }
+    }
   }
 };
 
@@ -478,10 +551,25 @@ function slug(value) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
 
-function renderItem(item, index) {
+function renderItem(item, index, options = {}) {
+  const isVideo = /\.(mp4|webm|mov)$/i.test(item);
+
+  if (isVideo) {
+    const posterTime = Number.isFinite(options.posterTime) ? options.posterTime : 0.1;
+
+    return `
+      <article class="collection-item collection-video-item">
+        <button class="collection-image-button collection-video-button" type="button" data-full="${item}" data-type="video">
+          <video src="${item}#t=${posterTime}" muted playsinline preload="metadata"></video>
+          <span>Film ansehen</span>
+        </button>
+      </article>
+    `;
+  }
+
   return `
     <article class="collection-item">
-      <button class="collection-image-button" type="button" data-full="${item}">
+      <button class="collection-image-button" type="button" data-full="${item}" data-type="image">
         <img src="${item}" alt="${collection.title} ${index + 1}">
       </button>
     </article>
@@ -515,7 +603,9 @@ function renderGroup(group, index) {
         ${note}
         ${action}
       </header>
-      ${renderGallery(group.files, group.title)}
+      <section class="collection-gallery" aria-label="${group.title}">
+        ${group.files.map((item, itemIndex) => renderItem(item, itemIndex, group)).join("")}
+      </section>
     </section>
   `;
 }
@@ -556,10 +646,10 @@ function renderCollection() {
     ${hero}
     ${switcher}
     ${collection.groups ? `
-      <section class="collection-groups" aria-label="${collection.title}">
+      <section class="collection-groups" aria-label="${collectionTitle}">
         ${collection.groups.map(renderGroup).join("")}
       </section>
-    ` : renderGallery(collection.files, collection.title)}
+    ` : renderGallery(collection.files, collectionTitle)}
   `;
 }
 
@@ -579,9 +669,19 @@ function setupLightbox() {
 
   const lightboxImage = lightbox.querySelector("img");
   const closeLightbox = lightbox.querySelector(".close-lightbox");
+  let lightboxVideo = lightbox.querySelector("video");
 
   if (!lightbox || !lightboxImage || !closeLightbox) {
     return;
+  }
+
+  if (!lightboxVideo) {
+    lightboxVideo = document.createElement("video");
+    lightboxVideo.className = "lightbox-video";
+    lightboxVideo.controls = true;
+    lightboxVideo.playsInline = true;
+    lightboxVideo.style.display = "none";
+    lightbox.append(lightboxVideo);
   }
 
   let activeIndex = 0;
@@ -606,13 +706,28 @@ function setupLightbox() {
   function showMedia(index) {
     activeIndex = (index + mediaButtons.length) % mediaButtons.length;
     const button = mediaButtons[activeIndex];
+    const isVideo = button.dataset.type === "video";
     const image = button.querySelector("img");
 
     lightboxImage.classList.add("is-switching");
+    lightboxVideo.classList.add("is-switching");
     window.setTimeout(() => {
-      lightboxImage.src = button.dataset.full;
-      lightboxImage.alt = image.alt;
+      if (isVideo) {
+        lightboxImage.removeAttribute("src");
+        lightboxImage.style.display = "none";
+        lightboxVideo.src = button.dataset.full;
+        lightboxVideo.style.display = "block";
+        lightboxVideo.play();
+      } else {
+        lightboxVideo.pause();
+        lightboxVideo.removeAttribute("src");
+        lightboxVideo.style.display = "none";
+        lightboxImage.src = button.dataset.full;
+        lightboxImage.alt = image.alt;
+        lightboxImage.style.display = "block";
+      }
       lightboxImage.classList.remove("is-switching");
+      lightboxVideo.classList.remove("is-switching");
     }, 120);
   }
 
@@ -624,12 +739,14 @@ function setupLightbox() {
   });
 
   closeLightbox.addEventListener("click", () => {
+    lightboxVideo.pause();
     lightbox.close();
   });
   previousButton.addEventListener("click", () => showMedia(activeIndex - 1));
   nextButton.addEventListener("click", () => showMedia(activeIndex + 1));
   lightbox.addEventListener("click", (event) => {
     if (event.target === lightbox) {
+      lightboxVideo.pause();
       lightbox.close();
     }
   });

@@ -549,6 +549,19 @@ body[data-language="de"] .board-ink .ink-hero-title {
   transform: rotate(1.2deg);
 }
 
+.index-tape {
+  position: absolute;
+  left: 50%;
+  top: -18px;
+  z-index: 4;
+  width: 126px;
+  height: 42px;
+  background:
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.14) 0 3px, transparent 3px 8px),
+    rgba(255, 79, 163, 0.58);
+  transform: translateX(-50%) rotate(-5deg);
+}
+
 .index-photo img {
   height: 100%;
   min-height: 520px;
@@ -2653,6 +2666,12 @@ h1 {
   content: none;
 }
 
+.collection-heading-jump {
+  margin-left: 0.28em;
+  color: var(--pink);
+  font: inherit;
+}
+
 .collection-group-heading p::before {
   content: "";
   position: absolute;
@@ -2683,6 +2702,7 @@ h1 {
 
 body[data-collection="produkt"] .collection-group-heading,
 body[data-collection="werbung"] .collection-group-heading,
+body[data-collection="portraits"] .collection-group-heading,
 body[data-collection="mockups"] .collection-group-heading {
   grid-template-columns: minmax(0, 1fr);
   justify-items: center;
@@ -2691,12 +2711,14 @@ body[data-collection="mockups"] .collection-group-heading {
 
 body[data-collection="produkt"] .collection-group-heading span,
 body[data-collection="werbung"] .collection-group-heading span,
+body[data-collection="portraits"] .collection-group-heading span,
 body[data-collection="mockups"] .collection-group-heading span {
   display: none;
 }
 
 body[data-collection="produkt"] .collection-group-heading h2,
 body[data-collection="werbung"] .collection-group-heading h2,
+body[data-collection="portraits"] .collection-group-heading h2,
 body[data-collection="mockups"] .collection-group-heading h2 {
   font-size: clamp(24px, 3vw, 54px);
   line-height: 1;
@@ -2982,6 +3004,10 @@ body[data-collection="mockups"] .collection-description {
   transform: rotate(-4deg);
 }
 
+body[data-collection="filme"] .collection-item:hover::after {
+  content: none;
+}
+
 .collection-image-button {
   width: 100%;
   height: auto;
@@ -3240,10 +3266,11 @@ body[data-collection="filme"] .collection-group-heading h2 {
 body[data-collection="filme"] .collection-group-heading p {
   max-width: 360px;
   margin: clamp(18px, 2.4vw, 28px) 0 0;
-  font-family: var(--hand);
-  font-size: clamp(22px, 2vw, 34px);
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-size: clamp(14px, 1.1vw, 17px);
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.6;
+  text-transform: uppercase;
 }
 
 body[data-collection="filme"] .collection-group-heading p::before {
@@ -3568,7 +3595,12 @@ body[data-collection="filme"] .collection-video-button span {
   }
 
   body.name-flight-ready .board-hero .hand-name {
-    top: calc(var(--name-start-top) - 18px);
+    position: absolute;
+    left: 14px;
+    top: auto;
+    bottom: 188px;
+    transform: rotate(-2deg);
+    transition: none;
   }
 
   .board-hero .scroll-note {
@@ -3848,6 +3880,8 @@ body[data-collection="filme"] .collection-video-button span {
   }
 
   .collection-switcher {
+    position: static;
+    transform: none;
     justify-content: flex-start;
     flex-wrap: nowrap;
     gap: 18px;
@@ -4078,6 +4112,37 @@ body[data-collection="filme"] .collection-video-button span {
 
   body[data-collection="mockups"] .collection-item img {
     max-height: 54vh;
+    border-radius: 16px;
+  }
+
+  body[data-collection="filme"] .collection-group {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  body[data-collection="filme"] .collection-group-heading h2 {
+    font-size: clamp(34px, 11vw, 54px);
+  }
+
+  body[data-collection="filme"] .collection-group-heading p {
+    max-width: none;
+    margin-top: 18px;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.55;
+    text-transform: uppercase;
+  }
+
+  body[data-collection="filme"] .collection-gallery {
+    column-count: 1;
+  }
+
+  body[data-collection="filme"] .collection-image-button {
+    border-radius: 16px;
+  }
+
+  body[data-collection="filme"] .collection-video-button video {
     border-radius: 16px;
   }
 }

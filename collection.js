@@ -3,42 +3,60 @@ const collections = {
     title: "Portraits",
     label: "Ordner / Portraits",
     description: "Alle Bilder aus dem Ordner Portraits. Ruhig angeordnet, ohne harte Zuschnitte.",
-    files: [
-      "material/Portraits/DSC_4478_result.jpg",
-      "material/Portraits/DSC_4486_result.jpg",
-      "material/Portraits/DSC_4622_result.jpg",
-      "material/Portraits/DSC_4633_result.jpg",
-      "material/Portraits/DSC_5214_result.jpg",
-      "material/Portraits/DSC_5259_result.jpg",
-      "material/Portraits/Fenix_Philipp0164_result.jpg",
-      "material/Portraits/Fenix_Philipp0250-2_result.jpg",
-      "material/Portraits/Fenix_Philipp0260_result.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0913_result.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0926_result.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0954_result.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0963_result.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1097_result.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1231_result.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1239_result.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1245_result.jpg",
-      "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits_Julianna_Yengibaryan_01_result.jpg",
-      "material/Portraits/Julianna_Yengibaryan_result.jpg",
-      "material/Portraits/Kai_Portrait0563-2_result.jpg",
-      "material/Portraits/Lasse Petersen1178_result.jpg",
-      "material/Portraits/Lasse Petersen1224_result.jpg",
-      "material/Portraits/Lasse Petersen1467_result.jpg",
-      "material/Portraits/Lasse Petersen1517_result.jpg",
-      "material/Portraits/Lasse Petersen1525_result.jpg",
-      "material/Portraits/Marvin Vorstellungsfoto_result.jpg",
-      "material/Portraits/Portrait10_result.jpg",
-      "material/Portraits/Portrait11_result.jpg",
-      "material/Portraits/portrait15_result.jpg",
-      "material/Portraits/Portrait2_result.jpg",
-      "material/Portraits/Portrait7_result.jpg",
-      "material/Portraits/Portrait8_result.jpg",
-      "material/Portraits/Portrait9_result.jpg",
-      "material/Portraits/_DSC2048_result.jpg",
-      "material/Portraits/portrait15_result.jpg"
+    groups: [
+      {
+        title: "Einzelportraits",
+        files: [
+          "material/Portraits/DSC_4478_result.jpg",
+          "material/Portraits/DSC_4486_result.jpg",
+          "material/Portraits/DSC_4622_result.jpg",
+          "material/Portraits/DSC_4633_result.jpg",
+          "material/Portraits/DSC_5214_result.jpg",
+          "material/Portraits/DSC_5259_result.jpg",
+          "material/Portraits/Fenix_Philipp0164_result.jpg",
+          "material/Portraits/Fenix_Philipp0250-2_result.jpg",
+          "material/Portraits/Fenix_Philipp0260_result.jpg",
+          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0913_result.jpg",
+          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0926_result.jpg",
+          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0954_result.jpg",
+          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0963_result.jpg",
+          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1097_result.jpg",
+          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1231_result.jpg",
+          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1245_result.jpg",
+          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits_Julianna_Yengibaryan_01_result.jpg",
+          "material/Portraits/Julianna_Yengibaryan_Lykka_2_result.jpg",
+          "material/Portraits/Julianna_Yengibaryan_Merle10_result.jpg",
+          "material/Portraits/Julianna_Yengibaryan_Merle1_result.jpg",
+          "material/Portraits/Julianna_Yengibaryan_Merle21_result.jpg",
+          "material/Portraits/Julianna_Yengibaryan_Sarin1_result.jpg",
+          "material/Portraits/Julianna_Yengibaryan_result.jpg",
+          "material/Portraits/Kai_Portrait0563-2_result.jpg",
+          "material/Portraits/Lasse Petersen1178_result.jpg",
+          "material/Portraits/Lasse Petersen1224_result.jpg",
+          "material/Portraits/Lasse Petersen1467_result.jpg",
+          "material/Portraits/Lasse Petersen1517_result.jpg",
+          "material/Portraits/Lasse Petersen1525_result.jpg",
+          "material/Portraits/Marvin Vorstellungsfoto_result.jpg",
+          "material/Portraits/Portrait10_result.jpg",
+          "material/Portraits/Portrait11_result.jpg",
+          "material/Portraits/portrait15_result.jpg",
+          "material/Portraits/Portrait2_result.jpg",
+          "material/Portraits/Portrait7_result.jpg",
+          "material/Portraits/Portrait8_result.jpg",
+          "material/Portraits/Portrait9_result.jpg",
+          "material/Portraits/_DSC2048_result.jpg"
+        ]
+      },
+      {
+        title: "Gruppen",
+        files: [
+          "material/Portraits/Gruppen/GIE_Portraits_JuliannaYengibaryanGie Portraits1284_result.jpg",
+          "material/Portraits/Gruppen/Jkml1_result.jpg",
+          "material/Portraits/Gruppen/Jkml2_result.jpg",
+          "material/Portraits/Gruppen/Julianna_Yengibaryan_Gruppe_02_result.jpg",
+          "material/Portraits/Gruppen/_DSC0629_result.jpg"
+        ]
+      }
     ]
   },
   street: {
@@ -50,6 +68,7 @@ const collections = {
       "material/Street Portraits/DSC_3982_result.jpg",
       "material/Street Portraits/DSC_4687 Kopie_result.jpg",
       "material/Street Portraits/DSC_4784 Kopie_result.jpg",
+      "material/Street Portraits/DSC_5014_result.jpg",
       "material/Street Portraits/DSC_5166_result.jpg",
       "material/Street Portraits/StreetPortrait10.JPG_result.jpg",
       "material/Street Portraits/StreetPortrait11.JPG_result.jpg",
@@ -107,7 +126,10 @@ const collections = {
           "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1785_result.jpg",
           "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1803_result.jpg",
           "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1844_result.jpg",
-          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1913_result.jpg"
+          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1913_result.jpg",
+          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1746_result.jpg",
+          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1897_result.jpg",
+          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1947_result.jpg"
         ]
       },
       {
@@ -128,6 +150,7 @@ const collections = {
         note: "For Haymark Lavash, I wanted the work to feel familiar and warm, like food moments from an everyday table.",
         files: [
           "material/Produktfotografie/Haymark Lavash/DSC_0103_result.jpg",
+          "material/Produktfotografie/Haymark Lavash/DSC_0127_result.jpg",
           "material/Produktfotografie/Haymark Lavash/DSC_0143_result.jpg",
           "material/Produktfotografie/Haymark Lavash/DSC_0378_result.jpg",
           "material/Produktfotografie/Haymark Lavash/arbeit&alltag5_result_1.jpg",
@@ -203,12 +226,23 @@ const collections = {
       "material/freestyle/DSC_0317_result.jpg",
       "material/freestyle/DSC_0322_result.jpg",
       "material/freestyle/Freestyle1_result.jpg",
+      "material/freestyle/bild12_result.jpg",
+      "material/freestyle/freestyle10_result.jpg",
+      "material/freestyle/freestyle11_result.jpg",
+      "material/freestyle/freestyle12_result.jpg",
+      "material/freestyle/freestyle13_result.jpg",
+      "material/freestyle/freestyle18_result.jpg",
+      "material/freestyle/freestyle20_result.jpg",
       "material/freestyle/freestyle2_result.jpg",
       "material/freestyle/freestyle23_result.jpg",
+      "material/freestyle/freestyle25_result.jpg",
       "material/freestyle/freestyle26_result.jpg",
       "material/freestyle/freestyle28_result.jpg",
       "material/freestyle/freestyle4_result.jpg",
       "material/freestyle/freestyle5_result.jpg",
+      "material/freestyle/freestyle6_result.jpg",
+      "material/freestyle/freestyle7_result.jpg",
+      "material/freestyle/freestyle8_result.jpg",
       "material/freestyle/freestyle9_result.jpg"
     ]
   },
@@ -588,6 +622,9 @@ function renderGroup(group, index) {
   const heading = group.href
     ? `<a href="${group.href}" target="_blank" rel="noreferrer">${group.title}</a>`
     : group.title;
+  const headingExtra = key === "portraits" && group.title === "Einzelportraits"
+    ? `<a class="collection-heading-jump" href="#${slug("Gruppen")}">/ Gruppen</a>`
+    : "";
   const noteText = getGroupText(group, "note");
   const note = noteText ? `<p>${noteText}</p>` : "";
   const actionText = getGroupText(group, "linkLabel");
@@ -596,10 +633,10 @@ function renderGroup(group, index) {
     : "";
 
   return `
-    <section class="collection-group collection-group-${slug(group.title)}">
+    <section class="collection-group collection-group-${slug(group.title)}" id="${slug(group.title)}">
       <header class="collection-group-heading">
         <span>${String(index + 1).padStart(2, "0")}</span>
-        <h2>${heading}</h2>
+        <h2>${heading}${headingExtra}</h2>
         ${note}
         ${action}
       </header>

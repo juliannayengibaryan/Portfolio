@@ -8,7 +8,7 @@
       name="description"
       content="Creative Portfolio for Photography, Film, Web & Visual Design"
     >
-    <link rel="stylesheet" href="styles.css?v=20260529s">
+    <link rel="stylesheet" href="styles.css?v=20260529ab">
   </head>
   <body>
     <div class="grain" aria-hidden="true"></div>
@@ -44,7 +44,6 @@
         <h1 id="hero-title">Personal<br>Portfolio</h1>
         <p class="hand-name" id="flying-name">julianna yengibaryan</p>
         <p class="hero-fields" data-i18n-html="hero.fields">Fotografie<br>Video /<br>Webdesign &amp; Visual Design</p>
-        <span class="pink-circle pink-circle-hero"></span>
         <span class="pink-star pink-star-hero">*</span>
         <span class="scroll-note">Scroll<br>↓</span>
       </section>
@@ -77,8 +76,8 @@
           <a href="filme.html"><span>07</span>Filme</a>
         </nav>
         <figure class="index-photo">
+          <span class="index-tape" aria-hidden="true"></span>
           <img src="material/Julianna/Materialcover_result.jpg" alt="Material preview">
-          <span class="material-sketch material-sketch-circle" aria-hidden="true"></span>
           <span class="material-sketch material-sketch-line" aria-hidden="true"></span>
         </figure>
       </section>
@@ -230,11 +229,17 @@
       }
 
       if (flyingName && aboutNameSlot && aboutSection) {
+        const mobileNameQuery = window.matchMedia("(max-width: 680px)");
         let start = null;
         let ticking = false;
         let resizeTimer = null;
 
         const measureNameFlight = () => {
+          if (mobileNameQuery.matches) {
+            document.body.classList.remove("name-flight-ready");
+            return;
+          }
+
           document.body.classList.remove("name-flight-ready");
           flyingName.style.removeProperty("--name-start-left");
           flyingName.style.removeProperty("--name-start-top");
@@ -256,7 +261,7 @@
         };
 
         const updateNameFlight = () => {
-          if (!start) return;
+          if (!start || mobileNameQuery.matches) return;
           const target = aboutNameSlot.getBoundingClientRect();
           const aboutTop = aboutSection.offsetTop;
           const aboutTravelStart = Math.max(1, aboutTop - window.innerHeight * 0.92);
@@ -268,9 +273,7 @@
           const x = (target.left - start.left) * eased;
           const y = (target.top - start.top) * eased;
           const rotation = -2 - 1.5 * eased;
-          const scale = window.matchMedia("(max-width: 680px)").matches
-            ? 1 - 0.34 * eased
-            : 1 - 0.16 * eased;
+          const scale = 1 - 0.16 * eased;
 
           flyingName.style.setProperty("--name-flight-x", `${x}px`);
           flyingName.style.setProperty("--name-flight-y", `${y}px`);
@@ -294,6 +297,7 @@
           window.clearTimeout(resizeTimer);
           resizeTimer = window.setTimeout(measureNameFlight, 160);
         });
+        mobileNameQuery.addEventListener("change", measureNameFlight);
       }
     </script>
 

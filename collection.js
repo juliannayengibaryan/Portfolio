@@ -297,22 +297,22 @@ const collections = {
     groups: [
       {
         title: "Fiktive Werbung für M. Asam",
-        note: "Eine fiktive Werbung für M. Asam mit Fokus auf Rhythmus, Schnitt und klare visuelle Produktinszenierung.",
+        note: "M. Asam – Fiktive Werbekampagne. Im Rahmen eines Hochschulprojekts entstand eine fiktive Werbekampagne für M. Asam. Mein Ziel war es, das Produkt durch eine elegante Bildsprache und hochwertige Produktfotografie modern und luxuriös in Szene zu setzen.",
         files: [
           "material/Videos/Werbung Task2 Julianna Yengibaryan.mp4"
         ]
       },
       {
         title: "RedFall Files",
-        note: "Ein Teamprojekt mit filmischer Stimmung, Szenenaufbau und gemeinsamer visueller Entwicklung.",
+        note: "Im Rahmen des Moduls Post Production entstand ein Title Design zum Thema Krimiserie. Der Fokus lag auf der Entwicklung einer stimmungsvollen Intro-Sequenz durch den gezielten Einsatz von Typografie, Schnitt und visuellen Effekten.",
         posterTime: 52,
         files: [
           "material/Videos/team05_RedFall_Files 2.mp4"
         ]
       },
       {
-        title: "Hast du Hunger",
-        note: "Ein Motion-Design-Projekt aus After Effects mit experimenteller Komposition und digitalem Storytelling.",
+        title: "Let's eat!",
+        note: "Im Rahmen dieses Projekts entstand eine spielerische Motion-Design-Animation mit experimenteller Komposition und digitalem Storytelling. Ziel war es, durch dynamische Bewegungen, kreative Übergänge und farbenfrohe Gestaltung eine lebendige Cartoon-Atmosphäre zu erschaffen.",
         posterTime: 6,
         files: [
           "material/Videos/AE_Endprojekt_Yengibaryan_Julianna.mp4"
@@ -320,7 +320,7 @@ const collections = {
       },
       {
         title: "Outloud",
-        note: "Ein kurzer Animationsfilm mit Fokus auf Bewegung, Timing und visueller Erzählung.",
+        note: "Ein kurzer 2D-Animationsfilm, entstanden im Rahmen des Kurses 2D Animation. Teile der Animation wurden Bild für Bild von Hand gezeichnet. Der Fokus lag auf Bewegung, Timing und visueller Erzählung, um Charaktere und Szenen lebendig wirken zu lassen.",
         posterTime: 69,
         files: [
           "material/Videos/2D Animation.mp4"
@@ -397,53 +397,53 @@ const i18n = {
     },
     groups: {
       "Fenix Composites": {
-        note: "Für Fenix sollten die Bilder präzise und kraftvoll wirken, mit ruhigem Fokus auf Form, Oberfläche und Bewegung.",
+        note: "Fenix Composites entwickelt nachhaltige Lösungen aus recycelten Carbonfasern und fertigt innovative Bauteile für verschiedene industrielle Anwendungen.\n\nIch durfte das Unternehmen fotografisch begleiten und verschiedene Produkte für den Webauftritt und die Unternehmenskommunikation in Szene setzen. Die Bildsprache orientiert sich am Markenauftritt von Fenix Composites: dunkle Farbbereiche, klare Kompositionen und ein präziser Fokus auf Form, Oberfläche und Struktur.\n\nZiel war es, die technische Präzision, Materialqualität und Innovationskraft der Produkte authentisch und hochwertig zu vermitteln.",
         linkLabel: "Website ansehen"
       },
       Schwenkbier: {
-        note: "Bei Schwenkbier lag der Fokus auf der Flasche als kleines Objekt mit Charakter, warmem Licht und handgemachtem Gefühl.",
+        note: "Schwenkbier ist ein Startup der Hochschule Flensburg, das Menschen durch ein innovatives Outdoor-Spiel zusammenbringt.\n\nIm Rahmen der Produktfotografie lag der Schwerpunkt auf den selbst entwickelten Flaschenöffnern. Ziel war es, Material, Form und Charakter der Produkte durch eine klare und authentische Bildsprache hervorzuheben.",
         linkLabel: "Website ansehen"
       },
       MoManufaktur: {
-        note: "Bei MoManufaktur habe ich die Bildsprache ruhig und minimal gehalten, damit Material, Balance und Detail im Vordergrund stehen.",
+        note: "MoManufaktur fertigt hochwertige Holzprodukte, die online präsentiert und verkauft werden.\n\nFür die Produktfotografie wurde eine ruhige und minimalistische Bildsprache gewählt, die den Fokus auf Material, Handwerksqualität und Details legt.",
         linkLabel: "Website ansehen"
       },
       "Haymark Lavash": {
-        note: "Bei Haymark Lavash sollte die Arbeit vertraut und warm wirken, wie kleine Food-Momente aus dem Alltag.",
+        note: "Haymark produziert armenisches traditionelles Lavash und verbindet handwerkliche Herstellung mit hoher Produktqualität.\n\nFür den Markenauftritt entstanden Produktaufnahmen mit Fokus auf Authentizität, Textur und Frische. Die natürliche Bildsprache unterstreicht die handwerkliche Qualität und den traditionellen Charakter der Produkte.",
         linkLabel: "Website ansehen"
       },
       Hobby: {
-        note: "Eine kleine Sammlung freier Projekte und persönlicher visueller Experimente. Die Gitarre gehört Lasse.",
+        note: "Eine kleine Sammlung freier Projekte und persönlicher visueller Experimente.\n\nDie Gitarre gehört Lasse Petersen.",
         linkLabel: "Website ansehen"
       },
       "Personal Portfolio": {
-        note: "Ein erstes Portfolio-Mockup, das Fotografie, Typografie und kleine handschriftliche Details persönlich wirken lässt, ohne die Struktur zu verlieren."
+        note: "Ein erstes Portfolio-Mockup, das Fotografie, Typografie und kleine handschriftliche Details persönlich wirken lässt.\n\nDer Fokus lag darauf, eine persönliche Gestaltung zu entwickeln, ohne die klare Struktur der Seite zu verlieren."
       },
       "Coffee Shop Concept": {
-        note: "Ein freies Projekt für eine Coffee-Shop-Identity mit warmer Produktpräsentation und einfachen digitalen Kontaktpunkten für ein freundliches Markengefühl."
+        note: "Ein freies Projekt für eine Coffee-Shop-Identity mit warmer Produktpräsentation.\n\nDie Gestaltung verbindet einfache digitale Kontaktpunkte mit einem freundlichen und einladenden Markengefühl."
       },
       "Ice Cream Concept": {
-        note: "Ein spielerisches freies Projekt für eine Ice-Cream-Marke mit heller Präsentation, klarer Hierarchie und leichter visueller Stimmung."
+        note: "Ein spielerisches freies Projekt für eine Ice-Cream-Marke.\n\nIm Mittelpunkt standen eine helle Präsentation, klare Hierarchie und eine leichte visuelle Stimmung."
       },
       "GIE Instagram Concept": {
-        note: "Visuelle Mockups für den Social-Media-Auftritt von GIE an der Hochschule Flensburg. Das Konzept setzt auf Klarheit, Konsistenz und eine moderne visuelle Sprache.",
+        note: "Visuelle Mockups für den Social-Media-Auftritt von GIE an der Hochschule Flensburg.\n\nDas Konzept setzt auf Klarheit, Konsistenz und eine moderne visuelle Sprache.",
         linkLabel: "Instagram ansehen"
       },
       "DesignLab Instagram": {
-        note: "Ich war 2024-2025 im Social-Media-Bereich für das DesignLab der Hochschule Flensburg tätig. Dieses Mockup zeigt diese Zeit und meine Arbeit mit strukturiertem Content, visueller Klarheit und ruhigem editorialem Rhythmus.",
+        note: "Ich war 2024-2025 im Social-Media-Bereich für das DesignLab der Hochschule Flensburg tätig.\n\nDieses Mockup zeigt diese Zeit und meine Arbeit mit strukturiertem Content, visueller Klarheit und ruhigem editorialem Rhythmus.",
         linkLabel: "Instagram ansehen"
       },
       Outloud: {
-        note: "Ein kurzer Animationsfilm mit Fokus auf Bewegung, Timing und visueller Erzählung."
+        note: "Ein kurzer 2D-Animationsfilm, entstanden im Rahmen des Kurses 2D Animation.\n\nTeile der Animation wurden Bild für Bild von Hand gezeichnet. Der Fokus lag auf Bewegung, Timing und visueller Erzählung, um Charaktere und Szenen lebendig wirken zu lassen."
       },
-      "Hast du Hunger": {
-        note: "Ein Motion-Design-Projekt aus After Effects mit experimenteller Komposition und digitalem Storytelling."
+      "Let's eat!": {
+        note: "Im Rahmen dieses Projekts entstand eine spielerische Motion-Design-Animation mit experimenteller Komposition und digitalem Storytelling.\n\nZiel war es, durch dynamische Bewegungen, kreative Übergänge und farbenfrohe Gestaltung eine lebendige Cartoon-Atmosphäre zu erschaffen."
       },
       "Fiktive Werbung für M. Asam": {
-        note: "Eine fiktive Werbung für M. Asam mit Fokus auf Rhythmus, Schnitt und klare visuelle Produktinszenierung."
+        note: "M. Asam – Fiktive Werbekampagne.\n\nIm Rahmen eines Hochschulprojekts entstand eine fiktive Werbekampagne für M. Asam. Mein Ziel war es, das Produkt durch eine elegante Bildsprache und hochwertige Produktfotografie modern und luxuriös in Szene zu setzen."
       },
       "RedFall Files": {
-        note: "Ein Teamprojekt mit filmischer Stimmung, Szenenaufbau und gemeinsamer visueller Entwicklung."
+        note: "Im Rahmen des Moduls Post Production entstand ein Title Design zum Thema Krimiserie.\n\nDer Fokus lag auf der Entwicklung einer stimmungsvollen Intro-Sequenz durch den gezielten Einsatz von Typografie, Schnitt und visuellen Effekten."
       }
     }
   },
@@ -502,11 +502,15 @@ const i18n = {
       }
     },
     groups: {
+      "Fenix Composites": {
+        note: "Fenix Composites develops sustainable solutions from recycled carbon fibers and produces innovative components for different industrial applications. I photographed the company and staged several products for the website and corporate communication. The visual language follows the brand appearance of Fenix Composites: dark color areas, clear compositions and a precise focus on form, surface and structure.",
+        linkLabel: "View website"
+      },
       Outloud: {
         note: "A short animation film focused on movement, timing and visual storytelling."
       },
-      "Hast du Hunger": {
-        note: "A motion design project created in After Effects, built around experimental composition and digital storytelling."
+      "Let's eat!": {
+        note: "A playful motion design animation with experimental composition and digital storytelling. The goal was to create a lively cartoon atmosphere through dynamic movement, creative transitions and colorful design."
       },
       "Fiktive Werbung für M. Asam": {
         note: "A fictional ad for M. Asam focused on rhythm, editing and clear visual product staging."
@@ -585,6 +589,10 @@ function slug(value) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
 
+function formatNoteText(value) {
+  return value.replace(/\n{2,}/g, "<br><br>");
+}
+
 function renderItem(item, index, options = {}) {
   const isVideo = /\.(mp4|webm|mov)$/i.test(item);
 
@@ -626,7 +634,7 @@ function renderGroup(group, index) {
     ? `<a class="collection-heading-jump" href="#${slug("Gruppen")}">/ Gruppen</a>`
     : "";
   const noteText = getGroupText(group, "note");
-  const note = noteText ? `<p>${noteText}</p>` : "";
+  const note = noteText ? `<p>${formatNoteText(noteText)}</p>` : "";
   const actionText = getGroupText(group, "linkLabel");
   const action = group.href && actionText
     ? `<a class="collection-group-link" href="${group.href}" target="_blank" rel="noreferrer">${actionText} -></a>`

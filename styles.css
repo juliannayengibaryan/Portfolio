@@ -2732,6 +2732,20 @@ body[data-collection="mockups"] .collection-group-heading p {
   text-align: left;
 }
 
+body[data-collection="produkt"] .collection-group-heading p {
+  max-width: 780px;
+  margin-top: clamp(18px, 2.4vw, 28px);
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-size: clamp(17px, 1.35vw, 22px);
+  font-weight: 400;
+  line-height: 1.58;
+  text-transform: none;
+}
+
+body[data-collection="produkt"] .collection-group-heading p::before {
+  display: none !important;
+}
+
 body[data-collection="mockups"] .collection-hero {
   min-height: auto;
   display: grid;
@@ -2815,9 +2829,9 @@ body[data-collection="mockups"] .collection-group-heading p {
   max-width: 420px;
   margin-top: clamp(22px, 3vw, 38px);
   font-family: Inter, Helvetica, Arial, sans-serif;
-  font-size: clamp(15px, 1.2vw, 18px);
-  font-weight: 500;
-  line-height: 1.65;
+  font-size: clamp(17px, 1.35vw, 22px);
+  font-weight: 400;
+  line-height: 1.58;
 }
 
 body[data-collection="mockups"] .collection-group-heading p::before {
@@ -2895,12 +2909,12 @@ body[data-collection="mockups"] .collection-group-heading h2 {
 }
 
 body[data-collection="mockups"] .collection-group-heading p {
-  max-width: 360px;
+  max-width: 420px;
   margin: clamp(18px, 2.4vw, 28px) 0 0;
-  font-family: var(--hand);
-  font-size: clamp(22px, 2vw, 34px);
-  font-weight: 700;
-  line-height: 1.35;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-size: clamp(17px, 1.35vw, 22px);
+  font-weight: 400;
+  line-height: 1.58;
 }
 
 body[data-collection="mockups"] .collection-group-heading p::before {
@@ -3182,12 +3196,12 @@ body[data-collection="mockups"] .collection-group-heading h2 {
 }
 
 body[data-collection="mockups"] .collection-group-heading p {
-  max-width: 360px;
+  max-width: 420px;
   margin: clamp(18px, 2.4vw, 28px) 0 0;
-  font-family: var(--hand);
-  font-size: clamp(22px, 2vw, 34px);
-  font-weight: 700;
-  line-height: 1.35;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-size: clamp(17px, 1.35vw, 22px);
+  font-weight: 400;
+  line-height: 1.58;
 }
 
 body[data-collection="mockups"] .collection-group-heading p::before {
@@ -3264,13 +3278,13 @@ body[data-collection="filme"] .collection-group-heading h2 {
 }
 
 body[data-collection="filme"] .collection-group-heading p {
-  max-width: 360px;
+  max-width: 420px;
   margin: clamp(18px, 2.4vw, 28px) 0 0;
   font-family: Inter, Helvetica, Arial, sans-serif;
-  font-size: clamp(14px, 1.1vw, 17px);
-  font-weight: 700;
-  line-height: 1.6;
-  text-transform: uppercase;
+  font-size: clamp(17px, 1.35vw, 22px);
+  font-weight: 400;
+  line-height: 1.58;
+  text-transform: none;
 }
 
 body[data-collection="filme"] .collection-group-heading p::before {
@@ -4100,10 +4114,10 @@ body[data-collection="filme"] .collection-video-button span {
   body[data-collection="mockups"] .collection-group-heading p {
     max-width: none;
     margin-top: 18px;
-    font-family: var(--hand);
-    font-size: clamp(21px, 6vw, 28px);
-    font-weight: 700;
-    line-height: 1.28;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.58;
   }
 
   body[data-collection="mockups"] .collection-group-heading p::before {
@@ -4128,10 +4142,10 @@ body[data-collection="filme"] .collection-video-button span {
     max-width: none;
     margin-top: 18px;
     font-family: Inter, Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1.55;
-    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.58;
+    text-transform: none;
   }
 
   body[data-collection="filme"] .collection-gallery {

@@ -8,7 +8,7 @@
       name="description"
       content="Creative Portfolio for Photography, Film, Web & Visual Design"
     >
-    <link rel="stylesheet" href="styles.css?v=20260530l">
+    <link rel="stylesheet" href="styles.css?v=20260622c">
   </head>
   <body>
     <div class="grain" aria-hidden="true"></div>
@@ -18,7 +18,7 @@
       </a>
       <nav class="main-nav" aria-label="Hauptnavigation">
         <a href="#index" data-i18n="nav.index">Index</a>
-        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#about" data-i18n="nav.about">Über mich</a>
         <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
       </nav>
     </header>
@@ -27,8 +27,8 @@
       <section class="board board-hero" aria-labelledby="hero-title">
         <a class="home-start-logo" href="#top">Personal<br>Portfolio</a>
         <nav class="board-nav" aria-label="Sections">
-          <a href="#index" data-i18n="nav.works">Works</a>
-          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#index" data-i18n="nav.works">Arbeiten</a>
+          <a href="#about" data-i18n="nav.about">Über mich</a>
           <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
           <span class="language-toggle" aria-label="Sprache wechseln">
             <button type="button" data-lang="de">DE</button>
@@ -65,7 +65,7 @@
       </section>
 
       <section class="board board-index" id="index" aria-labelledby="index-title">
-        <h2 id="index-title" class="vertical-title">Works</h2>
+        <h2 id="index-title" class="vertical-title" data-i18n="works.title">Arbeiten</h2>
         <nav class="editorial-index" aria-label="Portfolio index">
           <a href="portraits.html"><span>01</span>Portraits</a>
           <a href="street-portraits.html"><span>02</span>Street Portraits</a>
@@ -73,7 +73,8 @@
           <a href="events.html"><span>04</span>Events</a>
           <a href="nature.html"><span>05</span>Freestyle</a>
           <a href="mockups.html"><span>06</span>Mockups</a>
-          <a href="filme.html"><span>07</span>Filme</a>
+          <a href="social-media.html"><span>07</span>Social Media</a>
+          <a href="filme.html"><span>08</span>Filme</a>
         </nav>
         <figure class="index-photo">
           <span class="index-tape" aria-hidden="true"></span>
@@ -91,8 +92,14 @@
         <h2 data-i18n-html="contact.title">Lass uns<br><em>zusammen</em><br>gestalten.</h2>
         <span class="pink-star quote-star">*</span>
         <div class="contact-email-frame">
-          <span data-i18n="contact.email">email</span>
-          <a href="mailto:yengibaryan.j@outlook.de">yengibaryan.j@outlook.de</a>
+          <div class="contact-channel">
+            <span data-i18n="contact.email">email</span>
+            <a href="mailto:yengibaryan.j@outlook.de">yengibaryan.j@outlook.de</a>
+          </div>
+          <div class="contact-channel">
+            <span data-i18n="contact.instagram">instagram</span>
+            <a href="https://www.instagram.com/shotsandlots?utm_source=qr" target="_blank" rel="noopener noreferrer">@shotsandlots</a>
+          </div>
         </div>
         <span class="pink-circle quote-circle contact-email-circle" aria-hidden="true"></span>
       </section>
@@ -113,9 +120,9 @@
             text: "Hi, ich bin Julianna — das ist mein visuelles Tagebuch, eine Sammlung aus Fotografie, Design und kreativen Projekten, geprägt von Emotion, Storytelling und Inspiration aus dem Alltag. Schön, dass du da bist.",
             place: "Based in Germany"
           },
-          works: { product: "Produktfotografie" },
+          works: { title: "Arbeiten", product: "Produktfotografie" },
           ink: { title: "Ich erzähle<br><span>visuelle</span><br>Geschichten." },
-          contact: { title: "Lass uns<br><em>zusammen</em><br>gestalten.", email: "email" }
+          contact: { title: "Lass uns<br><em>zusammen</em><br>gestalten.", email: "email", instagram: "instagram" }
         },
         en: {
           nav: { index: "Index", works: "Works", about: "About", contact: "Contact" },
@@ -124,9 +131,9 @@
             text: "Hi, I'm Julianna — this is my visual diary, a collection of photography, design and creative projects shaped by emotion, storytelling and everyday inspiration. Enjoy your visit.",
             place: "Based in Germany"
           },
-          works: { product: "Product Photography" },
+          works: { title: "Works", product: "Product Photography" },
           ink: { title: "I create<br><span>visual</span><br>stories." },
-          contact: { title: "Let's<br>create<br><em>together.</em>", email: "email" }
+          contact: { title: "Let's<br>create<br><em>together.</em>", email: "email", instagram: "instagram" }
         }
       };
 

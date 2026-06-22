@@ -937,10 +937,10 @@ body[data-language="de"] .board-ink .ink-hero-title {
 }
 
 .quote-circle {
-  right: clamp(48px, 7vw, 112px);
-  bottom: clamp(54px, 8vw, 118px);
-  width: clamp(360px, 34vw, 620px);
-  height: clamp(160px, 15vw, 270px);
+  right: clamp(24px, 5vw, 90px);
+  bottom: clamp(36px, 6vw, 92px);
+  width: clamp(520px, 48vw, 800px);
+  height: clamp(240px, 22vw, 380px);
   border-color: var(--pink);
 }
 
@@ -970,14 +970,21 @@ body[data-language="de"] .board-ink .ink-hero-title {
 
 .contact-email-frame {
   position: absolute;
-  right: clamp(82px, 11vw, 180px);
-  bottom: clamp(108px, 14vw, 214px);
+  right: clamp(92px, 11vw, 184px);
+  bottom: clamp(112px, 13vw, 196px);
   z-index: 2;
   display: grid;
-  gap: 12px;
+  gap: clamp(16px, 1.8vw, 28px);
   color: var(--paper);
   font-size: clamp(18px, 1.8vw, 30px);
   font-weight: 500;
+}
+
+.contact-channel {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: end;
+  column-gap: clamp(34px, 4.2vw, 78px);
 }
 
 .contact-email-frame span {
@@ -991,6 +998,9 @@ body[data-language="de"] .board-ink .ink-hero-title {
 
 .contact-email-frame a {
   color: var(--paper);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(18px, 1.9vw, 34px);
+  line-height: 0.95;
   border-bottom: 0;
 }
 
@@ -1589,7 +1599,7 @@ footer {
   gap: clamp(12px, 2vw, 26px);
   color: var(--ink);
   font-family: Inter, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: clamp(15px, 1.15vw, 18px);
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -2485,7 +2495,7 @@ h1 {
 
 .collection-page .brand,
 .collection-page .main-nav {
-  font-size: 13px;
+  font-size: clamp(15px, 1.1vw, 17px);
   font-weight: 800;
   letter-spacing: 0;
 }
@@ -3822,21 +3832,32 @@ body[data-collection="filme"] .collection-video-button span {
   .contact-email-frame {
     left: auto;
     right: auto;
-    bottom: 94px;
+    bottom: 86px;
     width: 100%;
     max-width: none;
     justify-items: center;
-    gap: 8px;
+    gap: 10px;
     font-size: clamp(12px, 3.2vw, 15px);
     text-align: center;
+  }
+
+  .contact-channel {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 8px;
+  }
+
+  .contact-email-frame a {
+    font-size: clamp(15px, 4.7vw, 22px);
+    overflow-wrap: anywhere;
   }
 
   .quote-circle {
     left: 50%;
     right: auto;
-    bottom: 62px;
-    width: 286px;
-    height: 126px;
+    bottom: 46px;
+    width: min(88vw, 360px);
+    height: 178px;
     transform: translateX(-50%) rotate(-10deg);
   }
 

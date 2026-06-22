@@ -7,54 +7,104 @@ const collections = {
       {
         title: "Einzelportraits",
         files: [
-          "material/Portraits/DSC_4478_result.jpg",
-          "material/Portraits/DSC_4486_result.jpg",
-          "material/Portraits/DSC_4622_result.jpg",
-          "material/Portraits/DSC_4633_result.jpg",
+          "material/Portraits/Wei-Hsin_Portraits_Julianna_Yengibaryan3782.jpg",
           "material/Portraits/DSC_5214_result.jpg",
-          "material/Portraits/DSC_5259_result.jpg",
-          "material/Portraits/Fenix_Philipp0164_result.jpg",
-          "material/Portraits/Fenix_Philipp0250-2_result.jpg",
-          "material/Portraits/Fenix_Philipp0260_result.jpg",
-          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0913_result.jpg",
-          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0926_result.jpg",
-          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0954_result.jpg",
-          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0963_result.jpg",
-          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1097_result.jpg",
+          "material/Portraits/Spüldock2700_result.jpg",
           "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1231_result.jpg",
-          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1245_result.jpg",
-          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits_Julianna_Yengibaryan_01_result.jpg",
-          "material/Portraits/Julianna_Yengibaryan_Lykka_2_result.jpg",
           "material/Portraits/Julianna_Yengibaryan_Merle10_result.jpg",
-          "material/Portraits/Julianna_Yengibaryan_Merle1_result.jpg",
-          "material/Portraits/Julianna_Yengibaryan_Merle21_result.jpg",
-          "material/Portraits/Julianna_Yengibaryan_Sarin1_result.jpg",
-          "material/Portraits/Julianna_Yengibaryan_result.jpg",
-          "material/Portraits/Kai_Portrait0563-2_result.jpg",
-          "material/Portraits/Lasse Petersen1178_result.jpg",
-          "material/Portraits/Lasse Petersen1224_result.jpg",
-          "material/Portraits/Lasse Petersen1467_result.jpg",
+          "material/Portraits/Bodo&Klaus_Photoshoot_Julianna_Yengibaryan_1941.jpg",
           "material/Portraits/Lasse Petersen1517_result.jpg",
-          "material/Portraits/Lasse Petersen1525_result.jpg",
-          "material/Portraits/Marvin Vorstellungsfoto_result.jpg",
-          "material/Portraits/Portrait10_result.jpg",
-          "material/Portraits/Portrait11_result.jpg",
-          "material/Portraits/portrait15_result.jpg",
-          "material/Portraits/Portrait2_result.jpg",
-          "material/Portraits/Portrait7_result.jpg",
+          "material/Portraits/WhenWhat_Julianna_Yengibaryan3588_result.jpg",
+          "material/Portraits/Fenix_Philipp0250-2_result.jpg",
           "material/Portraits/Portrait8_result.jpg",
+          "material/Portraits/Schwenkbier1312_result.jpg",
+          "material/Portraits/Julianna_Yengibaryan_Lykka_2_result.jpg",
+          "material/Portraits/DSC_4478_result.jpg",
+          "material/Portraits/Spüldock2448_result.jpg",
+          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0954_result.jpg",
+          "material/Portraits/Marvin Vorstellungsfoto_result.jpg",
+          "material/Portraits/WhenWhat_Julianna_Yengibaryan3516_result.jpg",
+          "material/Portraits/Julianna_Yengibaryan_result.jpg",
+          "material/Portraits/Spüldock2613_result.jpg",
+          "material/Portraits/Fotoshoot_Julianna_Yengibaryan2.jpg",
+          "material/Portraits/Portrait10_result.jpg",
+          "material/Portraits/Wei-Hsin_Portraits_Julianna_Yengibaryan3835.jpg",
+          "material/Portraits/DSC_4633_result.jpg",
+          "material/Portraits/Lasse Petersen1224_result.jpg",
+          "material/Portraits/Bodo&Klaus_Photoshoot_Julianna_Yengibaryan.jpg",
+          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1097_result.jpg",
+          "material/Portraits/Spüldock2763_result.jpg",
+          "material/Portraits/Schwenkbier1681.jpg",
+          "material/Portraits/Julianna_Yengibaryan_Merle21_result.jpg",
+          "material/Portraits/Fenix_Philipp0164_result.jpg",
+          "material/Portraits/Portrait2_result.jpg",
+          "material/Portraits/WhenWhat_Julianna_Yengibaryan3456_result.jpg",
+          "material/Portraits/DSC_5259_result.jpg",
+          "material/Portraits/Spüldock2502_result.jpg",
+          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0913_result.jpg",
+          "material/Portraits/Kai_Portrait0563-2_result.jpg",
+          "material/Portraits/Julianna_Yengibaryan_Sarin1_result.jpg",
+          "material/Portraits/Portrait11_result.jpg",
+          "material/Portraits/Spüldock2987.jpg",
+          "material/Portraits/Wei-Hsin_Portraits_Julianna_Yengibaryan3776.jpg",
+          "material/Portraits/Bodo&Klaus_Photoshoot_Julianna_Yengibaryan_1988.jpg",
+          "material/Portraits/Lasse Petersen1467_result.jpg",
+          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0963_result.jpg",
+          "material/Portraits/WhenWhat_Julianna_Yengibaryan3606_result.jpg",
+          "material/Portraits/DSC_4486_result.jpg",
+          "material/Portraits/Spüldock2579_result.jpg",
+          "material/Portraits/Portrait7_result.jpg",
+          "material/Portraits/Fenix_Philipp0260_result.jpg",
+          "material/Portraits/Julianna_Yengibaryan_Merle1_result.jpg",
+          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits_Julianna_Yengibaryan_01_result.jpg",
+          "material/Portraits/Lasse Petersen1178_result.jpg",
+          "material/Portraits/Schwenkbier1644_result.jpg",
+          "material/Portraits/DSC_4622_result.jpg",
+          "material/Portraits/Spüldock2711_result.jpg",
+          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1245_result.jpg",
           "material/Portraits/Portrait9_result.jpg",
-          "material/Portraits/_DSC2048_result.jpg"
+          "material/Portraits/WhenWhat_Julianna_Yengibaryan3467_result.jpg",
+          "material/Portraits/Lasse Petersen1525_result.jpg",
+          "material/Portraits/portrait15_result.jpg",
+          "material/Portraits/Spüldock2390_result.jpg",
+          "material/Portraits/WhenWhat_Julianna_Yengibaryan3568_result.jpg",
+          "material/Portraits/_DSC2048_result.jpg",
+          "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits0926_result.jpg"
         ]
       },
       {
         title: "Gruppen",
         files: [
-          "material/Portraits/Gruppen/GIE_Portraits_JuliannaYengibaryanGie Portraits1284_result.jpg",
+          "material/Portraits/Gruppen/Schwenkbier_JuliannaYengibaryanDSC_0104_result.jpg",
+          "material/Portraits/Gruppen/Bodo&Klaus_Photoshoot_Julianna_Yengibaryan_1922.jpg",
+          "material/Portraits/Gruppen/Spüldock3046_result.jpg",
+          "material/Portraits/Gruppen/WhenWhat_Julianna_Yengibaryan3347_result.jpg",
           "material/Portraits/Gruppen/Jkml1_result.jpg",
-          "material/Portraits/Gruppen/Jkml2_result.jpg",
+          "material/Portraits/Gruppen/Schwenkbier1616_result.jpg",
+          "material/Portraits/Gruppen/Spüldock2857_result.jpg",
+          "material/Portraits/Gruppen/Bodo&Klaus_Photoshoot_Julianna_Yengibaryan_1810.jpg",
+          "material/Portraits/Gruppen/Schwenkbier_JuliannaYengibaryanDSC_0415_result.jpg",
+          "material/Portraits/Gruppen/WhenWhat_Julianna_Yengibaryan3723_result.jpg",
+          "material/Portraits/Gruppen/GIE_Portraits_JuliannaYengibaryanGie Portraits1284_result.jpg",
+          "material/Portraits/Gruppen/Spüldock3119_result.jpg",
+          "material/Portraits/Gruppen/Schwenkbier1449_result.jpg",
           "material/Portraits/Gruppen/Julianna_Yengibaryan_Gruppe_02_result.jpg",
-          "material/Portraits/Gruppen/_DSC0629_result.jpg"
+          "material/Portraits/Gruppen/Spüldock2985_result.jpg",
+          "material/Portraits/Gruppen/Bodo&Klaus_Photoshoot_Julianna_Yengibaryan_2076.jpg",
+          "material/Portraits/Gruppen/Schwenkbier_JuliannaYengibaryanDSC_0163_result.jpg",
+          "material/Portraits/Gruppen/WhenWhat_Julianna_Yengibaryan3202_result.jpg",
+          "material/Portraits/Gruppen/Jkml2_result.jpg",
+          "material/Portraits/Gruppen/Schwenkbier1624_result.jpg",
+          "material/Portraits/Gruppen/Spüldock2886_result.jpg",
+          "material/Portraits/Gruppen/Bodo&Klaus_Photoshoot_Julianna_Yengibaryan_1904.jpg",
+          "material/Portraits/Gruppen/Schwenkbier_JuliannaYengibaryanDSC_0054_result.jpg",
+          "material/Portraits/Gruppen/Spüldock3150_result.jpg",
+          "material/Portraits/Gruppen/WhenWhat_Julianna_Yengibaryan3695_result.jpg",
+          "material/Portraits/Gruppen/Schwenkbier1417_result.jpg",
+          "material/Portraits/Gruppen/Spüldock3103_result.jpg",
+          "material/Portraits/Gruppen/Schwenkbier_JuliannaYengibaryanDSC_0231_result.jpg",
+          "material/Portraits/Gruppen/_DSC0629_result.jpg",
+          "material/Portraits/Gruppen/Schwenkbier1611_result.jpg"
         ]
       }
     ]
@@ -248,7 +298,7 @@ const collections = {
   },
   mockups: {
     title: "Mockups",
-    label: "Webdesign / Social Media",
+    label: "Webdesign / Mockups",
     groups: [
       {
         title: "Personal Portfolio",
@@ -270,12 +320,18 @@ const collections = {
         files: [
           "material/mockups/Ice-Cream freies Projekt.png"
         ]
-      },
+      }
+    ]
+  },
+  social: {
+    title: "Social Media",
+    label: "Social Media",
+    groups: [
       {
-        title: "GIE Instagram Concept",
+        title: "GIE Instagram",
         href: "https://www.instagram.com/gie_hsfl?igsh=MWl1OTQxaGlsZmNvdA%3D%3D&utm_source=qr",
         linkLabel: "Instagram ansehen",
-        note: "Visual mockups created for Hochschule Flensburg's GIE social media presence. The concept focuses on clarity, consistency and a modern visual language.",
+        note: "Seit September 2025 bin ich im Marketing-Team des GIE und betreue die Social-Media-Seite des Studiengangs. Über die Verlinkung kann man meine Arbeiten direkt auf Instagram sehen.",
         files: [
           "material/mockups/GIE-instagram.png"
         ]
@@ -337,14 +393,15 @@ const collectionLinks = [
   ["Events", "events.html", "events"],
   ["Freestyle", "nature.html", "nature"],
   ["Mockups", "mockups.html", "mockups"],
+  ["Social Media", "social-media.html", "social"],
   ["Filme", "filme.html", "filme"]
 ];
 
 const i18n = {
   de: {
     nav: {
-      works: "Works",
-      about: "About",
+      works: "Arbeiten",
+      about: "Über mich",
       contact: "Kontakt",
       mediaView: "Medienansicht",
       closeMedia: "Medienansicht schließen",
@@ -358,6 +415,7 @@ const i18n = {
       events: "Events",
       nature: "Freestyle",
       mockups: "Mockups",
+      social: "Social Media",
       filme: "Filme"
     },
     collections: {
@@ -388,7 +446,12 @@ const i18n = {
       },
       mockups: {
         title: "Mockups",
-        label: "Webdesign / Social Media"
+        label: "Webdesign / Mockups"
+      },
+      social: {
+        title: "Social Media",
+        label: "Social Media",
+        description: "Social-Media-Arbeiten und betreute Instagram-Auftritte."
       },
       filme: {
         title: "Filme",
@@ -425,8 +488,8 @@ const i18n = {
       "Ice Cream Concept": {
         note: "Ein spielerisches freies Projekt für eine Ice-Cream-Marke.\n\nIm Mittelpunkt standen eine helle Präsentation, klare Hierarchie und eine leichte visuelle Stimmung."
       },
-      "GIE Instagram Concept": {
-        note: "Visuelle Mockups für den Social-Media-Auftritt von GIE an der Hochschule Flensburg.\n\nDas Konzept setzt auf Klarheit, Konsistenz und eine moderne visuelle Sprache.",
+      "GIE Instagram": {
+        note: "Seit September 2025 bin ich im Marketing-Team des GIE und betreue die Social-Media-Seite des Studiengangs.\n\nÜber die Verlinkung kann man meine Arbeiten direkt auf Instagram sehen.",
         linkLabel: "Instagram ansehen"
       },
       "DesignLab Instagram": {
@@ -464,6 +527,7 @@ const i18n = {
       events: "Events",
       nature: "Freestyle",
       mockups: "Mockups",
+      social: "Social Media",
       filme: "Films"
     },
     collections: {
@@ -494,7 +558,12 @@ const i18n = {
       },
       mockups: {
         title: "Mockups",
-        label: "Web Design / Social Media"
+        label: "Web Design / Mockups"
+      },
+      social: {
+        title: "Social Media",
+        label: "Social Media",
+        description: "Social media work and managed Instagram presences."
       },
       filme: {
         title: "Films",
@@ -505,6 +574,14 @@ const i18n = {
       "Fenix Composites": {
         note: "Fenix Composites develops sustainable solutions from recycled carbon fibers and produces innovative components for different industrial applications. I photographed the company and staged several products for the website and corporate communication. The visual language follows the brand appearance of Fenix Composites: dark color areas, clear compositions and a precise focus on form, surface and structure.",
         linkLabel: "View website"
+      },
+      "GIE Instagram": {
+        note: "Since September 2025, I have been part of the GIE marketing team and manage the study program's social media page. The linked Instagram profile shows my work directly.",
+        linkLabel: "View Instagram"
+      },
+      "DesignLab Instagram": {
+        note: "I worked in social media for DesignLab at Hochschule Flensburg from 2024 to 2025, creating structured content with visual clarity and a calm editorial rhythm.",
+        linkLabel: "View Instagram"
       },
       Outloud: {
         note: "A short animation film focused on movement, timing and visual storytelling."

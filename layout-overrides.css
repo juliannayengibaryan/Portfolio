@@ -690,3 +690,28 @@ body.collection-page .collection-hero .collection-number {
     transform: none;
   }
 }
+
+/* Mobile correction for the ink section on the home page. */
+@media (max-width: 680px) {
+  .editorial-home .board-ink {
+    min-height: 100svh;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10.5rem 1.4rem 4rem;
+    overflow: hidden;
+  }
+
+  .editorial-home .board-ink .ink-hero-title {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    max-width: 22rem;
+    margin: 0;
+    font-size: clamp(3rem, 14vw, 4.4rem);
+    line-height: 1.02;
+  }
+}

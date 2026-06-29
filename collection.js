@@ -139,31 +139,31 @@ const collections = {
         linkLabel: "Website ansehen",
         note: "For Fenix, I wanted the images to feel precise and strong, with a quiet focus on shape, surface and movement.",
         files: [
-          "material/Produktfotografie/Fenix Composites/FENIX1883_result.jpg",
-          "material/Produktfotografie/Fenix Composites/FENIX1920_result.jpg",
-          "material/Produktfotografie/Fenix Composites/FENIX1928_result.jpg",
-          "material/Produktfotografie/Fenix Composites/FENIX2051_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix0011_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix0045_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix0091_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix0121_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix0168_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix0216_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Fahrrad2141_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Fahrrad2156_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Fahrrad2188_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Fahrrad2201_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Fahrrad2224_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0047_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0063_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0065_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0092_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0101_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0102_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0122_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0145_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0148_result.jpg",
-          "material/Produktfotografie/Fenix Composites/Fenix_Philipp0159_result.jpg"
+          "material/Produkte/Fenix Composites/FENIX1883_result.jpg",
+          "material/Produkte/Fenix Composites/FENIX1920_result.jpg",
+          "material/Produkte/Fenix Composites/FENIX1928_result.jpg",
+          "material/Produkte/Fenix Composites/FENIX2051_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix0011_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix0045_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix0091_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix0121_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix0168_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix0216_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix_Fahrrad2141_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix_Fahrrad2156_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix_Fahrrad2188_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix_Fahrrad2201_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix_Fahrrad2224_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix_Philipp0047_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix_Philipp0063_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix_Philipp0065_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix_Philipp0092_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix_Philipp0101_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix_Philipp0102_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix_Philipp0122_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix_Philipp0145_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix_Philipp0148_result.jpg",
+          "material/Produkte/Fenix Composites/Fenix_Philipp0159_result.jpg"
         ]
       },
       {
@@ -172,13 +172,13 @@ const collections = {
         linkLabel: "Website ansehen",
         note: "With Schwenkbier, I focused on the bottle as a small object with character, warm light and a handmade feeling.",
         files: [
-          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1785_result.jpg",
-          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1803_result.jpg",
-          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1844_result.jpg",
-          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1913_result.jpg",
-          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1746_result.jpg",
-          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1897_result.jpg",
-          "material/Produktfotografie/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1947_result.jpg"
+          "material/Produkte/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1785_result.jpg",
+          "material/Produkte/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1803_result.jpg",
+          "material/Produkte/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1844_result.jpg",
+          "material/Produkte/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1913_result.jpg",
+          "material/Produkte/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1746_result.jpg",
+          "material/Produkte/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1897_result.jpg",
+          "material/Produkte/Schwenkbier/Schwenkbier_Produktfotografie_Julianna_Yengibaryan1947_result.jpg"
         ]
       },
       {
@@ -187,9 +187,9 @@ const collections = {
         linkLabel: "Website ansehen",
         note: "For MoManufaktur, I kept the visuals calm and minimal so the object could speak through material, balance and detail.",
         files: [
-          "material/Produktfotografie/MoManufaktur/DSC_2572_result.jpg",
-          "material/Produktfotografie/MoManufaktur/Pro-Capture One 0021_result.jpg",
-          "material/Produktfotografie/MoManufaktur/Pro-Capture One 0038_result.jpg"
+          "material/Produkte/MoManufaktur/DSC_2572_result.jpg",
+          "material/Produkte/MoManufaktur/Pro-Capture One 0021_result.jpg",
+          "material/Produkte/MoManufaktur/Pro-Capture One 0038_result.jpg"
         ]
       },
       {
@@ -198,12 +198,12 @@ const collections = {
         linkLabel: "Website ansehen",
         note: "For Haymark Lavash, I wanted the work to feel familiar and warm, like food moments from an everyday table.",
         files: [
-          "material/Produktfotografie/Haymark Lavash/DSC_0103_result.jpg",
-          "material/Produktfotografie/Haymark Lavash/DSC_0127_result.jpg",
-          "material/Produktfotografie/Haymark Lavash/DSC_0143_result.jpg",
-          "material/Produktfotografie/Haymark Lavash/DSC_0378_result.jpg",
-          "material/Produktfotografie/Haymark Lavash/arbeit&alltag5_result_1.jpg",
-          "material/Produktfotografie/Haymark Lavash/arbeit&alltag6_result.jpg"
+          "material/Produkte/Haymark Lavash/DSC_0103_result.jpg",
+          "material/Produkte/Haymark Lavash/DSC_0127_result.jpg",
+          "material/Produkte/Haymark Lavash/DSC_0143_result.jpg",
+          "material/Produkte/Haymark Lavash/DSC_0378_result.jpg",
+          "material/Produkte/Haymark Lavash/arbeit&alltag5_result_1.jpg",
+          "material/Produkte/Haymark Lavash/arbeit&alltag6_result.jpg"
         ]
       },
       {
@@ -213,12 +213,12 @@ const collections = {
         linkLabel: "Website ansehen",
         note: "A small collection of free-time projects and personal visual experiments. The guitar belongs to Lasse Petersen. His website also features more photographs I created for him.",
         files: [
-          "material/Produktfotografie/Hobby/Capture One Catalog0053_result.jpg",
-          "material/Produktfotografie/Hobby/DSC_0124_result.jpg",
-          "material/Produktfotografie/Hobby/DSC_0160_result.jpg",
-          "material/Produktfotografie/Hobby/DSC_0167_result.jpg",
-          "material/Produktfotografie/Hobby/DSC_0177_result.jpg",
-          "material/Produktfotografie/Hobby/Lasse Petersen1376_result.jpg"
+          "material/Produkte/Hobby/Capture One Catalog0053_result.jpg",
+          "material/Produkte/Hobby/DSC_0124_result.jpg",
+          "material/Produkte/Hobby/DSC_0160_result.jpg",
+          "material/Produkte/Hobby/DSC_0167_result.jpg",
+          "material/Produkte/Hobby/DSC_0177_result.jpg",
+          "material/Produkte/Hobby/Lasse Petersen1376_result.jpg"
         ]
       }
     ]
@@ -304,21 +304,21 @@ const collections = {
         title: "Personal Portfolio",
         note: "A first portfolio mockup exploring how photography, typography and small handwritten details can feel personal without losing structure.",
         files: [
-          "material/mockups/mein 1. Postfolio.png"
+          "material/webdesign/mein 1. Postfolio.png"
         ]
       },
       {
         title: "Coffee Shop Concept",
         note: "A free project for a coffee shop identity, with warm product presentation and simple digital touchpoints for a friendly brand feeling.",
         files: [
-          "material/mockups/coffee shop freies projekt.png"
+          "material/webdesign/coffee shop freies projekt.png"
         ]
       },
       {
         title: "Ice Cream Concept",
         note: "A playful free project for an ice cream brand, focused on bright presentation, clear hierarchy and a light visual mood.",
         files: [
-          "material/mockups/Ice-Cream freies Projekt.png"
+          "material/webdesign/Ice-Cream freies Projekt.png"
         ]
       }
     ]
@@ -334,7 +334,7 @@ const collections = {
         linkLabel: "Instagram ansehen",
         note: "Seit September 2025 bin ich im Marketing-Team des GIE und betreue die Social-Media-Seite des Studiengangs. Über die Verlinkung kann man meine Arbeiten direkt auf Instagram sehen.",
         files: [
-          "material/mockups/GIE-instagram.png"
+          "material/webdesign/GIE-instagram.png"
         ]
       },
       {
@@ -344,7 +344,7 @@ const collections = {
         linkLabel: "Instagram ansehen",
         note: "I was active in Social Media for DesignLab at Hochschule Flensburg in 2024-2025. This mockup reflects that period and my work with structured content, visual clarity and a calm editorial rhythm.",
         files: [
-          "material/mockups/DesignLab-instagram.png"
+          "material/webdesign/DesignLab-instagram.png"
         ]
       }
     ]
@@ -391,10 +391,10 @@ const collections = {
 const collectionLinks = [
   ["Portraits", "portraits.html", "portraits"],
   ["Street Portraits", "street-portraits.html", "street"],
-  ["Produkte", "produktfotografie.html", "produkt"],
+  ["Produkte", "produkte.html", "produkt"],
   ["Events", "events.html", "events"],
-  ["Freestyle", "nature.html", "nature"],
-  ["Webdesign", "mockups.html", "mockups"],
+  ["Freestyle", "freestyle.html", "nature"],
+  ["Webdesign", "webdesign.html", "mockups"],
   ["Social Media", "social-media.html", "social"],
   ["Filme", "filme.html", "filme"]
 ];

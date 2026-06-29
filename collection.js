@@ -1,7 +1,7 @@
 const collections = {
   portraits: {
     title: "Portraits",
-    label: "Ordner / Portraits",
+    label: "Works / Portraits",
     description: "Alle Bilder aus dem Ordner Portraits. Ruhig angeordnet, ohne harte Zuschnitte.",
     groups: [
       {
@@ -34,7 +34,6 @@ const collections = {
           "material/Portraits/Bodo&Klaus_Photoshoot_Julianna_Yengibaryan.jpg",
           "material/Portraits/GIE_Portraits_JuliannaYengibaryanGie Portraits1097_result.jpg",
           "material/Portraits/Spüldock2763_result.jpg",
-          "material/Portraits/Schwenkbier1681.jpg",
           "material/Portraits/Julianna_Yengibaryan_Merle21_result.jpg",
           "material/Portraits/Fenix_Philipp0164_result.jpg",
           "material/Portraits/Portrait2_result.jpg",
@@ -111,7 +110,7 @@ const collections = {
   },
   street: {
     title: "Street Portraits",
-    label: "Ordner / Street Portraits",
+    label: "Works / Street Portraits",
     description: "Alle Bilder aus dem Ordner Street Portraits.",
     files: [
       "material/Street Portraits/DSC_0066_result.jpg",
@@ -130,9 +129,9 @@ const collections = {
     ]
   },
   produkt: {
-    title: "Produktfotografie",
-    label: "Ordner / Produktfotografie",
-    description: "Alle Bilder aus dem Ordner Produktfotografie.",
+    title: "Produkte",
+    label: "Works / Produkte",
+    description: "Produktfotografie für Marken, Produkte und kleine Unternehmen mit Fokus auf Material, Form und Atmosphäre.",
     groups: [
       {
         title: "Fenix Composites",
@@ -210,8 +209,9 @@ const collections = {
       {
         title: "Hobby",
         href: "https://www.lassepts.de",
+        linkText: "Lasse Petersen",
         linkLabel: "Website ansehen",
-        note: "A small collection of free-time projects and personal visual experiments. The guitar belongs to Lasse.",
+        note: "A small collection of free-time projects and personal visual experiments. The guitar belongs to Lasse Petersen. His website also features more photographs I created for him.",
         files: [
           "material/Produktfotografie/Hobby/Capture One Catalog0053_result.jpg",
           "material/Produktfotografie/Hobby/DSC_0124_result.jpg",
@@ -225,8 +225,8 @@ const collections = {
   },
   events: {
     title: "Events",
-    label: "Ordner / Events",
-    description: "Alle Bilder aus dem Ordner events.",
+    label: "Works / Events",
+    description: "Eventfotografie mit Fokus auf Stimmung, Bühne, Bewegung und echten Momenten.",
     files: [
       "material/events/DSC_2927_result.jpg",
       "material/events/DSC_2934_result.jpg",
@@ -267,8 +267,8 @@ const collections = {
   },
   nature: {
     title: "Freestyle",
-    label: "Ordner / Freestyle",
-    description: "Alle Bilder aus dem Ordner nature.",
+    label: "Works / Freestyle",
+    description: "Freie fotografische Arbeiten, Alltagsmomente und visuelle Experimente.",
     files: [
       "material/freestyle/DSC_0283_result.jpg",
       "material/freestyle/DSC_0285_result.jpg",
@@ -297,8 +297,8 @@ const collections = {
     ]
   },
   mockups: {
-    title: "Mockups",
-    label: "Webdesign / Mockups",
+    title: "Webdesign",
+    label: "Works / Webdesign",
     groups: [
       {
         title: "Personal Portfolio",
@@ -325,11 +325,12 @@ const collections = {
   },
   social: {
     title: "Social Media",
-    label: "Social Media",
+    label: "Works / Social Media",
     groups: [
       {
         title: "GIE Instagram",
         href: "https://www.instagram.com/gie_hsfl?igsh=MWl1OTQxaGlsZmNvdA%3D%3D&utm_source=qr",
+        linkText: "GIE",
         linkLabel: "Instagram ansehen",
         note: "Seit September 2025 bin ich im Marketing-Team des GIE und betreue die Social-Media-Seite des Studiengangs. Über die Verlinkung kann man meine Arbeiten direkt auf Instagram sehen.",
         files: [
@@ -339,6 +340,7 @@ const collections = {
       {
         title: "DesignLab Instagram",
         href: "https://www.instagram.com/designlab_flensburg?igsh=MWVzbnl4NGRucnhxcQ%3D%3D&utm_source=qr",
+        linkText: "DesignLab",
         linkLabel: "Instagram ansehen",
         note: "I was active in Social Media for DesignLab at Hochschule Flensburg in 2024-2025. This mockup reflects that period and my work with structured content, visual clarity and a calm editorial rhythm.",
         files: [
@@ -349,7 +351,7 @@ const collections = {
   },
   filme: {
     title: "Filme",
-    label: "Video / Motion",
+    label: "Works / Filme",
     groups: [
       {
         title: "Fiktive Werbung für M. Asam",
@@ -389,10 +391,10 @@ const collections = {
 const collectionLinks = [
   ["Portraits", "portraits.html", "portraits"],
   ["Street Portraits", "street-portraits.html", "street"],
-  ["Produktfotografie", "produktfotografie.html", "produkt"],
+  ["Produkte", "produktfotografie.html", "produkt"],
   ["Events", "events.html", "events"],
   ["Freestyle", "nature.html", "nature"],
-  ["Mockups", "mockups.html", "mockups"],
+  ["Webdesign", "mockups.html", "mockups"],
   ["Social Media", "social-media.html", "social"],
   ["Filme", "filme.html", "filme"]
 ];
@@ -411,51 +413,51 @@ const i18n = {
     links: {
       portraits: "Portraits",
       street: "Street Portraits",
-      produkt: "Produktfotografie",
+      produkt: "Produkte",
       events: "Events",
       nature: "Freestyle",
-      mockups: "Mockups",
+      mockups: "Webdesign",
       social: "Social Media",
       filme: "Filme"
     },
     collections: {
       portraits: {
         title: "Portraits",
-        label: "Ordner / Portraits",
+        label: "Works / Portraits",
         description: "Alle Bilder aus dem Ordner Portraits. Ruhig angeordnet, ohne harte Zuschnitte."
       },
       street: {
         title: "Street Portraits",
-        label: "Ordner / Street Portraits",
+        label: "Works / Street Portraits",
         description: "Alle Bilder aus dem Ordner Street Portraits."
       },
       produkt: {
-        title: "Produktfotografie",
-        label: "Ordner / Produktfotografie",
-        description: "Alle Bilder aus dem Ordner Produktfotografie."
+        title: "Produkte",
+        label: "Works / Produkte",
+        description: "Produktfotografie für Marken, Produkte und kleine Unternehmen mit Fokus auf Material, Form und Atmosphäre."
       },
       events: {
         title: "Events",
-        label: "Ordner / Events",
-        description: "Alle Bilder aus dem Ordner Events."
+        label: "Works / Events",
+        description: "Eventfotografie mit Fokus auf Stimmung, Bühne, Bewegung und echten Momenten."
       },
       nature: {
         title: "Freestyle",
-        label: "Ordner / Freestyle",
-        description: "Alle Bilder aus dem Ordner Freestyle."
+        label: "Works / Freestyle",
+        description: "Freie fotografische Arbeiten, Alltagsmomente und visuelle Experimente."
       },
       mockups: {
-        title: "Mockups",
-        label: "Webdesign / Mockups"
+        title: "Webdesign",
+        label: "Works / Webdesign"
       },
       social: {
         title: "Social Media",
-        label: "Social Media",
+        label: "Works / Social Media",
         description: "Social-Media-Arbeiten und betreute Instagram-Auftritte."
       },
       filme: {
         title: "Filme",
-        label: "Video / Motion"
+        label: "Works / Filme"
       }
     },
     groups: {
@@ -476,11 +478,11 @@ const i18n = {
         linkLabel: "Website ansehen"
       },
       Hobby: {
-        note: "Eine kleine Sammlung freier Projekte und persönlicher visueller Experimente.\n\nDie Gitarre gehört Lasse Petersen.",
+        note: "Eine kleine Sammlung freier Projekte und persönlicher visueller Experimente.\n\nDie Gitarre gehört Lasse Petersen. Auf seiner Website sind außerdem weitere Fotografien zu sehen, die ich für ihn gemacht habe.",
         linkLabel: "Website ansehen"
       },
       "Personal Portfolio": {
-        note: "Ein erstes Portfolio-Mockup, das Fotografie, Typografie und kleine handschriftliche Details persönlich wirken lässt.\n\nDer Fokus lag darauf, eine persönliche Gestaltung zu entwickeln, ohne die klare Struktur der Seite zu verlieren."
+        note: "Ein erstes Portfolio-Webdesign, das Fotografie, Typografie und kleine handschriftliche Details persönlich wirken lässt.\n\nDer Fokus lag darauf, eine persönliche Gestaltung zu entwickeln, ohne die klare Struktur der Seite zu verlieren."
       },
       "Coffee Shop Concept": {
         note: "Ein freies Projekt für eine Coffee-Shop-Identity mit warmer Produktpräsentation.\n\nDie Gestaltung verbindet einfache digitale Kontaktpunkte mit einem freundlichen und einladenden Markengefühl."
@@ -493,7 +495,7 @@ const i18n = {
         linkLabel: "Instagram ansehen"
       },
       "DesignLab Instagram": {
-        note: "Ich war 2024-2025 im Social-Media-Bereich für das DesignLab der Hochschule Flensburg tätig.\n\nDieses Mockup zeigt diese Zeit und meine Arbeit mit strukturiertem Content, visueller Klarheit und ruhigem editorialem Rhythmus.",
+        note: "Ich war 2024-2025 im Social-Media-Bereich für das DesignLab der Hochschule Flensburg tätig.\n\nDieses Webdesign zeigt diese Zeit und meine Arbeit mit strukturiertem Content, visueller Klarheit und ruhigem editorialem Rhythmus.",
         linkLabel: "Instagram ansehen"
       },
       Outloud: {
@@ -523,57 +525,56 @@ const i18n = {
     links: {
       portraits: "Portraits",
       street: "Street Portraits",
-      produkt: "Product Photography",
+      produkt: "Products",
       events: "Events",
       nature: "Freestyle",
-      mockups: "Mockups",
+      mockups: "Web Design",
       social: "Social Media",
       filme: "Films"
     },
     collections: {
       portraits: {
         title: "Portraits",
-        label: "Folder / Portraits",
+        label: "Works / Portraits",
         description: "All images from the Portraits folder, arranged calmly without harsh crops."
       },
       street: {
         title: "Street Portraits",
-        label: "Folder / Street Portraits",
+        label: "Works / Street Portraits",
         description: "All images from the Street Portraits folder."
       },
       produkt: {
-        title: "Product Photography",
-        label: "Folder / Product Photography",
-        description: "All images from the Product Photography folder."
+        title: "Products",
+        label: "Works / Products",
+        description: "Product photography for brands, products and small businesses, focused on material, form and atmosphere."
       },
       events: {
         title: "Events",
-        label: "Folder / Events",
-        description: "All images from the Events folder."
+        label: "Works / Events",
+        description: "Event photography focused on atmosphere, stage moments, movement and real interactions."
       },
       nature: {
         title: "Freestyle",
-        label: "Folder / Freestyle",
-        description: "All images from the Freestyle folder."
+        label: "Works / Freestyle",
+        description: "Free photographic work, everyday observations and visual experiments."
       },
       mockups: {
-        title: "Mockups",
-        label: "Web Design / Mockups"
+        title: "Web Design",
+        label: "Works / Web Design"
       },
       social: {
         title: "Social Media",
-        label: "Social Media",
+        label: "Works / Social Media",
         description: "Social media work and managed Instagram presences."
       },
       filme: {
         title: "Films",
-        label: "Video / Motion"
+        label: "Works / Films"
       }
     },
     groups: {
       "Fenix Composites": {
-        note: "Fenix Composites develops sustainable solutions from recycled carbon fibers and produces innovative components for different industrial applications. I photographed the company and staged several products for the website and corporate communication. The visual language follows the brand appearance of Fenix Composites: dark color areas, clear compositions and a precise focus on form, surface and structure.",
-        linkLabel: "View website"
+        note: "Fenix Composites develops sustainable solutions from recycled carbon fibers and produces innovative components for different industrial applications. I photographed the company and staged several products for the website and corporate communication. The visual language follows the brand appearance of Fenix Composites: dark color areas, clear compositions and a precise focus on form, surface and structure."
       },
       "GIE Instagram": {
         note: "Since September 2025, I have been part of the GIE marketing team and manage the study program's social media page. The linked Instagram profile shows my work directly.",
@@ -582,6 +583,10 @@ const i18n = {
       "DesignLab Instagram": {
         note: "I worked in social media for DesignLab at Hochschule Flensburg from 2024 to 2025, creating structured content with visual clarity and a calm editorial rhythm.",
         linkLabel: "View Instagram"
+      },
+      Hobby: {
+        note: "A small collection of free-time projects and personal visual experiments. The guitar belongs to Lasse Petersen. His website also features more photographs I created for him.",
+        linkLabel: "View website"
       },
       Outloud: {
         note: "A short animation film focused on movement, timing and visual storytelling."
@@ -670,6 +675,32 @@ function formatNoteText(value) {
   return value.replace(/\n{2,}/g, "<br><br>");
 }
 
+function linkProjectName(note, group) {
+  if (!group.href) {
+    return formatNoteText(note);
+  }
+
+  const candidates = [
+    group.linkText,
+    group.title,
+    group.title.replace(/\s+Instagram$/i, "")
+  ].filter(Boolean);
+
+  for (const candidate of candidates) {
+    const escapedCandidate = candidate.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const pattern = new RegExp(escapedCandidate, "i");
+
+    if (pattern.test(note)) {
+      return formatNoteText(note.replace(
+        pattern,
+        `<a class="project-inline-link" href="${group.href}" target="_blank" rel="noopener noreferrer">$&</a>`
+      ));
+    }
+  }
+
+  return `<a class="project-inline-link project-inline-link-lead" href="${group.href}" target="_blank" rel="noopener noreferrer">${group.linkText || group.title}</a><br>${formatNoteText(note)}`;
+}
+
 function renderItem(item, index, options = {}) {
   const isVideo = /\.(mp4|webm|mov)$/i.test(item);
 
@@ -680,7 +711,7 @@ function renderItem(item, index, options = {}) {
       <article class="collection-item collection-video-item">
         <button class="collection-image-button collection-video-button" type="button" data-full="${item}" data-type="video">
           <video src="${item}#t=${posterTime}" muted playsinline preload="metadata"></video>
-          <span>Film ansehen</span>
+          <span>larger</span>
         </button>
       </article>
     `;
@@ -707,23 +738,14 @@ function renderGroup(group, index) {
   const heading = group.href
     ? `<a href="${group.href}" target="_blank" rel="noreferrer">${group.title}</a>`
     : group.title;
-  const headingExtra = key === "portraits" && group.title === "Einzelportraits"
-    ? `<a class="collection-heading-jump" href="#${slug("Gruppen")}">/ Gruppen</a>`
-    : "";
   const noteText = getGroupText(group, "note");
-  const note = noteText ? `<p>${formatNoteText(noteText)}</p>` : "";
-  const actionText = getGroupText(group, "linkLabel");
-  const action = group.href && actionText
-    ? `<a class="collection-group-link" href="${group.href}" target="_blank" rel="noreferrer">${actionText} -></a>`
-    : "";
-
+  const note = noteText ? `<p>${linkProjectName(noteText, group)}</p>` : "";
   return `
     <section class="collection-group collection-group-${slug(group.title)}" id="${slug(group.title)}">
       <header class="collection-group-heading">
         <span>${String(index + 1).padStart(2, "0")}</span>
-        <h2>${heading}${headingExtra}</h2>
+        <h2>${heading}</h2>
         ${note}
-        ${action}
       </header>
       <section class="collection-gallery" aria-label="${group.title}">
         ${group.files.map((item, itemIndex) => renderItem(item, itemIndex, group)).join("")}
@@ -741,7 +763,6 @@ function renderCollection() {
   const language = getLanguage();
   const collectionTitle = getCollectionText("title");
   const collectionLabel = getCollectionText("label");
-  const collectionDescription = getCollectionText("description");
   const navText = i18n[language].nav;
 
   document.documentElement.lang = language;
@@ -750,23 +771,30 @@ function renderCollection() {
   document.querySelector(".main-nav a[href='index.html#about']")?.replaceChildren(document.createTextNode(navText.about));
   document.querySelector(".main-nav a[href='index.html#kontakt']")?.replaceChildren(document.createTextNode(navText.contact));
 
-  const switcher = `
-    <nav class="collection-switcher" aria-label="Andere Ordner">
-      ${collectionLinks.map(([label, href, linkKey]) => `<a class="${linkKey === key ? "active" : ""}" href="${href}">${getLinkLabel(linkKey, label)}</a>`).join("")}
+  const groupNav = collection.groups?.length > 1
+    ? `<nav class="collection-project-links" aria-label="Projekte">${collection.groups.map((group) => `<a href="#${slug(group.title)}">${group.title}</a>`).join("")}</nav>`
+    : "";
+  const worksNav = `
+    <nav class="collection-switcher" aria-label="Works">
+      ${collectionLinks.map(([fallbackLabel, href, linkKey]) => {
+        const label = i18n[language].links?.[linkKey] || fallbackLabel;
+        const active = linkKey === key ? " class=\"active\"" : "";
+        return `<a href="${href}"${active}>${label}</a>`;
+      }).join("")}
     </nav>
   `;
   const hero = `
     <section class="collection-hero">
       <span class="collection-number">${String(activeIndex + 1).padStart(2, "0")} —</span>
-      <p class="collection-hand">${collectionLabel.replace("Ordner / ", "")}</p>
+      <p class="collection-hand">${collectionLabel}</p>
       <h1>${collectionTitle}</h1>
-      ${collectionDescription ? `<p class="collection-description">${collectionDescription}</p>` : ""}
     </section>
   `;
 
   root.innerHTML = `
     ${hero}
-    ${switcher}
+    ${worksNav}
+    ${groupNav}
     ${collection.groups ? `
       <section class="collection-groups" aria-label="${collectionTitle}">
         ${collection.groups.map(renderGroup).join("")}

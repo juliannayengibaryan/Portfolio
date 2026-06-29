@@ -8,13 +8,15 @@
       name="description"
       content="Creative Portfolio for Photography, Film, Web & Visual Design"
     >
-    <link rel="stylesheet" href="styles.css?v=20260622c">
+    <link rel="stylesheet" href="styles.css?v=20260624b">
+    <link rel="stylesheet" href="layout-overrides.css?v=20260624af">
   </head>
   <body>
     <div class="grain" aria-hidden="true"></div>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Zur Startseite">
-        <span>Start</span>
+        <span class="brand-title">Personal<br>Portfolio</span>
+        <small>julianna yengibaryan</small>
       </a>
       <nav class="main-nav" aria-label="Hauptnavigation">
         <a href="#index" data-i18n="nav.index">Index</a>
@@ -23,28 +25,30 @@
       </nav>
     </header>
 
+    <div class="home-chrome">
+      <a class="home-start-logo" href="#top">Personal<br>Portfolio<small>julianna yengibaryan</small></a>
+      <nav class="board-nav home-board-nav" aria-label="Sections">
+        <a href="#index" data-i18n="nav.works">Arbeiten</a>
+        <a href="#about" data-i18n="nav.about">Über mich</a>
+        <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+        <span class="language-toggle" aria-label="Sprache wechseln">
+          <button type="button" data-lang="de">DE</button>
+          <span>/</span>
+          <button type="button" data-lang="en">EN</button>
+        </span>
+      </nav>
+      <button class="mobile-menu-toggle home-mobile-menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
     <main id="top" class="editorial-home">
       <section class="board board-hero" aria-labelledby="hero-title">
-        <a class="home-start-logo" href="#top">Personal<br>Portfolio</a>
-        <nav class="board-nav" aria-label="Sections">
-          <a href="#index" data-i18n="nav.works">Arbeiten</a>
-          <a href="#about" data-i18n="nav.about">Über mich</a>
-          <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
-          <span class="language-toggle" aria-label="Sprache wechseln">
-            <button type="button" data-lang="de">DE</button>
-            <span>/</span>
-            <button type="button" data-lang="en">EN</button>
-          </span>
-        </nav>
-        <button class="mobile-menu-toggle home-mobile-menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <h1 id="hero-title">Personal<br>Portfolio</h1>
-        <p class="hand-name" id="flying-name">julianna yengibaryan</p>
-        <p class="hero-fields" data-i18n-html="hero.fields">Fotografie<br>Video /<br>Webdesign &amp; Visual Design</p>
-        <span class="pink-star pink-star-hero">*</span>
+        <h1 id="hero-title"><span class="hero-personal">Personal<span class="pink-star hero-title-star" aria-hidden="true">*</span></span><br>Portfolio</h1>
+        <p class="hand-name" id="flying-name"><span class="pink-star hero-name-star" aria-hidden="true">*</span>julianna yengibaryan</p>
+        <p class="hero-fields" data-i18n-html="hero.fields">Fotografie<br>Video<br>Webdesign</p>
         <span class="scroll-note">Scroll<br>↓</span>
       </section>
 
@@ -55,13 +59,8 @@
         </figure>
         <div class="about-statement">
           <div class="about-name-slot" aria-hidden="true"></div>
-          <p data-i18n="about.text">Hi, ich bin Julianna — das ist mein visuelles Tagebuch, eine Sammlung aus Fotografie, Design und kreativen Projekten, geprägt von Emotion, Storytelling und Inspiration aus dem Alltag. Schön, dass du da bist.</p>
+          <p data-i18n-html="about.text">Hi, ich bin Julianna — ich lebe in Deutschland und das hier ist mein visuelles Tagebuch:<br>eine Sammlung aus Fotografie, Design und kreativen Projekten, geprägt von Emotion, Storytelling und Inspiration aus dem Alltag. Schön, dass du da bist.</p>
         </div>
-        <span class="pink-star about-star about-star-a">*</span>
-        <span class="pink-star about-star about-star-b">*</span>
-        <span class="pink-star about-star about-star-c">*</span>
-        <span class="about-rule" aria-hidden="true"></span>
-        <span class="about-place" data-i18n="about.place">Based in Germany</span>
       </section>
 
       <section class="board board-index" id="index" aria-labelledby="index-title">
@@ -69,10 +68,10 @@
         <nav class="editorial-index" aria-label="Portfolio index">
           <a href="portraits.html"><span>01</span>Portraits</a>
           <a href="street-portraits.html"><span>02</span>Street Portraits</a>
-          <a href="produktfotografie.html"><span>03</span><em data-i18n="works.product">Produktfotografie</em></a>
+          <a href="produktfotografie.html"><span>03</span><em data-i18n="works.product">Produkte</em></a>
           <a href="events.html"><span>04</span>Events</a>
           <a href="nature.html"><span>05</span>Freestyle</a>
-          <a href="mockups.html"><span>06</span>Mockups</a>
+          <a href="mockups.html"><span>06</span>Webdesign</a>
           <a href="social-media.html"><span>07</span>Social Media</a>
           <a href="filme.html"><span>08</span>Filme</a>
         </nav>
@@ -85,12 +84,10 @@
 
       <section class="board board-ink" aria-label="I create visual stories">
         <h2 class="ink-hero-title" data-i18n-html="ink.title">Ich erzähle<br><span>visuelle</span><br>Geschichten.</h2>
-        <span class="pink-star pink-star-hero">*</span>
       </section>
 
       <section class="board board-quote" id="kontakt" aria-label="Contact">
-        <h2 data-i18n-html="contact.title">Lass uns<br><em>zusammen</em><br>gestalten.</h2>
-        <span class="pink-star quote-star">*</span>
+        <h2 data-i18n-html="contact.title">Lass uns<br><em>zusammen</em><br><span class="contact-star-word">gestalten.<span class="pink-star quote-star" aria-hidden="true">*</span></span></h2>
         <div class="contact-email-frame">
           <div class="contact-channel">
             <span data-i18n="contact.email">email</span>
@@ -101,7 +98,7 @@
             <a href="https://www.instagram.com/shotsandlots?utm_source=qr" target="_blank" rel="noopener noreferrer">@shotsandlots</a>
           </div>
         </div>
-        <span class="pink-circle quote-circle contact-email-circle" aria-hidden="true"></span>
+        <span class="pink-circle quote-circle contact-email-circle" aria-hidden="true"><span class="pink-star quote-circle-star">*</span></span>
       </section>
 
     </main>
@@ -115,25 +112,23 @@
       const homeI18n = {
         de: {
           nav: { index: "Index", works: "Arbeiten", about: "Über mich", contact: "Kontakt" },
-          hero: { fields: "Fotografie<br>Video /<br>Webdesign &amp; Visual Design" },
+          hero: { fields: "Fotografie<br>Video<br>Webdesign" },
           about: {
-            text: "Hi, ich bin Julianna — das ist mein visuelles Tagebuch, eine Sammlung aus Fotografie, Design und kreativen Projekten, geprägt von Emotion, Storytelling und Inspiration aus dem Alltag. Schön, dass du da bist.",
-            place: "Based in Germany"
+            text: "Hi, ich bin Julianna — ich lebe in Deutschland und das hier ist mein visuelles Tagebuch:<br>eine Sammlung aus Fotografie, Design und kreativen Projekten, geprägt von Emotion, Storytelling und Inspiration aus dem Alltag. Schön, dass du da bist."
           },
-          works: { title: "Arbeiten", product: "Produktfotografie" },
+          works: { title: "Arbeiten", product: "Produkte" },
           ink: { title: "Ich erzähle<br><span>visuelle</span><br>Geschichten." },
-          contact: { title: "Lass uns<br><em>zusammen</em><br>gestalten.", email: "email", instagram: "instagram" }
+          contact: { title: "Lass uns<br><em>zusammen</em><br><span class=\"contact-star-word\">gestalten.<span class=\"pink-star quote-star\" aria-hidden=\"true\">*</span></span>", email: "email", instagram: "instagram" }
         },
         en: {
           nav: { index: "Index", works: "Works", about: "About", contact: "Contact" },
-          hero: { fields: "Photography<br>Video /<br>Web &amp; Visual Design" },
+          hero: { fields: "Photography<br>Video<br>Web Design" },
           about: {
-            text: "Hi, I'm Julianna — this is my visual diary, a collection of photography, design and creative projects shaped by emotion, storytelling and everyday inspiration. Enjoy your visit.",
-            place: "Based in Germany"
+            text: "Hi, I'm Julianna — based in Germany, this is my visual diary:<br>a collection of photography, design and creative projects shaped by emotion, storytelling and everyday inspiration. Enjoy your visit."
           },
-          works: { title: "Works", product: "Product Photography" },
+          works: { title: "Works", product: "Products" },
           ink: { title: "I create<br><span>visual</span><br>stories." },
-          contact: { title: "Let's<br>create<br><em>together.</em>", email: "email", instagram: "instagram" }
+          contact: { title: "Let's<br>create<br><em class=\"contact-star-word\">together.<span class=\"pink-star quote-star\" aria-hidden=\"true\">*</span></em>", email: "email", instagram: "instagram" }
         }
       };
 
@@ -167,16 +162,14 @@
 
       applyHomeLanguage();
 
-      const fixedNav = document.querySelector(".board-hero .board-nav");
+      const fixedNav = document.querySelector(".home-board-nav");
       const homeStartLogo = document.querySelector(".home-start-logo");
       const mobileMenuToggle = document.querySelector(".home-mobile-menu-toggle");
-      const homeLanguageToggle = document.querySelector(".board-hero .language-toggle");
+      const homeLanguageToggle = document.querySelector(".home-board-nav .language-toggle");
       const contactSection = document.querySelector("#kontakt");
       const aboutSection = document.querySelector("#about");
       const flyingName = document.querySelector("#flying-name");
       const aboutNameSlot = document.querySelector(".about-name-slot");
-      const floatingNavItems = [fixedNav, homeStartLogo, mobileMenuToggle, homeLanguageToggle].filter(Boolean);
-
       if (mobileMenuToggle && fixedNav) {
         mobileMenuToggle.addEventListener("click", () => {
           const isOpen = fixedNav.classList.toggle("menu-open");
@@ -211,19 +204,16 @@
         window.addEventListener("resize", updateNavColor);
       }
 
-      if (floatingNavItems.length) {
+      const homeChrome = document.querySelector(".home-chrome");
+      if (homeChrome) {
         let lastScrollY = window.scrollY;
         let tickingNav = false;
 
-        const updateNavVisibility = () => {
+        const updateChromeVisibility = () => {
           const currentScrollY = window.scrollY;
           const isScrollingDown = currentScrollY > lastScrollY;
-          const shouldHide = isScrollingDown && currentScrollY > 90;
-
-          floatingNavItems.forEach((item) => {
-            item.classList.toggle("nav-hidden", shouldHide);
-          });
-
+          const menuIsOpen = fixedNav?.classList.contains("menu-open");
+          homeChrome.classList.toggle("nav-hidden", !menuIsOpen && isScrollingDown && currentScrollY > 90);
           lastScrollY = currentScrollY;
           tickingNav = false;
         };
@@ -231,7 +221,7 @@
         window.addEventListener("scroll", () => {
           if (tickingNav) return;
           tickingNav = true;
-          requestAnimationFrame(updateNavVisibility);
+          requestAnimationFrame(updateChromeVisibility);
         }, { passive: true });
       }
 

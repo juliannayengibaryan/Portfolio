@@ -4,16 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Impressum | Julianna Yengibaryan</title>
-    <link rel="stylesheet" href="styles.css?v=20260622c">
+    <link rel="stylesheet" href="styles.css?v=20260624b">
+    <link rel="stylesheet" href="layout-overrides.css?v=20260624af">
   </head>
   <body class="legal-page">
     <header class="site-header">
-      <a class="brand" href="index.html"><span>Personal<br>Portfolio</span></a>
+      <a class="brand" href="index.html"><span class="brand-title">Personal<br>Portfolio</span><small>julianna yengibaryan</small></a>
       <nav class="main-nav" aria-label="Hauptnavigation">
         <a href="index.html#index">Arbeiten</a>
         <a href="index.html#about">Über mich</a>
         <a href="index.html#kontakt">Kontakt</a>
       </nav>
+      <button class="mobile-menu-toggle" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </header>
 
     <main class="legal-content">
@@ -29,7 +31,7 @@
 
       <section>
         <h2>Urheberrecht</h2>
-        <p>Alle Fotografien, Mockups, Texte und sonstigen Inhalte auf dieser Website stammen, sofern nicht anders angegeben, von Julianna Yengibaryan. Eine Nutzung, Vervielfältigung oder Weitergabe ist nur mit vorheriger Zustimmung erlaubt.</p>
+        <p>Alle Fotografien, Webdesigns, Designarbeiten, Texte und sonstigen Inhalte auf dieser Website stammen, sofern nicht anders angegeben, von Julianna Yengibaryan. Eine Nutzung, Vervielfältigung, Weitergabe, Veröffentlichung oder sonstige Weiterverwendung ist nur mit vorheriger Zustimmung erlaubt.</p>
       </section>
 
       <section>
@@ -42,5 +44,23 @@
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
     </footer>
+    <script>
+      const menuToggle = document.querySelector(".mobile-menu-toggle");
+      const mainNav = document.querySelector(".main-nav");
+      menuToggle?.addEventListener("click", () => {
+        const isOpen = mainNav.classList.toggle("menu-open");
+        menuToggle.classList.toggle("menu-open", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      const pageHeader = document.querySelector(".site-header");
+      let lastScrollY = window.scrollY;
+      window.addEventListener("scroll", () => {
+        const currentScrollY = window.scrollY;
+        const menuIsOpen = mainNav?.classList.contains("menu-open");
+        pageHeader?.classList.toggle("nav-hidden", !menuIsOpen && currentScrollY > lastScrollY && currentScrollY > 90);
+        lastScrollY = currentScrollY;
+      }, { passive: true });
+    </script>
   </body>
 </html>

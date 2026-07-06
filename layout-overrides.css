@@ -1626,7 +1626,10 @@ body.legal-page .legal-content p {
 /* Mobile collection pages: keep only the lined paper surface and widen project copy. */
 @media (max-width: 680px) {
   body.collection-page {
-    background: var(--paper) !important;
+    background:
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0 / 48px 48px,
+      linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0 / 48px 48px,
+      var(--paper) !important;
     margin: 0 !important;
     padding: 0 !important;
     --grid-bg-size: 48px;
@@ -1638,13 +1641,20 @@ body.legal-page .legal-content p {
   body.legal-page {
     margin: 0 !important;
     padding: 0 !important;
-    background: var(--paper) !important;
+    background:
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0 / 48px 48px,
+      linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0 / 48px 48px,
+      var(--paper) !important;
   }
 
   .editorial-home .board,
   body.legal-page .legal-content {
     margin: 0 !important;
     border: 0 !important;
+    background:
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0 / 48px 48px,
+      linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0 / 48px 48px,
+      var(--paper) !important;
   }
 
   body.collection-page .site-header {
@@ -1660,11 +1670,16 @@ body.legal-page .legal-content p {
     margin-bottom: 0 !important;
     margin-left: 0 !important;
     border: 0 !important;
-    background: var(--paper) !important;
+    background:
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0 / 48px 48px,
+      linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0 / 48px 48px,
+      var(--paper) !important;
   }
 
-  body.collection-page #collection-root > .board-grid line {
-    stroke-width: 1px !important;
+  body.collection-page #collection-root > .board-grid,
+  .editorial-home .board > .board-grid,
+  body.legal-page .legal-content > .board-grid {
+    display: none !important;
   }
 
   body.collection-page .collection-switcher {
@@ -1738,19 +1753,22 @@ body.legal-page .legal-content p {
     box-sizing: border-box !important;
     display: grid !important;
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    gap: 10px !important;
-    width: 100% !important;
+    gap: 16px !important;
+    row-gap: 16px !important;
+    column-gap: 16px !important;
+    width: calc(100% - 16px) !important;
     max-width: none !important;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-    padding: 10px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding: 0 !important;
     column-count: auto !important;
-    column-gap: normal !important;
+    column-gap: 16px !important;
   }
 
   body.collection-page .collection-item,
   body[data-collection="produkt"] .collection-item {
     display: block !important;
+    min-width: 0 !important;
     width: 100% !important;
     margin-right: 0 !important;
     margin-left: 0 !important;
@@ -1760,17 +1778,48 @@ body.legal-page .legal-content p {
 
   body.collection-page .collection-image-button,
   body[data-collection="produkt"] .collection-image-button {
+    min-width: 0 !important;
     width: 100% !important;
     height: 100% !important;
   }
 
   body.collection-page .collection-item img,
   body.collection-page .collection-item video {
+    display: block !important;
+    min-width: 0 !important;
     width: 100% !important;
     height: 100% !important;
     max-height: none !important;
     aspect-ratio: 1 / 1 !important;
     object-fit: cover !important;
     border-radius: 7px !important;
+  }
+
+  body:is([data-collection="mockups"], [data-collection="social"], [data-collection="filme"]) .collection-gallery,
+  body.collection-page .collection-group-social-media .collection-gallery {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    row-gap: 20px !important;
+    column-gap: 20px !important;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+
+  body:is([data-collection="mockups"], [data-collection="social"], [data-collection="filme"]) .collection-item {
+    width: 100% !important;
+  }
+
+  body:is([data-collection="mockups"], [data-collection="social"], [data-collection="filme"]) .collection-image-button,
+  body:is([data-collection="mockups"], [data-collection="social"], [data-collection="filme"]) .collection-video-button {
+    height: auto !important;
+  }
+
+  body:is([data-collection="mockups"], [data-collection="social"]) .collection-item img,
+  body:is([data-collection="mockups"], [data-collection="social"]) .collection-item video,
+  body[data-collection="filme"] .collection-video-button video {
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
   }
 }

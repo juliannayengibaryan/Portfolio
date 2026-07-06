@@ -575,6 +575,14 @@ const i18n = {
       "Fenix Composites": {
         note: "Fenix Composites develops sustainable solutions from recycled carbon fibers and produces innovative components for different industrial applications. I photographed the company and staged several products for the website and corporate communication. The visual language follows the brand appearance of Fenix Composites: dark color areas, clear compositions and a precise focus on form, surface and structure."
       },
+      Schwenkbier: {
+        note: "Schwenkbier is a startup from Hochschule Flensburg that brings people together through an innovative outdoor game.\n\nFor the product photography, the focus was on the custom-developed bottle openers. The goal was to highlight the material, form and character of the products through a clear and authentic visual language.",
+        linkLabel: "View website"
+      },
+      "Haymark Lavash": {
+        note: "Haymark produces traditional Armenian lavash and combines artisanal production with high product quality.\n\nFor the brand presentation, I created product photographs focused on authenticity, texture and freshness. The natural visual language emphasizes the artisanal quality and traditional character of the products.",
+        linkLabel: "View website"
+      },
       "GIE Instagram": {
         note: "Since September 2025, I have been part of the GIE marketing team and manage the study program's social media page. The linked Instagram profile shows my work directly.",
         linkLabel: "View Instagram"

@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Webdesign | Julianna Yengibaryan</title>
-    <link rel="stylesheet" href="styles.css?v=20260624b">
-    <link rel="stylesheet" href="layout-overrides.css?v=20260624af">
+    <link rel="stylesheet" href="styles.css?v=20260706lighttext">
+    <link rel="stylesheet" href="layout-overrides.css?v=20260706lightboxnocircles">
   </head>
   <body class="collection-page" data-collection="mockups">
     <header class="site-header">
@@ -14,10 +14,79 @@
         <a href="index.html#index">Arbeiten</a>
         <a href="index.html#about">Über mich</a>
         <a href="index.html#kontakt">Kontakt</a>
+        <span class="language-toggle" aria-label="Sprache wechseln"><button type="button" data-lang="de">DE</button><span>/</span><button type="button" data-lang="en">EN</button></span>
       </nav>
       <button class="mobile-menu-toggle" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </header>
-    <main id="collection-root"></main>
+    <main id="collection-root">
+      <section class="collection-hero">
+        <span class="collection-number">06 —</span>
+        <p class="collection-hand">Works / Webdesign</p>
+        <h1>Webdesign</h1>
+      </section>
+
+      <nav class="collection-switcher" aria-label="Works">
+        <a href="portraits.html">Portraits</a>
+        <a href="street-portraits.html">Street Portraits</a>
+        <a href="produkte.html">Produkte</a>
+        <a href="events.html">Events</a>
+        <a href="freestyle.html">Freestyle</a>
+        <a href="webdesign.html" class="active">Webdesign</a>
+        <a href="social-media.html">Social Media</a>
+        <a href="filme.html">Filme</a>
+      </nav>
+      <details class="collection-project-menu">
+
+        <summary><span class="project-menu-title">Webdesign</span><span class="project-menu-note">Untermenü</span><span class="project-menu-arrow" aria-hidden="true">↓</span></summary>
+
+        <nav class="collection-project-links" aria-label="Projekte"><a href="#personal-portfolio">Personal Portfolio</a><a href="#coffee-shop-concept">Coffee Shop Concept</a><a href="#ice-cream-concept">Ice Cream Concept</a></nav>
+
+      </details>
+      <section class="collection-groups" aria-label="Webdesign">
+      <section class="collection-group collection-group-personal-portfolio" id="personal-portfolio">
+        <header class="collection-group-heading">
+          <span>01</span>
+          <h2>Personal Portfolio</h2>
+        <p>Ein erstes Portfolio-Webdesign, das Fotografie, Typografie und kleine handschriftliche Details persönlich wirken lässt.<br><br>Der Fokus lag darauf, eine persönliche Gestaltung zu entwickeln, ohne die klare Struktur der Seite zu verlieren.</p>
+        </header>
+        <section class="collection-gallery" aria-label="Personal Portfolio">
+        <article class="collection-item">
+          <a class="collection-image-button" href="material/webdesign/mein 1. Postfolio.png">
+            <img src="material/webdesign/mein 1. Postfolio.png" alt="Personal Portfolio 1" loading="lazy">
+          </a>
+        </article>
+        </section>
+      </section>
+      <section class="collection-group collection-group-coffee-shop-concept" id="coffee-shop-concept">
+        <header class="collection-group-heading">
+          <span>02</span>
+          <h2>Coffee Shop Concept</h2>
+        <p>Ein freies Projekt für eine Coffee-Shop-Identity mit warmer Produktpräsentation.<br><br>Die Gestaltung verbindet einfache digitale Kontaktpunkte mit einem freundlichen und einladenden Markengefühl.</p>
+        </header>
+        <section class="collection-gallery" aria-label="Coffee Shop Concept">
+        <article class="collection-item">
+          <a class="collection-image-button" href="material/webdesign/coffee shop freies projekt.png">
+            <img src="material/webdesign/coffee shop freies projekt.png" alt="Coffee Shop Concept 1" loading="lazy">
+          </a>
+        </article>
+        </section>
+      </section>
+      <section class="collection-group collection-group-ice-cream-concept" id="ice-cream-concept">
+        <header class="collection-group-heading">
+          <span>03</span>
+          <h2>Ice Cream Concept</h2>
+        <p>Ein spielerisches freies Projekt für eine Ice-Cream-Marke.<br><br>Im Mittelpunkt standen eine helle Präsentation, klare Hierarchie und eine leichte visuelle Stimmung.</p>
+        </header>
+        <section class="collection-gallery" aria-label="Ice Cream Concept">
+        <article class="collection-item">
+          <a class="collection-image-button" href="material/webdesign/Ice-Cream freies Projekt.png">
+            <img src="material/webdesign/Ice-Cream freies Projekt.png" alt="Ice Cream Concept 1" loading="lazy">
+          </a>
+        </article>
+        </section>
+      </section>
+      </section>
+    </main>
     <dialog class="lightbox" aria-label="Bildansicht">
       <button class="close-lightbox" type="button" aria-label="Bildansicht schließen">x</button>
       <img src="" alt="">
@@ -26,6 +95,7 @@
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
     </footer>
-    <script src="collection.js?v=20260624f"></script>
+    <script src="collection.js?v=20260706apostrophe"></script>
+    <script src="grid-fit.js?v=20260706wholegrid"></script>
   </body>
 </html>

@@ -272,7 +272,6 @@ const collections = {
     files: [
       "material/freestyle/DSC_0283_result.jpg",
       "material/freestyle/DSC_0285_result.jpg",
-      "material/freestyle/DSC_0309_result.jpg",
       "material/freestyle/DSC_0317_result.jpg",
       "material/freestyle/DSC_0322_result.jpg",
       "material/freestyle/Freestyle1_result.jpg",
@@ -369,7 +368,7 @@ const collections = {
         ]
       },
       {
-        title: "Let's eat!",
+        title: "Let’s eat!",
         note: "Im Rahmen dieses Projekts entstand eine spielerische Motion-Design-Animation mit experimenteller Komposition und digitalem Storytelling. Ziel war es, durch dynamische Bewegungen, kreative Übergänge und farbenfrohe Gestaltung eine lebendige Cartoon-Atmosphäre zu erschaffen.",
         posterTime: 6,
         files: [
@@ -501,7 +500,7 @@ const i18n = {
       Outloud: {
         note: "Ein kurzer 2D-Animationsfilm, entstanden im Rahmen des Kurses 2D Animation.\n\nTeile der Animation wurden Bild für Bild von Hand gezeichnet. Der Fokus lag auf Bewegung, Timing und visueller Erzählung, um Charaktere und Szenen lebendig wirken zu lassen."
       },
-      "Let's eat!": {
+      "Let’s eat!": {
         note: "Im Rahmen dieses Projekts entstand eine spielerische Motion-Design-Animation mit experimenteller Komposition und digitalem Storytelling.\n\nZiel war es, durch dynamische Bewegungen, kreative Übergänge und farbenfrohe Gestaltung eine lebendige Cartoon-Atmosphäre zu erschaffen."
       },
       "Fiktive Werbung für M. Asam": {
@@ -591,7 +590,7 @@ const i18n = {
       Outloud: {
         note: "A short animation film focused on movement, timing and visual storytelling."
       },
-      "Let's eat!": {
+      "Let’s eat!": {
         note: "A playful motion design animation with experimental composition and digital storytelling. The goal was to create a lively cartoon atmosphere through dynamic movement, creative transitions and colorful design."
       },
       "Fiktive Werbung für M. Asam": {
@@ -626,19 +625,23 @@ function getLinkLabel(linkKey, fallback) {
 function setupLanguageToggle() {
   const header = document.querySelector(".site-header");
 
-  if (!header || header.querySelector(".language-toggle")) {
+  if (!header) {
     return;
   }
 
-  const toggle = document.createElement("div");
-  toggle.className = "language-toggle";
-  toggle.setAttribute("aria-label", "Sprache wechseln");
-  toggle.innerHTML = `
-    <button type="button" data-lang="de">DE</button>
-    <span>/</span>
-    <button type="button" data-lang="en">EN</button>
-  `;
-  header.append(toggle);
+  let toggle = header.querySelector(".language-toggle");
+
+  if (!toggle) {
+    toggle = document.createElement("div");
+    toggle.className = "language-toggle";
+    toggle.setAttribute("aria-label", "Sprache wechseln");
+    toggle.innerHTML = `
+      <button type="button" data-lang="de">DE</button>
+      <span>/</span>
+      <button type="button" data-lang="en">EN</button>
+    `;
+    header.append(toggle);
+  }
 
   const sync = () => {
     const language = getLanguage();

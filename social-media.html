@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Social Media | Julianna Yengibaryan</title>
-    <link rel="stylesheet" href="styles.css?v=20260624b">
-    <link rel="stylesheet" href="layout-overrides.css?v=20260624af">
+    <link rel="stylesheet" href="styles.css?v=20260706lighttext">
+    <link rel="stylesheet" href="layout-overrides.css?v=20260706lightboxnocircles">
   </head>
   <body class="collection-page" data-collection="social">
     <header class="site-header">
@@ -14,10 +14,65 @@
         <a href="index.html#index">Arbeiten</a>
         <a href="index.html#about">Über mich</a>
         <a href="index.html#kontakt">Kontakt</a>
+        <span class="language-toggle" aria-label="Sprache wechseln"><button type="button" data-lang="de">DE</button><span>/</span><button type="button" data-lang="en">EN</button></span>
       </nav>
       <button class="mobile-menu-toggle" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </header>
-    <main id="collection-root"></main>
+    <main id="collection-root">
+      <section class="collection-hero">
+        <span class="collection-number">07 —</span>
+        <p class="collection-hand">Works / Social Media</p>
+        <h1>Social Media</h1>
+      </section>
+
+      <nav class="collection-switcher" aria-label="Works">
+        <a href="portraits.html">Portraits</a>
+        <a href="street-portraits.html">Street Portraits</a>
+        <a href="produkte.html">Produkte</a>
+        <a href="events.html">Events</a>
+        <a href="freestyle.html">Freestyle</a>
+        <a href="webdesign.html">Webdesign</a>
+        <a href="social-media.html" class="active">Social Media</a>
+        <a href="filme.html">Filme</a>
+      </nav>
+      <details class="collection-project-menu">
+
+        <summary><span class="project-menu-title">Social Media</span><span class="project-menu-note">Untermenü</span><span class="project-menu-arrow" aria-hidden="true">↓</span></summary>
+
+        <nav class="collection-project-links" aria-label="Projekte"><a href="#gie-instagram">GIE Instagram</a><a href="#designlab-instagram">DesignLab Instagram</a></nav>
+
+      </details>
+      <section class="collection-groups" aria-label="Social Media">
+      <section class="collection-group collection-group-gie-instagram" id="gie-instagram">
+        <header class="collection-group-heading">
+          <span>01</span>
+          <h2><a href="https://www.instagram.com/gie_hsfl?igsh=MWl1OTQxaGlsZmNvdA%3D%3D&amp;utm_source=qr" target="_blank" rel="noreferrer">GIE Instagram</a></h2>
+        <p>Seit September 2025 bin ich im Marketing-Team des GIE und betreue die Social-Media-Seite des Studiengangs.<br><br>Über die Verlinkung kann man meine Arbeiten direkt auf Instagram sehen.</p>
+        </header>
+        <section class="collection-gallery" aria-label="GIE Instagram">
+        <article class="collection-item">
+          <a class="collection-image-button" href="material/webdesign/GIE-instagram.png">
+            <img src="material/webdesign/GIE-instagram.png" alt="GIE Instagram 1" loading="lazy">
+          </a>
+        </article>
+        </section>
+      </section>
+      <section class="collection-group collection-group-designlab-instagram" id="designlab-instagram">
+        <header class="collection-group-heading">
+          <span>02</span>
+          <h2><a href="https://www.instagram.com/designlab_flensburg?igsh=MWVzbnl4NGRucnhxcQ%3D%3D&amp;utm_source=qr" target="_blank" rel="noreferrer">DesignLab Instagram</a></h2>
+        <p>Ich war 2024-2025 im Social-Media-Bereich für das DesignLab der Hochschule Flensburg tätig.<br><br>Dieses Webdesign zeigt diese Zeit und meine Arbeit mit strukturiertem Content, visueller Klarheit und ruhigem editorialem Rhythmus.</p>
+        </header>
+        <section class="collection-gallery" aria-label="DesignLab Instagram">
+        <article class="collection-item">
+          <a class="collection-image-button" href="material/webdesign/DesignLab-instagram.png">
+            <img src="material/webdesign/DesignLab-instagram.png" alt="DesignLab Instagram 1" loading="lazy">
+          </a>
+        </article>
+        </section>
+      </section>
+      </section>
+    </main>
     <dialog class="lightbox" aria-label="Bildansicht">
       <button class="close-lightbox" type="button" aria-label="Bildansicht schließen">x</button>
       <img src="" alt="">
@@ -26,6 +81,7 @@
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
     </footer>
-    <script src="collection.js?v=20260624f"></script>
+    <script src="collection.js?v=20260706apostrophe"></script>
+    <script src="grid-fit.js?v=20260706wholegrid"></script>
   </body>
 </html>

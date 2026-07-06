@@ -1622,3 +1622,155 @@ body.legal-page .legal-content p {
   background: transparent !important;
   outline: none !important;
 }
+
+/* Mobile collection pages: keep only the lined paper surface and widen project copy. */
+@media (max-width: 680px) {
+  body.collection-page {
+    background: var(--paper) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    --grid-bg-size: 48px;
+    --grid-bg-safe: 0px;
+  }
+
+  body:has(.editorial-home),
+  .editorial-home,
+  body.legal-page {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: var(--paper) !important;
+  }
+
+  .editorial-home .board,
+  body.legal-page .legal-content {
+    margin: 0 !important;
+    border: 0 !important;
+  }
+
+  body.collection-page .site-header {
+    background: transparent !important;
+  }
+
+  body.collection-page #collection-root {
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 100svh !important;
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    border: 0 !important;
+    background: var(--paper) !important;
+  }
+
+  body.collection-page #collection-root > .board-grid line {
+    stroke-width: 1px !important;
+  }
+
+  body.collection-page .collection-switcher {
+    display: none !important;
+  }
+
+  body.collection-page .collection-project-menu {
+    display: block !important;
+  }
+
+  body.collection-page .collection-project-menu summary {
+    display: none !important;
+  }
+
+  body.collection-page .collection-project-links {
+    display: flex !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: none !important;
+    justify-content: center !important;
+    gap: 14px 18px !important;
+    padding: 10px 14px calc(var(--grid-size) * 0.7) !important;
+  }
+
+  body.collection-page .collection-project-links a {
+    font-size: clamp(11px, 3.2vw, 13px) !important;
+    line-height: 1.1 !important;
+  }
+
+  body.collection-page .collection-groups {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: none !important;
+    gap: calc(var(--grid-size) * 1.7) !important;
+    padding-top: 0 !important;
+  }
+
+  body.collection-page .collection-group {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  body.collection-page .collection-group-heading,
+  body[data-collection="produkt"] .collection-group-heading {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: none !important;
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+  }
+
+  body.collection-page .collection-group-heading p,
+  body[data-collection="produkt"] .collection-group-heading p {
+    box-sizing: border-box !important;
+    display: block !important;
+    width: calc(100vw - 16px) !important;
+    max-width: none !important;
+    margin-top: 12px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    font-size: clamp(13px, 3.7vw, 16px) !important;
+    line-height: 1.34 !important;
+    text-align: left !important;
+  }
+
+  body.collection-page .collection-gallery,
+  body[data-collection="produkt"] .collection-gallery {
+    box-sizing: border-box !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding: 10px !important;
+    column-count: auto !important;
+    column-gap: normal !important;
+  }
+
+  body.collection-page .collection-item,
+  body[data-collection="produkt"] .collection-item {
+    display: block !important;
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-bottom: 0 !important;
+    break-inside: auto !important;
+  }
+
+  body.collection-page .collection-image-button,
+  body[data-collection="produkt"] .collection-image-button {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  body.collection-page .collection-item img,
+  body.collection-page .collection-item video {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: none !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important;
+    border-radius: 7px !important;
+  }
+}

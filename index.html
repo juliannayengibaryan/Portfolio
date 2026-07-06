@@ -9,7 +9,7 @@
       content="Creative Portfolio for Photography, Film, Web & Visual Design"
     >
     <link rel="stylesheet" href="styles.css?v=20260706lighttext">
-    <link rel="stylesheet" href="layout-overrides.css?v=20260706mobilebalancededges">
+    <link rel="stylesheet" href="layout-overrides.css?v=20260706contactoval">
   </head>
   <body>
     <div class="grain" aria-hidden="true"></div>
@@ -59,7 +59,7 @@
         </figure>
         <div class="about-statement">
           <div class="about-name-slot" aria-hidden="true"></div>
-          <p data-i18n-html="about.text">Hi, ich bin Julianna — ich lebe in Deutschland und das hier ist mein visuelles Tagebuch:<br>eine Sammlung aus Fotografie, Design und kreativen Projekten, geprägt von Emotion, Storytelling und Inspiration aus dem Alltag. Schön, dass du da bist.</p>
+          <p data-i18n-html="about.text">Hi, ich bin Julianna — das hier ist mein visuelles Tagebuch:<br>eine Sammlung aus Fotografie, Design und kreativen Projekten, geprägt von Emotion, Storytelling und Inspiration aus dem Alltag. Schön, dass du da bist.</p>
         </div>
       </section>
 
@@ -106,6 +106,7 @@
     <footer class="legal-footer home-legal-footer">
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
+      <a href="dokumentation.html">Dokumentation</a>
     </footer>
 
     <script>
@@ -114,7 +115,7 @@
           nav: { index: "Index", works: "Arbeiten", about: "Über mich", contact: "Kontakt" },
           hero: { fields: "Fotografie<br>Video<br>Webdesign" },
           about: {
-            text: "Hi, ich bin Julianna — ich lebe in Deutschland und das hier ist mein visuelles Tagebuch:<br>eine Sammlung aus Fotografie, Design und kreativen Projekten, geprägt von Emotion, Storytelling und Inspiration aus dem Alltag. Schön, dass du da bist."
+            text: "Hi, ich bin Julianna — das hier ist mein visuelles Tagebuch:<br>eine Sammlung aus Fotografie, Design und kreativen Projekten, geprägt von Emotion, Storytelling und Inspiration aus dem Alltag. Schön, dass du da bist."
           },
           works: { title: "Arbeiten", product: "Produkte" },
           ink: { title: "Ich erzähle<br><span>visuelle</span><br>Geschichten." },
@@ -124,7 +125,7 @@
           nav: { index: "Index", works: "Works", about: "About", contact: "Contact" },
           hero: { fields: "Photography<br>Video<br>Web Design" },
           about: {
-            text: "Hi, I'm Julianna — based in Germany, this is my visual diary:<br>a collection of photography, design and creative projects shaped by emotion, storytelling and everyday inspiration. Enjoy your visit."
+            text: "Hi, I'm Julianna — this is my visual diary:<br>a collection of photography, design and creative projects shaped by emotion, storytelling and everyday inspiration. Enjoy your visit."
           },
           works: { title: "Works", product: "Products" },
           ink: { title: "I create<br><span>visual</span><br>stories." },
@@ -173,6 +174,7 @@
         const findBalancedGrid = (width, height) => {
           const targetCell = readCssPixelValue("--grid-bg-size", 64);
           const targetPad = readCssPixelValue("--grid-bg-safe", 12);
+          // Ganze Rasterfelder verhindern abgeschnittene Linien am Rand.
           const columns = Math.max(2, Math.floor((width - targetPad * 2) / targetCell));
           const rows = Math.max(2, Math.floor((height - targetPad * 2) / targetCell));
 
@@ -191,6 +193,7 @@
           const { columns, rows, cell, padX, padY } = findBalancedGrid(rect.width, rect.height);
           let grid = board.querySelector(":scope > .board-grid");
 
+          // Das SVG-Raster wird neu gezeichnet, wenn sich die Board-Größe ändert.
           if (!grid) {
             grid = document.createElementNS("http://www.w3.org/2000/svg", "svg");
             grid.classList.add("board-grid");
@@ -273,6 +276,7 @@
         const updateNavColor = () => {
           const rect = contactSection.getBoundingClientRect();
           const viewportMiddle = window.innerHeight * 0.35;
+          // Auf der dunklen Kontaktfläche braucht die Navigation eine helle Variante.
           const isDark = rect.top <= viewportMiddle && rect.bottom > 0;
           fixedNav.classList.toggle("on-dark", isDark);
           homeStartLogo?.classList.toggle("on-dark", isDark);
@@ -294,6 +298,7 @@
           const currentScrollY = window.scrollY;
           const isScrollingDown = currentScrollY > lastScrollY;
           const menuIsOpen = fixedNav?.classList.contains("menu-open");
+          // Beim Runterscrollen bleibt mehr Platz für den Inhalt.
           homeChrome.classList.toggle("nav-hidden", !menuIsOpen && isScrollingDown && currentScrollY > 90);
           lastScrollY = currentScrollY;
           tickingNav = false;
@@ -318,6 +323,7 @@
             return;
           }
 
+          // Erst messen, dann animieren. Sonst springt der Name beim Start.
           document.body.classList.remove("name-flight-ready");
           flyingName.style.removeProperty("--name-start-left");
           flyingName.style.removeProperty("--name-start-top");
@@ -342,6 +348,7 @@
           if (!start || mobileNameQuery.matches) return;
           const target = aboutNameSlot.getBoundingClientRect();
           const aboutTop = aboutSection.offsetTop;
+          // Der Name bewegt sich nur im Bereich kurz vor der About-Sektion.
           const aboutTravelStart = Math.max(1, aboutTop - window.innerHeight * 0.92);
           const aboutTravelEnd = Math.max(aboutTravelStart + 1, aboutTop - window.innerHeight * 0.2);
           const rawProgress = (window.scrollY - aboutTravelStart) / (aboutTravelEnd - aboutTravelStart);

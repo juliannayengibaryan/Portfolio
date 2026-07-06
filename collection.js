@@ -662,6 +662,7 @@ function setupLanguageToggle() {
   toggle.querySelectorAll("button").forEach((button) => {
     button.addEventListener("click", () => {
       localStorage.setItem("portfolio-language", button.dataset.lang);
+      // Die Seite wird neu geladen, damit alle Projektdaten in der gewählten Sprache neu gerendert werden.
       window.location.reload();
     });
   });
@@ -691,6 +692,7 @@ function linkProjectName(note, group) {
     return formatNoteText(note);
   }
 
+  // Wenn der Projektname im Text vorkommt, wird genau dieses Wort zum Link.
   const candidates = [
     group.linkText,
     group.title,
@@ -718,6 +720,7 @@ function renderItem(item, index, options = {}) {
   if (isVideo) {
     const posterTime = Number.isFinite(options.posterTime) ? options.posterTime : 0.1;
 
+    // Videos bekommen einen kleinen Startzeitpunkt, damit nicht nur ein schwarzer Frame sichtbar ist.
     return `
       <article class="collection-item collection-video-item">
         <button class="collection-image-button collection-video-button" type="button" data-full="${item}" data-type="video">
@@ -776,6 +779,7 @@ function renderCollection() {
   const collectionLabel = getCollectionText("label");
   const navText = i18n[language].nav;
 
+  // Ab hier wird die Seite aus den Daten oben zusammengesetzt.
   document.documentElement.lang = language;
   document.title = `${collectionTitle} | Julianna Yengibaryan`;
   document.querySelector(".main-nav a[href='index.html#index']")?.replaceChildren(document.createTextNode(navText.works));
@@ -817,6 +821,7 @@ function renderCollection() {
 function setupLightbox() {
   let lightbox = document.querySelector(".lightbox");
 
+  // Die Lightbox wird nur gebaut, wenn sie auf der Seite noch nicht existiert.
   if (!lightbox) {
     lightbox = document.createElement("dialog");
     lightbox.className = "lightbox";
@@ -865,6 +870,7 @@ function setupLightbox() {
   lightbox.append(previousButton, nextButton);
 
   function showMedia(index) {
+    // Durch das Modulo kann man am Ende wieder zum ersten Bild springen.
     activeIndex = (index + mediaButtons.length) % mediaButtons.length;
     const button = mediaButtons[activeIndex];
     const isVideo = button.dataset.type === "video";
@@ -880,6 +886,7 @@ function setupLightbox() {
         lightboxVideo.style.display = "block";
         lightboxVideo.play();
       } else {
+        // Beim Wechsel zurück zu Bildern muss das Video wirklich gestoppt werden.
         lightboxVideo.pause();
         lightboxVideo.removeAttribute("src");
         lightboxVideo.style.display = "none";
@@ -951,6 +958,7 @@ function setupScrollNav() {
       return;
     }
 
+    // requestAnimationFrame verhindert, dass beim Scrollen zu viele Updates gleichzeitig laufen.
     ticking = true;
     requestAnimationFrame(updateNavVisibility);
   }, { passive: true });

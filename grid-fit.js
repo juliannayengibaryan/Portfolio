@@ -11,6 +11,7 @@
   const findBalancedGrid = (width, height) => {
     const targetCell = readCssPixelValue("--grid-bg-size", 64);
     const targetPad = readCssPixelValue("--grid-bg-safe", 12);
+    // Das Raster wird in ganze Felder aufgeteilt, damit am Rand keine halben Linien entstehen.
     const columns = Math.max(2, Math.floor((width - targetPad * 2) / targetCell));
     const rows = Math.max(2, Math.floor((height - targetPad * 2) / targetCell));
 
@@ -30,6 +31,7 @@
     const { columns, rows, cell, padX, padY } = findBalancedGrid(rect.width, rect.height);
     let grid = target.querySelector(":scope > .board-grid");
 
+    // Das SVG-Raster liegt über dem CSS-Hintergrund und kann genauer an die Fläche angepasst werden.
     if (!grid) {
       grid = document.createElementNS("http://www.w3.org/2000/svg", "svg");
       grid.classList.add("board-grid");
@@ -69,6 +71,7 @@
   };
 
   const resizeGridObserver = new ResizeObserver((entries) => {
+    // Bei Responsive-Ansichten ändert sich die Fläche oft, deshalb wird das Raster neu gezeichnet.
     entries.forEach((entry) => updateGridTarget(entry.target));
   });
 

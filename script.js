@@ -11,6 +11,7 @@ filterButtons.forEach((button) => {
     filterButtons.forEach((item) => item.classList.remove("active"));
     button.classList.add("active");
 
+    // Nur Karten aus der gewählten Kategorie bleiben sichtbar.
     workCards.forEach((card) => {
       const isVisible = filter === "all" || card.dataset.category === filter;
       card.classList.toggle("hidden", !isVisible);
@@ -21,6 +22,7 @@ filterButtons.forEach((button) => {
 document.querySelectorAll(".image-button").forEach((button) => {
   button.addEventListener("click", () => {
     const image = button.querySelector("img");
+    // In der Lightbox wird die größere Datei aus data-full gezeigt.
     lightboxImage.src = button.dataset.full;
     lightboxImage.alt = image.alt;
     lightbox.showModal();
@@ -32,6 +34,7 @@ closeLightbox.addEventListener("click", () => {
 });
 
 lightbox.addEventListener("click", (event) => {
+  // Klick auf den dunklen Hintergrund schließt die Lightbox.
   if (event.target === lightbox) {
     lightbox.close();
   }

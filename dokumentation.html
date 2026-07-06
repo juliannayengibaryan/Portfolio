@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dokumentation | Julianna Yengibaryan</title>
+    <meta name="description" content="Dokumentation zur Konzeption, Gestaltung und technischen Umsetzung des Portfolio-Projekts von Julianna Yengibaryan.">
+    <link rel="stylesheet" href="styles.css?v=20260706lighttext">
+    <link rel="stylesheet" href="layout-overrides.css?v=20260706dochandlabelsmall">
+  </head>
+  <body class="legal-page documentation-page">
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-title">Personal<br>Portfolio</span><small>julianna yengibaryan</small></a>
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <a href="index.html#index">Arbeiten</a>
+        <a href="index.html#about">Über mich</a>
+        <a href="index.html#kontakt">Kontakt</a>
+        <span class="language-toggle" aria-label="Sprache wechseln"><button type="button" data-lang="de">DE</button><span>/</span><button type="button" data-lang="en">EN</button></span>
+      </nav>
+      <button class="mobile-menu-toggle" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </header>
+
+    <main class="legal-content documentation-content">
+      <p class="collection-hand">Hausarbeit / Dokumentation</p>
+      <h1>Dokumentation</h1>
+
+      <section class="documentation-intro">
+      
+      </section>
+
+   <section>
+    <h2>Einleitung</h2>
+   <p>Die Idee für meine Portfolio-Website entstand, weil ich mich für mein Pflichtpraktikum im siebten Semester bewerben musste. Statt meine Arbeiten nur in einem PDF oder Video zu präsentieren, wollte ich eine eigene Website entwickeln, die meine gestalterischen und technischen Fähigkeiten zeigt. Gleichzeitig sollte sie mich als Person besser widerspiegeln und meine Chancen auf einen Praktikumsplatz oder späteren Berufseinstieg verbessern.</p>
+</section>
+
+      <section>
+        <h2>1. Konzeptioneller Ansatz</h2>
+        <p>Programmiert habe ich die Website in Visual Studio Code und den Code mit Git verwaltet. Da ich zuvor noch keine eigene Website veröffentlicht hatte, habe ich mich mit verschiedenen Hosting-Möglichkeiten beschäftigt und mich schließlich für Vercel entschieden. Dort habe ich mein Portfolio veröffentlicht und den Link anschließend direkt in meinen Bewerbungen verwendet.</p>
+        <p>Gestalterisch wusste ich schon früh, in welche Richtung das Portfolio gehen sollte. Ich wollte mit einer ruhigen Farbpalette arbeiten und nur eine Akzentfarbe einsetzen. Die Beispiele aus der Vorlesung haben mich dabei inspiriert, stärker mit Typografie, Größenkontrasten und Bewegung zu arbeiten, statt die Seite mit vielen Farben oder Effekten zu füllen.</p>
+        <p>Außerdem sollte die Website wie ein persönliches Scrapbook wirken. Deshalb habe ich ein kariertes Raster als Hintergrund und eine handschriftliche Schrift verwendet. Erste Skizzen und zusätzliche grafische Elemente habe ich im Laufe der Entwicklung wieder reduziert, damit die Inhalte und Bilder stärker im Mittelpunkt stehen.</p>
+      </section>
+
+      <section>
+        <h2>2. Gestaltung</h2>
+        <p>Die Website kombiniert eine Serifenschrift mit einer Handschrift. Die Serifenschrift sorgt für einen klaren, editorialen Eindruck, während die Handschrift das Portfolio persönlicher und weniger glatt macht. Dadurch entsteht ein Kontrast zwischen Struktur und etwas Spontanem.</p>
+        <p>Pink dient als Akzentfarbe und hebt einzelne Elemente hervor, ohne die Bilder zu überdecken. Das sichtbare Raster erinnert an kariertes Papier und unterstützt die Scrapbook-Idee. </p>
+      </section>
+
+      <section>
+        <h2>3. Technische Umsetzung</h2>
+        <p>Die Website wurde vollständig mit HTML, CSS und JavaScript entwickelt. Auf Frameworks habe ich bewusst verzichtet, weil ich jede gestalterische Entscheidung selbst umsetzen und besser verstehen wollte. HTML bildet die Grundstruktur der Seiten: Navigation, Inhaltsbereiche, Projektabschnitte, Galerien und Footer sind dort angelegt.</p>
+        <p>CSS übernimmt den größten Teil der Gestaltung. Darüber steuere ich Typografie, Abstände, das sichtbare Hintergrundraster, responsive Layouts und die Bildgalerien. Für die Anordnung verwende ich vor allem CSS Grid und Flexbox. Mit <code>clamp()</code> skalieren Schriftgrößen und Abstände fließender, sodass die Website auf großen Bildschirmen und auf dem Smartphone nicht komplett unterschiedlich aufgebaut werden muss.</p>
+        <p>JavaScript nutze ich für die interaktiven Teile der Website. Dazu gehören die mobile Navigation, die Sprachumschaltung, die Lightbox der Galerien und die dynamischen Projektseiten. Besonders wichtig ist die Datei <code>collection.js</code>. Dort sind Kategorien, Projekttexte, Bilder, Videos und Sprachversionen zentral gespeichert. Beim Öffnen eines Projekts werden diese Daten automatisch ausgelesen und in die Seite eingefügt. Dadurch musste ich nicht jede Projektseite einzeln bauen und kann später neue Projekte leichter ergänzen.</p>
+        <p>Ohne JavaScript ist die Website nur eingeschränkt nutzbar. Die statischen Seiten wie Startseite, Impressum, Datenschutz und Dokumentation bleiben sichtbar, weil diese Inhalte direkt im HTML stehen. Die Projektseiten und Galerien sind aber bewusst dynamisch aufgebaut: Texte, Bilder, Videos und Sprachversionen werden aus <code>collection.js</code> geladen. Deshalb ist JavaScript notwendig, damit alle Projektinhalte vollständig angezeigt werden.</p>
+        <p>Weitere wichtige technische Punkte sind die Speicherung der ausgewählten Sprache im Browser mit <code>localStorage</code>, die mobile Navigation mit einem eigenen Menübutton und die Anpassung der Galerien über Media Queries. KI habe ich nicht als reine Übersetzungsmaschine genutzt, sondern als Unterstützung, um die Sprachstruktur im Code aufzubauen und neue Sprachversionen direkt in die vorhandenen Projektdaten einzufügen. Danach habe ich die Texte kontrolliert und angepasst.</p>
+      </section>
+
+      <section class="process-section">
+        <h2>4. Entwicklungsprozess</h2>
+        <p>Besonders viel Zeit floss in die mobile Darstellung, die Navigation und das Raster im Hintergrund. Viele Abstände, Schriftgrößen und Bildanordnungen wurden mehrfach angepasst, bis die Website sowohl auf dem Smartphone als auch auf größeren Bildschirmen funktionierte. Vor allem die Galerien waren schwierig, weil die Bilder auf kleinen Bildschirmen weder zu groß noch zu eng wirken sollten.</p>
+        <p>Zwischendurch habe ich mir Feedback eingeholt und die Seite danach weiter verbessert. Dadurch sind zum Beispiel Abstände, Textbreiten, die mobile Galerie und einzelne Navigationspunkte noch einmal überarbeitet worden. Das Feedback hat mir geholfen, nicht nur aus meiner eigenen Sicht auf die Website zu schauen.</p>
+        <p>Ein großer Teil des Projekts bestand aus Testen, Überarbeiten und dem Lösen kleiner Layout-Probleme. Teilweise sah eine Entscheidung am Desktop gut aus, funktionierte aber auf dem Handy nicht mehr. Dann musste ich wieder zurück in den Code, Abstände anpassen, die Galerien neu ausrichten oder das Raster korrigieren.</p>
+        <p>Auch die Struktur der Projektseiten hat sich Schritt für Schritt entwickelt. Am Anfang wollte ich einzelne Seiten stärker von Hand gestalten. Später habe ich die Inhalte zentraler in JavaScript organisiert, weil das übersichtlicher war und mir mehr Kontrolle über Wiederholungen gab. Dadurch wurde der Code zwar an manchen Stellen komplexer, aber die Pflege der Projekte wurde einfacher.</p>
+        <p>Der Entwicklungsprozess war deshalb nicht linear. Ich habe immer wieder im Browser getestet, Screenshots verglichen, Fehler gesucht und kleine Details angepasst. Genau dadurch hat sich das Design langsam zu der Version entwickelt, die jetzt besser zu meiner Arbeitsweise passt.</p>
+      </section>
+
+      <section>
+        <h2>5. Verwendete Materialien</h2>
+        <p>Für die Website wurden ausschließlich eigene Fotografien und Arbeiten aus meinen Foto-, Video-, Studien- und Social-Media-Projekten verwendet. Die Bildrechte liegen, sofern nicht anders angegeben, bei mir. Externe Links führen nur zu den jeweiligen Projekt- oder Social-Media-Seiten.</p>
+        <p>Als Schriften verwende ich vor allem <em><a href="https://fonts.google.com/specimen/Playfair+Display" target="_blank" rel="noopener noreferrer">Playfair Display</a></em>, <em><a href="https://fonts.google.com/specimen/Cormorant+Garamond" target="_blank" rel="noopener noreferrer">Cormorant Garamond</a></em> und <em><a href="https://fonts.google.com/specimen/Nothing+You+Could+Do" target="_blank" rel="noopener noreferrer">Nothing You Could Do</a></em>. Die Fonts sind über Google Fonts eingebunden. Gearbeitet habe ich mit Visual Studio Code, Git und Vercel. Für die Gestaltung und Bildbearbeitung kam außerdem das Program Lightroom zum Einsatz.</p>
+      </section>
+
+      <section>
+        <h2>6. Fazit</h2>
+        <p>Mit diesem Projekt konnte ich Gestaltung und Programmierung miteinander verbinden und gleichzeitig ein Portfolio entwickeln, das ich langfristig für Bewerbungen nutzen kann. Besonders spannend war für mich, dass viele gestalterische Ideen erst während der Umsetzung entstanden sind.</p>
+        <p>Die größte Herausforderung war die responsive Gestaltung. Gerade die mobile Version hat gezeigt, dass ein experimentelles Layout sehr genau getestet werden muss. Heute würde ich manche CSS-Strukturen früher ordnen und technische Entscheidungen etwas früher festlegen. Trotzdem passt das Projekt gut zu meiner gestalterischen Arbeitsweise, weil es persönlich, visuell und prozesshaft entstanden ist.</p>
+      </section>
+    </main>
+
+    <footer class="legal-footer">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="dokumentation.html">Dokumentation</a>
+    </footer>
+	    <script src="grid-fit.js?v=20260706wholegrid"></script>
+	    <script>
+	      const menuToggle = document.querySelector(".mobile-menu-toggle");
+	      const mainNav = document.querySelector(".main-nav");
+	      const languageToggle = document.querySelector(".language-toggle");
+
+	    
+	      const syncLanguageToggle = () => {
+	        const language = localStorage.getItem("portfolio-language") === "en" ? "en" : "de";
+	        document.documentElement.lang = language;
+	        languageToggle?.querySelectorAll("button").forEach((button) => {
+	          button.classList.toggle("active", button.dataset.lang === language);
+	        });
+	      };
+
+
+	      languageToggle?.querySelectorAll("button").forEach((button) => {
+	        button.addEventListener("click", () => {
+	          localStorage.setItem("portfolio-language", button.dataset.lang);
+	          syncLanguageToggle();
+	        });
+      });
+
+	      syncLanguageToggle();
+
+	      menuToggle?.addEventListener("click", () => {
+	        const isOpen = mainNav.classList.toggle("menu-open");
+	        menuToggle.classList.toggle("menu-open", isOpen);
+	        menuToggle.setAttribute("aria-expanded", String(isOpen));
+	      });
+
+	      const pageHeader = document.querySelector(".site-header");
+	      let lastScrollY = window.scrollY;
+
+
+	      window.addEventListener("scroll", () => {
+	        const currentScrollY = window.scrollY;
+	        const menuIsOpen = mainNav?.classList.contains("menu-open");
+	        pageHeader?.classList.toggle("nav-hidden", !menuIsOpen && currentScrollY > lastScrollY && currentScrollY > 90);
+        lastScrollY = currentScrollY;
+      }, { passive: true });
+    </script>
+  </body>
+</html>
